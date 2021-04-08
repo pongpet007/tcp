@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<?php $this->load->view('2021_theme_1/inc/header-meta') ?>
+<?php $this->load->view('2021_theme_1/inc/css') ?>
+<?/*php $this->load->view('2021_theme_1/inc/css1')*/ ?>
+<body style="background-color: #FFF;">
+
+  <?php
+  $lang = $this->session->userdata('site_lang_name');
+  ?>
+
+  <?php 
+  // $this->load->view('2021_theme_1/inc/header1/header') 
+  ?>
+  <div class="section-header">
+
+    <?php $this->load->view('2021_theme_1/inc/header2/header') ?>
+
+
+
+
+    <div class="container container-header">
+      <div class="row">
+        <div class="col-md-12">
+         <div class="about-us">
+          <h1>
+            รู้จัก T.C.P
+          </h1>
+          <p>ตอบโจทย์ทุกธุรกิจ คู่คิด SME และ STARTUP</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+</div>
+
+<!-- End Section head -->
+<section class="section-tab">
+  <div class="container container-header">
+    <div class="row">
+     <!-- Tab Selection -->
+
+     <div class="col-md-12 space-tab Top"> 
+      <div class="row text-center row-space-tab" >
+        <div class="space-tab-select item-1 ">
+          <a href="<?=base_url($lang.'/About#vision')?>">
+            <div class="tab-select">
+              <div class="vision">
+                <i class="icofont-unique-idea iconvision"></i>
+                <p>วิสัยทัศน์</p>
+                <span>มุ่งพัฒนาคุณภาพการผลิต</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="space-tab-select item-2" >
+          <a href="<?=base_url($lang.'/About#obligation')?>">
+            <div class="tab-select">
+              <div class="vision">
+                <i class="fas fa-bullseye iconvision"></i>
+                <p>พันธกิจ</p>
+                <span>เพื่อตอบสนองด้านธุกิจ</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="space-tab-select item-3" id="sidebar-tab" >
+          <a href="<?=base_url($lang.'/About#history')?>">
+            <div class="tab-select">
+              <div class="vision">
+                <i class="icofont-building-alt iconvision"></i>
+                <p>ประวัติ</p>
+                <span>ก่อตั้งขึ้นเพื่อผลิตบรรจุภัณฑ์</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="space-tab-select item-4" id="sidebar-tab" >
+          <a href="<?=base_url($lang.'/About#board')?>">
+            <div class="tab-select">
+              <div class="vision">            
+                <i class="icofont-site-map iconvision"></i>
+                <p>ทีมผู้บริหาร</p>
+                <span>ด้วยการบริหารงานคุณภาพ</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="space-tab-select item-5" id="sidebar-tab" >
+          <a href="<?=base_url($lang.'/About#iso')?>">
+            <div class="tab-select">
+              <div class="vision">
+                <!-- <i class="icofont-certificate iconvision"></i> -->
+                <i class="icofont-badge iconvision"></i>
+                <p>การรับรอง</p>
+                <span>ISO 9001:2000</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</section>
+<!-- END Selection -->
+
+
+
+<section id="vision" class="vision-detail" >
+  <div class="container container-about">
+    <div class="row">
+      <div class="col-md-6 img-vision sticky">
+        <img src="<?=base_url('image_new/bg/img-about.png')?>" width="100%">
+      </div>
+      <div class="col-md-6">
+        <div class="detail-vision">
+          <h1>
+            วิสัยทัศน์
+          </h1>
+          <div class="scrollbar" id="vision-p">
+           <p >
+            &nbsp;&nbsp;&nbsp;&nbsp;มุ่งมั่นและพัฒนาการผลิต โดยนำเอาเทคโนโลยีการพิมพ์ที่ทันสมัยจากต่างประเทศเข้ามาพัฒนาการผลิต ซึ่งถือได้ว่าเป็นโรงพิมพ์ที่ทันสมัยแห่งหนึ่งในประเทศไทย ทั้งยังมีระบบตรวจสอบประกันคุณภาพทุกขั้นตอนของการผลิต เพื่อสนองความต้องการและความพึงพอใจของลูกค้า
+          </p>
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;ด้วยการบริหารงานคุณภาพของทีมงานในฝ่ายต่างๆ ประกอบด้วย ฝ่ายมาตรฐานคุณภาพ, ฝ่ายบัญชี, ฝ่ายการเงิน, ฝ่ายบุคคล, ฝ่ายขาย, ฝ่ายจัดซื้อ, ฝ่ายออกแบบ, ฝ่ายวางแผนการผลิต, ฝ่ายผลิต, ฝ่ายไอที และการพัฒนาองค์กร เพื่อครอบคลุม กระบวนการผลิต รองรับงานพิมพ์ที่มีคุณภาพรวดเร็ว เพราะทุกกระบวนการผลิตสามารถผลิตสำเร็จภายในโรงงาน ประกอบด้วย แผนกออกแบบ, แผนกตัด, แผนกพิมพ์, แผนกคัด, แผนกอาบเคลือบ, แผนกปะกบลูกฟูก, แผนกไดคัท, แผนกติดประกอบ, แผนกจัดส่ง และแผนกซ่อมบำรุง 
+          </p>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="obligation" class="obligation" style="background-color: #FFF;">
+  <div class="container container-obligation">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="detail-obligation">
+
+          <h1>
+            พันธกิจ
+          </h1>
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;เพื่อตอบสนองด้านเศรษฐกิจ ทางบริษัทฯ จึงได้จัดตั้งโรงงาน ณ ที่ปัจจุบัน บนถนนประชาอุทิศ แขวงทุ่งครุ เขตทุ่งครุ กรุงเทพฯ ในปีพุทธศักราช 2532 เพื่อขยายรากฐานกำลังการผลิตให้มีปริมาณมากขึ้น โดนใช้ชื่อว่า "บริษัท ที.ซี.พี อินดัสทรี้ จำกัด" บนเนื้อที่ 12 ไร่ พื้นที่สำนักงาน 1,386 ตารางเมตร พื้นที่โรงงาน 9,000 ตารางเมตร ด้วยบุคลากรมากกว่า 300 คน โดยมีกำลังการผลิต 15,000 ตันต่อปี เพื่อนสร้างสรรค์บรรจุภัณฑ์คุณภาพออกสู่ตลาดทั้งในประเทศและต่างประเทศ อย่างต่อเนื่องจนถึงปัจจุบัน 
+          </p>
+
+        </div>
+      </div>
+      <div class="col-md-6">
+       <img src="<?=base_url('image_new/bg/img-about.png')?>" width="100%">
+     </div>
+   </div>
+ </div>
+</section>
+
+
+<section id="history" class="history">
+ <div class="container container-history">
+   <div class="row">
+     <div class="col-md-12">
+      <div class="detail-history">
+        <h1>
+          ประวัติ
+        </h1>
+        <p>
+          บริษัท ที.ซี.พี อินดัสทรี้ จำกัด เป็นผู้ดำเนินการเกี่ยวกับสิ่งพิมพ์ด้านบรรจุภัณฑ์ประเภทกระดาษ รวมถึงบรรจุภัณฑ์ประเภทลูกฟูกออฟเซ็ท
+          <br>
+          และสิ่งพิมพ์ที่เกี่ยวกับกระดาษอื่นๆ เช่น กล่องบรรจุสินค้า , โปสเตอร์ , ป้าย , โบรชัวร์ , สติ๊กเกอร์ มากกว่า 65 ปี
+        </p>
+
+
+        <img src="<?=base_url('image_new/bg/about-history.png')?>" width="100%">
+
+        <picture>
+          <source media="(min-width:650px)" srcset="<?=base_url('image_new/bg/about-history.png')?>">                
+            <source media="(min-width:768px)" srcset="<?=base_url('image_new/bg/about-history.png')?>" src="" type="" style="width:100%;">
+              <!-- <img src="<?=base_url('image_new/bg/about-history.png')?>" alt="history" style="width:100%;"> -->
+            </picture>
+
+            <div style="margin-top: 30px;">
+              <p>
+                ทุกกระบวนการ เราดำเนินการผลิตภายในบริษัท ตั้งแต่การจัดทำตัวอย่าง, การทำเพลทพิมพ์ด้วยระบบคอมพิวเตอร์, การทำบล็อคไดคัท รวมถึงกระบวนการอาบเคลือบประเภทต่างๆ นอกจากนี้ยังสามารถทำ Hot Stamp , Emboss และการอัดลาย เพื่อเพิ่มความสวยงามและมูลค่าให้แก่สินค้าได้อีกด้วย
+              </p>
+            </div>
+
+            <div style="width: 100% ;margin-top: 40px; margin-bottom: 70px;">
+              <span style=" border-bottom: 10px solid #013b9c;padding: 0 100px;"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="board" class="board">
+    <div class="container container-board">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="detail-board">
+           <h1>
+             คณะกรรมการบริษัท
+           </h1>
+           <p>
+             ด้วยการบริหารงานคุณภาพของทีมงานในฝ่ายต่างๆ
+           </p>
+         </div>
+         <div class="board-head">
+          <div class="row">
+            <div class="col-md-5">
+            </div>
+            <div class="col-md-7">
+              <div class="detail-director">
+                <h2 class="name-board-1">
+                  นายสุนทร สุนทรกำพลรัตน์
+                </h2>
+
+                <p class="detail-com">
+                  ด้วยการบริหารงานคุณภาพของทีมงานในฝ่ายต่างๆ ประกอบด้วย ฝ่ายมาตรฐานคุณภาพ, ฝ่ายบัญชี, ฝ่ายการเงิน, ฝ่ายบุคคลฝ่ายขาย, ฝ่ายจัดซื้อ, ฝ่ายออกแบบ, ฝ่ายวางแผนการผลิต, ฝ่ายผลิต, ฝ่ายไอที และการพัฒนาองค์กร เพื่อครอบคลุมกระบวนการผลิต รองรับงานพิมพ์ที่มีคุณภาพรวดเร็ว เพราะทุกกระบวนการผลิต  สามารถผลิตสำเร็จภายในโรงงาน ประกอบด้วย แผนกออกแบบ, แผนกคัด, แผนกอาบเคลือบ, แผนกประกบลูกฟูก, แผนกไดคัท, แผนกติดประกอบ, แผนกจัดส่ง และแผนกซ่อมบำรุง 
+                </p>
+                <div class="hover-detail-director">
+
+                  <div class="arrow_box">
+                    <h3 class="arrow">
+                      กรรมการบริษัท
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="other-board">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="hover-board-1">
+                <div class="board-1">
+                  <div class="position-rank-1">
+                    <h1 class="h1-rank-1">ผู้ช่วยการตลาด</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="hover-board-2">
+                <div class="board-2">
+                  <div class="position-rank-2">
+                    <h1 class="h1-rank-2">ผู้ช่วยการฝ่ายขาย</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="bg-member">
+          <img src="<?=base_url()?>assets_2021_theme_1/img/bg/member.png?<?= rand()?>" alt="Member of TCP" id="memberImg">
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <img src="<?=base_url()?>assets_2021_theme_1/img/bg/member-join.png" style="width: 100%;">
+      </div>
+      <div class="col-md-8">
+
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="iso" class="iso">
+  <div class="container container-iso">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="detail-iso">
+          <h1>
+            การรับรองคุณภาพ
+          </h1>
+          <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;ด้วยระบบการบริหารคุณภาพ ISO 9001:2000 ครอบคลุมการบริการตลอดจนทุกกระบวนการ และทุกกิจกรรมของบรัษัทฯ ซึ่งว่าด้วยมาตรฐานคุณภาพ คือ มุ่งมั่นพัฒนาคุณภาพการผลิตโดยนำเอาเทคโนโลยีการพิมพ์ที่ทันสมัยจากต่างประเทศเข้ามาพัฒนาการผลิต ซึ่งถือได้ว่าเป็นโรงพิมพ์ที่ทันสมัยแห่งหนึ่งในประเทศไทย ทั้งยังมีระบบตรวจสอบประกันคุณภาพทุกขั้นตอนของการผลิต เพื่อสนองความต้องการ และความพึงพอใจขอลูกค้า
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="<?=base_url('image_new/bg/img-iso.png')?>" width="100%">
+      </div>
+    </div>
+  </div>
+
+
+  
+</section>
+
+<a href="#" class="radius scroll-top" ><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+<p class="open-menu-left" onclick="hideButtonmenu()"><i class="fas fa-chevron-right" aria-hidden="true"></i></a></p>
+<div class="menu-left">
+  <div class="space-left-a">
+    <a href="#vision" class="menu-left-a" data-toggle="tooltip" data-placement="right" title="<?=lang('vision')?>">
+      <i class="icofont-unique-idea iconvision-left"></i>
+    </a>
+  </div>
+  <div class="space-left-a">
+    <a href="#obligation" class="menu-left-a" data-toggle="tooltip" data-placement="right" title="<?=lang('obligation')?>">
+      <i class="fas fa-bullseye iconvision-left"></i>
+      
+    </a>
+  </div>
+  <div class="space-left-a">
+    <a href="#history" class="menu-left-a" data-toggle="tooltip" data-placement="right" title="<?=lang('history')?>">
+      <i class="icofont-building-alt iconvision-left"></i>
+      
+    </a>  
+  </div>
+  <div class="space-left-a">
+    <a href="#board" class="menu-left-a" data-toggle="tooltip" data-placement="right" title="<?=lang('board')?>">
+      <i class="icofont-site-map iconvision-left"></i>
+      
+    </a>
+  </div>
+  <div class="space-left-a">
+    <a href="#iso" class="menu-left-a" data-toggle="tooltip" data-placement="right" title="<?=lang('iso')?>">
+      <i class="icofont-badge iconvision-left"></i>
+      
+    </a>
+  </div>
+</div>
+
+
+
+<?php 
+$this->load->view('2021_theme_1/inc/footer2/footer') 
+?>
+
+
+
+
+
+
+
+
+
+
+<?php 
+  // $this->load->view('2021_theme_1/index/banner')
+?>
+<main id="home1">
+  <?php 
+    // $this->load->view('2021_theme_1/index/about') 
+  ?>
+
+
+</main>
+
+
+
+<?php 
+$this->load->view('2021_theme_1/inc/footer-js') 
+?>
+
+
+
+<script>
+  $(document).ready(function() {
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 2,
+          nav: true,
+          margin: 20
+        },
+        600: {
+          items: 3,
+          nav: false,
+          margin: 20
+        },
+        1000: {
+          items: 3,
+          nav: true,
+          loop: false,
+          margin: 100
+        }
+      }
+    })
+  });
+</script>
+
+
+<!-- <script type="text/javascript">
+  // This is a functions that scrolls to #{blah}link
+  function goToByScroll(id) {
+    // Remove "link" from the ID
+    id = id.replace("link", "");
+    // Scroll
+    $('html,body').animate({
+      scrollTop: $("#" + id).offset().top
+    }, 'slow');
+  }
+
+  $("#sidebar-tab > a").click(function(e) {
+    // Prevent a page reload when a link is pressed
+    e.preventDefault();
+    // Call the scroll function
+    goToByScroll(this.id);
+  });
+
+</script> -->
+
+<script>
+  // $(function() {
+  //   $('a[href*=\\#]:not([href=\\#])').on('click', function() {
+  //     var target = $(this.hash);
+  //     target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+  //     if (target.length) {
+  //       $('html,body').animate({
+  //         scrollTop: target.offset().top
+  //       }, 1000);
+  //       return false;
+  //     }
+  //   });
+  // });
+</script>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<script type="text/javascript">
+  function hide(x) {
+    x.style.background-color = #333;
+  }
+</script>
+
+
+ <!--  <footer id="footer">
+    <div class="container">
+      <div class="copyright new-copyright">
+        &copy; Copyright <strong><?=date('Y')?></strong> - All Rights Reserved.
+      </div>
+    </div>
+  </footer> -->
+  <!-- End Footer -->
+  <!-- <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a> -->
+  <!-- <div id="preloader"></div> -->
+  <!-- Vendor JS Files -->
+  
+</body>
+</html>

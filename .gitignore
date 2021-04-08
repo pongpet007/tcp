@@ -1,0 +1,12 @@
+/admin/
+/db/
+/images/
+/image_new/
+/icon/
+/margjs/
+/_ref/
+/slide/
+/system/
+/application/cache/*
+/application/config/config.php
+/personal/
