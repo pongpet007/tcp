@@ -63,9 +63,31 @@ $route['(VN|vn)\/Home'] = 'Home';
 
 $route['(TH|th)\/Home\/index3'] = 'Home/index3';
 
-$route['(TH|th)\/About'] = 'About/index';
+$route['(TH|th)\/About'] = 'About/index/$1';
+$route['(US|us)\/About'] = 'About/index/$1';
+$route['(KH|kh)\/About'] = 'About/index/$1';
+$route['(LA|la)\/About'] = 'About/index/$1';
+$route['(MM|mm)\/About'] = 'About/index/$1';
+$route['(VN|vn)\/About'] = 'About/index/$1';
 
-$route['(TH|th)\/Solution'] = 'Solution/index';
+$route['(TH|th)\/Solution'] = 'Solution/index/$1';
+$route['(US|us)\/Solution'] = 'Solution/index/$1';
+$route['(KH|kh)\/Solution'] = 'Solution/index/$1';
+$route['(LA|la)\/Solution'] = 'Solution/index/$1';
+$route['(MM|mm)\/Solution'] = 'Solution/index/$1';
+$route['(VN|vn)\/Solution'] = 'Solution/index/$1';
+
+
+$route['(TH|th)\/Contactus'] = 'Contactus/index/$1';
+$route['(US|us)\/Contactus'] = 'Contactus/index/$1';
+$route['(KH|kh)\/Contactus'] = 'Contactus/index/$1';
+$route['(LA|la)\/Contactus'] = 'Contactus/index/$1';
+$route['(MM|mm)\/Contactus'] = 'Contactus/index/$1';
+$route['(VN|vn)\/Contactus'] = 'Contactus/index/$1';
+
+
+
+
 
 $route['(TH|th)\/Home\/stat'] = 'Home/stat';
 $route['(US|us)\/Home\/stat'] = 'Home/stat';
@@ -275,18 +297,18 @@ $route['(VN|vn)\/Aboutus'] = 'Content/index/4';
 
 
 
-$route['(TH|th)\/Contactus'] = 'Content/index/3';
-$route['(US|us)\/Contactus'] = 'Content/index/3';
-$route['(KH|kh)\/Contactus'] = 'Content/index/3';
-$route['(LA|la)\/Contactus'] = 'Content/index/3';
-$route['(MM|mm)\/Contactus'] = 'Content/index/3';
-$route['(VN|vn)\/Contactus'] = 'Content/index/3';
+// $route['(TH|th)\/Contactus'] = 'Content/index/3';
+// $route['(US|us)\/Contactus'] = 'Content/index/3';
+// $route['(KH|kh)\/Contactus'] = 'Content/index/3';
+// $route['(LA|la)\/Contactus'] = 'Content/index/3';
+// $route['(MM|mm)\/Contactus'] = 'Content/index/3';
+// $route['(VN|vn)\/Contactus'] = 'Content/index/3';
 
 
 
 
 
-$route['Contactus'] = 'Content/index/7';
+// $route['Contactus'] = 'Content/index/7';
 
 
 

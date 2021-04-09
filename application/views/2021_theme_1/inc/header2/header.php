@@ -1,13 +1,14 @@
+<? $lang = $this->session->userdata('site_lang_name');?>
 <header id="header2" class="">
-	<div class="container container-header">
+	<div class="container container-header d-lg-block d-sm-none d-none">
 		<div class="row row-header">
-			<div class="col-md-6">
+			<div class="col-md-6 d-md-block d-sm-none d-none">
 				<div class="logo-header">
 					<img src="<?=base_url()?>image_new/logo/logo-footer.png">
 				</div>				
 				
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 d-md-block d-sm-none d-none">
 				<div class="contact-header">
 					<div class="detail-contact">
 						<div class="head-1">
@@ -23,24 +24,53 @@
 							</span>
 						</div>
 					</div>
-					<span class="flag">
-						<img src="<?=base_url()?>image_new/flag/thailand-3.png" width="10%">
-					</span>
-					
 
-					<div class="navbar-lang">
-						<a href="" class="" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							ภาษาไทย <i class="icofont-simple-down icondown"></i>
+					<div class="dropdown">
+						<?php foreach ($countrys as $country) { ?>
+							<? $uri =  uri_string(); ?>
+							<? $uri = str_ireplace($this->session->userdata('site_lang_name')."/", $country->iso2."/", $uri); ?>
+							<? if ($country->iso2 == $lang) { ?>
+								<div class="space-flag" style="display: inline-block;">
+									<span class="flag">
+										<img src="<?= base_url()?>images/country_flags/<? echo $country->iso2; ?>.png" alt="kulthorn" >
+									</span>
+								</div>
+								<?
+							} 
+						} 
+						?>
+						
+						<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<?php foreach ($countrys as $country) { ?>
+								<? $uri =  uri_string(); ?>
+								<? $uri = str_ireplace($this->session->userdata('site_lang_name')."/", $country->iso2."/", $uri); ?>
+								<? if ($country->iso2 == $lang) { ?>
+									<?   echo $country->iso2; ?>
+									<?
+								} 
+							} 
+							?>
 						</a>
+
 						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-							<a class="dropdown-item" href="#">ภาษาอังกฤษ</a>		
-							<a class="dropdown-item" href="#">ภาษาจีน</a>								
+							<?php foreach ($countrys as $country) { ?>
+								<? $uri =  uri_string(); ?>
+								<? $uri = str_ireplace($this->session->userdata('site_lang_name')."/", $country->iso2."/", $uri); ?>
+								<? if ($country->iso2 != $lang) { ?>
+									<a class="dropdown-item" href="<?=base_url($uri)?>">
+										<?   echo $country->iso2; ?>
+									</a>
+									<?
+								} 
+							} 
+							?>
 						</div>
+						
 					</div>
 				</div>
 			</div>
 			<hr class="hr-header">
-			<div class="col-md-12 d-sm-block d-none navbar-2">
+			<div class="col-md-12 d-md-block d-sm-none d-none navbar-2">
 				<nav class="navbar navbar-expand-lg navbar-light bg-light">
 					<a class="navbar-brand" href="#"></a>
 
@@ -54,45 +84,45 @@
 								<a class="nav-link" href="#">หน้าหลัก <span class="sr-only">(current)</span></a>
 							</li> -->
 							<li class="nav-item nav-1">
-								<a class="nav-link " href="#">
-									หน้าหลัก<span href="#" class="span-menu">T.C.P. INDUSTRY</span>
+								<a class="nav-link " href="<?=base_url($lang.'/Home')?>">
+									<?=lang('HOME')?><span class="span-menu">T.C.P. INDUSTRY</span>
 								</a>
 
 							</li>
 							<li class="nav-item nav-2">
-								<a class="nav-link nav-active" href="#" >
-									รู้จัก T.C.P
-									<span href="#" class="span-menu">เกี่ยวกับเรา</span>
+								<a class="nav-link nav-active" href="<?=base_url($lang.'/About')?>" >
+									<?=lang('know tcp')?>
+									<span class="span-menu"><?=lang('aboutus')?></span>
 								</a>
 							</li>
 							<li class="nav-item nav-3">
-								<a class="nav-link" href="#"  >
-									โซลูชั่น
-									<span href="#" class="span-menu">เทคโนโลยีของเรา</span>
+								<a class="nav-link" href="<?=base_url($lang.'/Solution')?>"  >
+									<?=lang('Solution')?>
+									<span class="span-menu"><?=lang('Our Technology')?></span>
 								</a>
 							</li>
 							<li class="nav-item nav-4">
-								<a class="nav-link" href="#" >
-									สินค้าและบริการ
-									<span href="#" class="span-menu">ผลิตภัณฑ์ทั้งหมด</span>
+								<a class="nav-link" href="<?=base_url($lang.'/Products')?>" >
+									<?=lang('Products and Service')?>
+									<span class="span-menu"><?=lang('All Products')?></span>
 								</a>
 							</li>
 							<li class="nav-item nav-5">
-								<a class="nav-link" href="#" >
-									รับสมัครงาน
-									<span href="#" class="span-menu">ร่วมงานกับเรา</span>
+								<a class="nav-link" href="<?=base_url($lang.'/Job')?>" >
+									<?=lang('Recruit')?>
+									<span class="span-menu"><?=lang('Join Us')?></span>
 								</a>
 							</li>
 							<li class="nav-item nav-6">
-								<a class="nav-link" href="#" >
-									บทความ
-									<span href="#" class="span-menu">สาระความรู้จากเรา</span>
+								<a class="nav-link" href="<?=base_url($lang.'/Blog')?>" >
+									<?=lang('Blogs')?>
+									<span class="span-menu"><?=lang('Knowledge from us')?></span>
 								</a>
 							</li>
 							<li class="nav-item nav-7">
-								<a class="nav-link" href="#" >
-									ติดต่อเรา
-									<span href="#" class="span-menu">สอบถามเพิ่มเติม</span>
+								<a class="nav-link" href="<?=base_url($lang.'/Contactus')?>" >
+									<?=lang('Contact Us')?>
+									<span class="span-menu"><?=lang('Ask more')?></span>
 								</a>
 							</li>
 
@@ -100,15 +130,17 @@
 					</div>
 				</nav>
 			</div>
+		</div>
+	</div>
 
-
-			<!-- Header Mobile -->
-			<div class="d-lg-none d-md-none d-sm-block d-block">
-				
-
+	<!-- Header Mobile -->
+	<div class="container-fluid d-lg-none d-sm-block d-block" >
+		<div class="row" >
+			
+			<div class=" col-xs-12 d-lg-none d-sm-block d-block">		
 				<div class="screen">
 					<div class="navbar"></div>
-					<div class="list">
+					<!-- <div class="list">
 						<div class="item">
 							<div class="img"></div>
 							<span></span>
@@ -133,16 +165,96 @@
 							<span></span>
 							<span></span>                    
 						</div>
-					</div>
+					</div> -->
 					<div class="circle"></div>
 					<div class="menu">
-						<ul>
-							<li><a href="">About</a></li>
-							<li><a href="">Share</a></li>
-							<li><a href="">Activity</a></li>
-							<li><a href="">Settings</a></li>
-							<li><a href="">Contact</a></li>
-						</ul>
+						<div>
+							<div class="logo-header-mobile" style="text-align: center;">
+								<div class="circle-logo">
+									<img src="<?=base_url()?>assets_2021_theme_1//img/bg/logo.png" style="width: 100%;">
+								</div>
+								<h4 class="font-PSL-bold" style="color: #000;">
+									บริษัท ทีซีพี อินดั้สทรี้ จำกัด
+								</h4>
+								<h4 style="color: #565656;">
+									TCP
+								</h4>
+								<hr>
+							</div>
+						</div>
+						<div style="background-color: #0e2046; color: #FFF; padding-left: 10px; font-size: 26px;">
+							<span><?=lang('MENU')?></span>
+						</div>
+						<div class="menu-nav-mobile" style="">
+							<i class="fas fa-chevron-right icon-next-mobile"></i>
+							<a href="<?=base_url($lang.'/Home')?>" style="color: #333;">
+								<?=lang('HOME')?><span class="span-menu-mobile">T.C.P. INDUSTRY</span>
+							</a>
+						</div>
+						<div class="menu-nav-mobile">
+							<i class="fas fa-chevron-right icon-next-mobile"></i>
+							<a href="<?=base_url($lang.'/About')?>" style="color: #333;">
+								<?=lang('know tcp')?>
+								<span class="span-menu-mobile"><?=lang('aboutus')?></span>
+							</a>
+						</div>
+						<div class="menu-nav-mobile">
+							<i class="fas fa-chevron-right icon-next-mobile"></i>
+							<a href="<?=base_url($lang.'/Solution')?>" style="color: #333;">
+								<?=lang('Solution')?>
+								<span class="span-menu-mobile"><?=lang('Our Technology')?></span>
+							</a>
+						</div>
+						<div class="menu-nav-mobile">
+							<i class="fas fa-chevron-right icon-next-mobile"></i>
+							<a href="<?=base_url($lang.'/Products')?>" style="color: #333;">
+								<?=lang('Products and Service')?>
+								<span class="span-menu-mobile"><?=lang('All Products')?></span>
+							</a>
+						</div>
+						<div class="menu-nav-mobile">
+							<i class="fas fa-chevron-right icon-next-mobile"></i>
+							<a href="<?=base_url($lang.'/Job')?>" style="color: #333;">
+								<?=lang('Recruit')?>
+								<span class="span-menu-mobile"><?=lang('Join Us')?></span>
+							</a>
+						</div>
+						<div class="menu-nav-mobile">
+							<i class="fas fa-chevron-right icon-next-mobile"></i>
+							<a href="<?=base_url($lang.'/Blog')?>" style="color: #333;">
+								<?=lang('Blogs')?>
+								<span class="span-menu-mobile"><?=lang('Knowledge from us')?></span>
+							</a>
+						</div>
+						<div class="menu-nav-mobile">
+							<i class="fas fa-chevron-right icon-next-mobile"></i>
+							<a href="<?=base_url($lang.'/Contactus')?>" style="color: #333;">
+								<?=lang('Contact Us')?>
+								<span class="span-menu-mobile"><?=lang('Ask more')?></span>
+							</a>
+						</div>
+						<div class="menu-nav-mobile">
+							<div class="lang-mobile" style="text-align: center;">
+								<?php foreach ($countrys as $country) { ?>
+									<? $uri =  uri_string(); ?>
+									<? $uri = str_ireplace($this->session->userdata('site_lang_name')."/", $country->iso2."/", $uri); ?>
+									<a class="text-reset" style="color: #000;" href="<?=base_url($uri)?>">
+										<img src="<?= base_url()?>images/country_flags/<? echo $country->iso2; ?>.png" alt="kulthorn" class="img-flag" style="margin-top: -5px;">
+										<?=$country->iso2?>
+									</a>
+								<?php } ?>
+
+								<!-- <a class="text-reset" href="#" style="color: #333;">
+									<img src="<?=base_url()?>images/country_flags/TH.png" class="flag-mobile">
+									TH
+								</a>
+								<a class="text-reset" href="#" style="color: #333;">
+									<img src="<?=base_url()?>images/country_flags/US.png" class="flag-mobile">
+									US
+								</a> -->
+							</div>
+						</div>
+
 					</div>			            
 					<div class="burger">
 						<div class="x"></div>
@@ -151,13 +263,9 @@
 					</div>    
 				</div>	
 			</div>
-
-
-
-
-
 		</div>
 	</div>
+	<!-- End Header Mobile -->
 </header>
 
 <? 
@@ -192,8 +300,8 @@ $this->load->view('2021_theme_1/inc/header2/css.php')
 		border-top: 1px solid #EEE; 
 	}
 	.navbar-expand-lg .navbar-nav .nav-link {
-		padding-left: 2.3rem;
-		padding-right: 2.3rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
 		font-size: 23px;
 		color: #FFF;
 	}
@@ -211,22 +319,38 @@ $this->load->view('2021_theme_1/inc/header2/css.php')
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
+		
+	}
+	.section-contactus {
+		background : url(<?=base_url()?>image_new/bg/solution-banner.jpg)  no-repeat center center ;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 		height: 800px;
 	}
 	.row-header {
 		padding-top: 15px;
 	}
 	.flag {
-		max-width: 5%;
-		float: none;
+		/*max-width: 100%;*/
+		/*float: none;*/
+	}
+	div.space-flag{
+		width: 40px;
+		height: 40px;
 	}
 	.flag img {
-		margin-top: -30px;
+		/*margin-top: -30px;*/
+		border-radius: 50%;
+		border: 4px solid #333;
+		width: 40px;
+		height: 40px;
 	}
 	.navbar-lang .dropdown-toggle {
 		border: none;
 	}
-	
+
 	.position-header {
 
 	}
@@ -266,8 +390,6 @@ $this->load->view('2021_theme_1/inc/header2/css.php')
 	}
 	.nav-1 {
 		/*border-right: 1px solid #6b6d82;*/
-		
-
 		/*background-color: #ebebeb;
 		content: "";
 		height: 20px;
@@ -279,6 +401,7 @@ $this->load->view('2021_theme_1/inc/header2/css.php')
 	.nav-1 ,.nav-2 , .nav-3 ,.nav-4 ,.nav-5 , .nav-6 ,.nav-7 {
 		position: relative;
 	}
+
 	
 	@media (max-width: 500px) and (min-width: 300px) {
 
@@ -303,16 +426,17 @@ $this->load->view('2021_theme_1/inc/header2/css.php')
 
 	}
 	@media (min-width: 1024px) {
-		.nav-2 {
+		.nav-active {
 			border-top: 5px solid #07a7ff;
 			margin-top: -12px;
 		}
 		.nav-active {
 			padding-top: 12px;
 		}
-		.nav-2:after {
+		.nav-active:after {
 			top: 12px;
 		}
+		.nav-link:hover
 	}
 	
 </style>

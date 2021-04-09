@@ -27,6 +27,19 @@ $lang["obligation"] = 'พันธกิจ';
 $lang["history"] = 'ประวัติ';
 $lang["board"] = 'ผู้บริหาร';
 $lang["iso"] = 'การรับรอง ISO';
+$lang["know tcp"] ='รู้จัก T.C.P';
+
+$lang["aboutus"] = 'เกี่ยวกับเรา';
+$lang["Solution"] = 'โซลูชั่น';
+$lang["Products and Service"] = 'สินค้าและบริการ';
+$lang["All Products"] = 'ผลิตภัณฑ์ทั้งหมด';
+$lang["Recruit"] = 'รับสมัครงาน';
+$lang["Join Us"] = 'ร่วมงานกับเรา';
+$lang["Our Technology"] = 'เทคโนโลยีของเรา';
+$lang["Blogs"] = 'บทความ';
+$lang["Knowledge from us"] = 'สาระความรู้จากเรา';
+$lang["Contact Us"] = 'ติดต่อเรา';
+$lang["Ask more"] = 'สอบถามเพิ่มเติม';
 
 
 

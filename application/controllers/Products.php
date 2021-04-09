@@ -36,253 +36,253 @@ class Products extends CI_Controller {
 		
 		// print_r($url);
 		// exit();
-		$data['site_lang_name'] = $this->session->userdata('site_lang_name');
+		// $data['site_lang_name'] = $this->session->userdata('site_lang_name');
 
-		$data['counter'] = $this->Counter_model->count();
-		$data["categorys"] = $this->Category_model->getAll();
-		$company = $this->Company_model->getOne(1);		
-		$data['companyData'] = $company;
-		$data['meta_title'] = $company->meta_title;
-		$data['meta_keyword'] = $company->meta_keyword;
-		$data['meta_description'] = $company->meta_description;
+		// $data['counter'] = $this->Counter_model->count();
+		// $data["categorys"] = $this->Category_model->getAll();
+		// $company = $this->Company_model->getOne(1);		
+		// $data['companyData'] = $company;
+		// $data['meta_title'] = $company->meta_title;
+		// $data['meta_keyword'] = $company->meta_keyword;
+		// $data['meta_description'] = $company->meta_description;
 		
-		$theme_path = $company->theme_path;
-		$data['theme_path'] = $theme_path;
-		$data["theme_assets_path"] = $company->theme_assets_path;
+		// $theme_path = $company->theme_path;
+		// $data['theme_path'] = $theme_path;
+		// $data["theme_assets_path"] = $company->theme_assets_path;
 
-		$menus = $this->Menu_model->getMain();
-		// echo $this->db->last_query();
-		// exit();
+		// $menus = $this->Menu_model->getMain();
+		// // echo $this->db->last_query();
+		// // exit();
 
-		foreach ($menus as $menu) {
-			$menu->submenu = $this->Menu_model->getsub($menu->menu_id);
-		}
-		$data['menus'] = $menus ;		
+		// foreach ($menus as $menu) {
+		// 	$menu->submenu = $this->Menu_model->getsub($menu->menu_id);
+		// }
+		// $data['menus'] = $menus ;		
 		$data['countrys'] = $this->Country_model->getAll();
 
 		
-		if(strlen($params)>0 ){
+		// if(strlen($params)>0 ){
 			
-			list($name) = explode(':', $params);
+		// 	list($name) = explode(':', $params);
 			
-			if($name=='cid'){
-				list($name,$id) = explode(':', $params);
-				$cat_id = $id;
-			}else{
-				$cat_id = 0;
-			}
+		// 	if($name=='cid'){
+		// 		list($name,$id) = explode(':', $params);
+		// 		$cat_id = $id;
+		// 	}else{
+		// 		$cat_id = 0;
+		// 	}
 
-			if($name=='bid'){
-				list($name,$id) = explode(':', $params);
-				$brand_id = $id;
-			}else{
-				$brand_id = 0;
-			}
-			if ($name!='cid' or $name!='bid') {
-				$countnews = $name;
-			}
-		}else{
-			$cat_id = 0;
-			$brand_id = 0;
-			$countnews =0;
-		}
-
-		
-
-		$promotion_id = $this->input->get('promotion_id');
-		
-		// if ($cat_id = "") {
-
+		// 	if($name=='bid'){
+		// 		list($name,$id) = explode(':', $params);
+		// 		$brand_id = $id;
+		// 	}else{
+		// 		$brand_id = 0;
+		// 	}
+		// 	if ($name!='cid' or $name!='bid') {
+		// 		$countnews = $name;
+		// 	}
+		// }else{
 		// 	$cat_id = 0;
-		// }
-
-		// if ($brand_id = "") {
 		// 	$brand_id = 0;
+		// 	$countnews =0;
 		// }
-		if ($cat_id>0) {
-			unset($_SESSION["brand"]);
-			unset($_SESSION["brandid"]);
-		}
+
 		
-		$view = $this->input->get('view');
-		$orderby = $this->input->get('order');
-		$tag = $this->input->get('tag');
-		if (isset($tag)) {
-			$tagsquery = $this->Products_model->getAllcheckdata($tag,$this->session->userdata('site_lang'));
+
+		// $promotion_id = $this->input->get('promotion_id');
+		
+		// // if ($cat_id = "") {
+
+		// // 	$cat_id = 0;
+		// // }
+
+		// // if ($brand_id = "") {
+		// // 	$brand_id = 0;
+		// // }
+		// if ($cat_id>0) {
+		// 	unset($_SESSION["brand"]);
+		// 	unset($_SESSION["brandid"]);
+		// }
+		
+		// $view = $this->input->get('view');
+		// $orderby = $this->input->get('order');
+		// $tag = $this->input->get('tag');
+		// if (isset($tag)) {
+		// 	$tagsquery = $this->Products_model->getAllcheckdata($tag,$this->session->userdata('site_lang'));
 			
-			if($this->session->userdata('tag')!=$tag)
-			{
-				$couttag = $tagsquery[0]->count+1;
-				$params = array(																			
-							'count'=>$couttag);
-				$this->db->where('pro_tags_id', $tagsquery[0]->pro_tags_id);
-				$this->db->update('product_tag_data',$params);
+		// 	if($this->session->userdata('tag')!=$tag)
+		// 	{
+		// 		$couttag = $tagsquery[0]->count+1;
+		// 		$params = array(																			
+		// 					'count'=>$couttag);
+		// 		$this->db->where('pro_tags_id', $tagsquery[0]->pro_tags_id);
+		// 		$this->db->update('product_tag_data',$params);
 
-				$this->session->set_userdata('tag',$tag);
-			}
-		}
-		$keywords = $this->input->get('keyword');
-		// $data['brand_id'] = $this->input->get('brand_id');
-		$data['promotion_id'] = $promotion_id;
+		// 		$this->session->set_userdata('tag',$tag);
+		// 	}
+		// }
+		// $keywords = $this->input->get('keyword');
+		// // $data['brand_id'] = $this->input->get('brand_id');
+		// $data['promotion_id'] = $promotion_id;
 
-		$data['cat_id'] = $cat_id;
-		// print_r($cat_id);
-		// exit();
-		$search = array();
-		$search['keyword'] = $keywords;
-		$search['promotion_id'] = $promotion_id;
-		$search['tag'] = $tag;
+		// $data['cat_id'] = $cat_id;
+		// // print_r($cat_id);
+		// // exit();
+		// $search = array();
+		// $search['keyword'] = $keywords;
+		// $search['promotion_id'] = $promotion_id;
+		// $search['tag'] = $tag;
 
-		$tags = $this->Products_model->getTagsnew();
-		// print_r($tags);
-		// exit();
+		// $tags = $this->Products_model->getTagsnew();
+		// // print_r($tags);
+		// // exit();
 		
-		$data['tags'] = $tags;
+		// $data['tags'] = $tags;
 
-		if ($orderby > 0 ) {
-			$search['orderby'] = array($orderby);
-		}else{
-			$search['orderby'] = array();
-		}
+		// if ($orderby > 0 ) {
+		// 	$search['orderby'] = array($orderby);
+		// }else{
+		// 	$search['orderby'] = array();
+		// }
 
-		$data['lang'] = $this->session->userdata('site_lang');
-		// $data['config'] = $this->Config_model->getConfig();
-		$data['footer_newss'] = $this->News_model->getAll(4,0,array('news_type_id'=>0));
+		// $data['lang'] = $this->session->userdata('site_lang');
+		// // $data['config'] = $this->Config_model->getConfig();
+		// $data['footer_newss'] = $this->News_model->getAll(4,0,array('news_type_id'=>0));
 		
 		
-		$parents = $this->Category_model->getAll();
+		// $parents = $this->Category_model->getAll();
 
-		$cat_product = 0;
-		foreach ($parents as $key => $parentss) {
-			$cat_product = $cat_product + 1;
-		}
-		$data['cat_product_count'] = $cat_product;
+		// $cat_product = 0;
+		// foreach ($parents as $key => $parentss) {
+		// 	$cat_product = $cat_product + 1;
+		// }
+		// $data['cat_product_count'] = $cat_product;
 
-		$cat = array();
-		foreach ($parents as $parent) {
-			$cat[$parent->cat_id][] = $parent;
-			$categorys = $this->Category_model->getSub($parent->cat_id);
-			if(count($categorys)>0){
-				foreach ($categorys as $category) {
-					$cat[$parent->cat_id]['sub1'][$category->cat_id][] = $category;
-					$categorysnew = $this->Category_model->getSub($category->cat_id);
-					if(count($categorysnew)>0){
-						foreach ($categorysnew as $categorysnews) {
-							$cat[$parent->cat_id]['sub1'][$category->cat_id]['sub2'][$categorysnews->cat_id] = $categorysnews;
-						}
-					}
-				}
-			}
-		}
-		$data['categorysproduct'] = $cat;
-		if($cat_id>0){
-			$categorys = $this->Category_model->getSub($cat_id);
-			$arr1 = array($cat_id);
-			foreach ($categorys as $key => $value) {
-				$arr1[] = $value->cat_id;
-				$categorys2 = $this->Category_model->getSub($value->cat_id);
-				foreach ($categorys2 as $key2 => $value2) {			
-					$arr1[] = $value2->cat_id;
-				}
-			}
-			$search['cat_id'] = $arr1;
-		}
-		else{
-			$data['cat_name'] = array('en'=>'All Categories','th'=>'หมวดหมู่ทั้งหมด');
-			$search['cat_id'] = array();
-		}
+		// $cat = array();
+		// foreach ($parents as $parent) {
+		// 	$cat[$parent->cat_id][] = $parent;
+		// 	$categorys = $this->Category_model->getSub($parent->cat_id);
+		// 	if(count($categorys)>0){
+		// 		foreach ($categorys as $category) {
+		// 			$cat[$parent->cat_id]['sub1'][$category->cat_id][] = $category;
+		// 			$categorysnew = $this->Category_model->getSub($category->cat_id);
+		// 			if(count($categorysnew)>0){
+		// 				foreach ($categorysnew as $categorysnews) {
+		// 					$cat[$parent->cat_id]['sub1'][$category->cat_id]['sub2'][$categorysnews->cat_id] = $categorysnews;
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// }
+		// $data['categorysproduct'] = $cat;
+		// if($cat_id>0){
+		// 	$categorys = $this->Category_model->getSub($cat_id);
+		// 	$arr1 = array($cat_id);
+		// 	foreach ($categorys as $key => $value) {
+		// 		$arr1[] = $value->cat_id;
+		// 		$categorys2 = $this->Category_model->getSub($value->cat_id);
+		// 		foreach ($categorys2 as $key2 => $value2) {			
+		// 			$arr1[] = $value2->cat_id;
+		// 		}
+		// 	}
+		// 	$search['cat_id'] = $arr1;
+		// }
+		// else{
+		// 	$data['cat_name'] = array('en'=>'All Categories','th'=>'หมวดหมู่ทั้งหมด');
+		// 	$search['cat_id'] = array();
+		// }
 		
-		if (isset($_SESSION["brand"])) {
-		// 	// print_r($_SESSION["brand"]);
-		// exit();
-			$iss=0;
-			if ($brand_id > 0 ) {
+		// if (isset($_SESSION["brand"])) {
+		// // 	// print_r($_SESSION["brand"]);
+		// // exit();
+		// 	$iss=0;
+		// 	if ($brand_id > 0 ) {
 
-				unset($_SESSION["bid"]);
-				if ( array_key_exists($brand_id ,$_SESSION["brand"]) ){
+		// 		unset($_SESSION["bid"]);
+		// 		if ( array_key_exists($brand_id ,$_SESSION["brand"]) ){
 					
 
-				}else{
-					$_SESSION["brand"][$brand_id] = $brand_id ;
-					$_SESSION["brandid"][$brand_id] = $brand_id ;
-				}
-				$iss++;
-			}
-		}else{
-			$_SESSION["brand"] = array();
-			$_SESSION["brandid"] = array();
-		}
+		// 		}else{
+		// 			$_SESSION["brand"][$brand_id] = $brand_id ;
+		// 			$_SESSION["brandid"][$brand_id] = $brand_id ;
+		// 		}
+		// 		$iss++;
+		// 	}
+		// }else{
+		// 	$_SESSION["brand"] = array();
+		// 	$_SESSION["brandid"] = array();
+		// }
 
-		////////// Pagination ////////////////////////
+		// ////////// Pagination ////////////////////////
 		
-		$search['brand_id']= $_SESSION["brand"];
-		$this->load->config('pagination',TRUE);		
-		$config = $this->config->item('pagination');	
-		if ($view == 2) {
-			$data['views'] = 2;
-			$config["per_page"] = 36;
-		}elseif ($view == 3) {
-			$data['views'] = 3;
-			$config["per_page"] = 60;
-		}else{
-			$data['views'] = 0;
-			$config["per_page"] = $company->display_product_limit;
-		}
+		// $search['brand_id']= $_SESSION["brand"];
+		// $this->load->config('pagination',TRUE);		
+		// $config = $this->config->item('pagination');	
+		// if ($view == 2) {
+		// 	$data['views'] = 2;
+		// 	$config["per_page"] = 36;
+		// }elseif ($view == 3) {
+		// 	$data['views'] = 3;
+		// 	$config["per_page"] = 60;
+		// }else{
+		// 	$data['views'] = 0;
+		// 	$config["per_page"] = $company->display_product_limit;
+		// }
 
-		if ($orderby == 2) {
-			$data['orderby'] = 2;
-			$search['orderby'] = 2;
-		}elseif ($orderby == 3) {
-			$data['orderby'] = 3;
-			$search['orderby'] = 3;
-		}else{
-			$data['orderby'] = 0;
-		}
+		// if ($orderby == 2) {
+		// 	$data['orderby'] = 2;
+		// 	$search['orderby'] = 2;
+		// }elseif ($orderby == 3) {
+		// 	$data['orderby'] = 3;
+		// 	$search['orderby'] = 3;
+		// }else{
+		// 	$data['orderby'] = 0;
+		// }
 
-		$config["base_url"] = base_url() . "".$this->session->userdata('site_lang_name')."/Products/index/";
-		$config["total_rows"] = $this->Products_model->record_count($search);
+		// $config["base_url"] = base_url() . "".$this->session->userdata('site_lang_name')."/Products/index/";
+		// $config["total_rows"] = $this->Products_model->record_count($search);
 
-		// print_r($config["total_rows"]);
-		// exit();
-		$config["uri_segment"] = 4;
+		// // print_r($config["total_rows"]);
+		// // exit();
+		// $config["uri_segment"] = 4;
 
-		$config['reuse_query_string'] = true;			
-		$this->pagination->initialize($config);		
-		$data["links"] = $this->pagination->create_links();
-		$data['total_rows'] =  $config["total_rows"];
-		if ($countnews > 0) {
-			$start = $countnews;
-		}else{
-			$start = ($this->uri->segment(4)) ? $this->uri->segment(4) : 0;	
-		}
+		// $config['reuse_query_string'] = true;			
+		// $this->pagination->initialize($config);		
+		// $data["links"] = $this->pagination->create_links();
+		// $data['total_rows'] =  $config["total_rows"];
+		// if ($countnews > 0) {
+		// 	$start = $countnews;
+		// }else{
+		// 	$start = ($this->uri->segment(4)) ? $this->uri->segment(4) : 0;	
+		// }
 		
-		$data['starts'] = $start + 1;
-		$data['ends'] = $start + $config["per_page"];
+		// $data['starts'] = $start + 1;
+		// $data['ends'] = $start + $config["per_page"];
 
-		$data['promotions'] = $this->Promotion_model->getAll();
+		// $data['promotions'] = $this->Promotion_model->getAll();
 
-		$data['brand'] = $this->Brand_model->getAll();
-		$orderby="`products`.`orders` asc";
+		// $data['brand'] = $this->Brand_model->getAll();
+		// $orderby="`products`.`orders` asc";
 
-		$product = $this->Products_model->getAll($config["per_page"],$start,$search,$orderby);
+		// $product = $this->Products_model->getAll($config["per_page"],$start,$search,$orderby);
 		
-		$image_group_id = 1;
-		foreach ($product as $products) { 
-			$products->images = $this->Image_manage_model->getinuseProduct($image_group_id,$products->pro_id);
-		}
-		$data['product'] = $product;
+		// $image_group_id = 1;
+		// foreach ($product as $products) { 
+		// 	$products->images = $this->Image_manage_model->getinuseProduct($image_group_id,$products->pro_id);
+		// }
+		// $data['product'] = $product;
 
-		$data['menuactive'] = 2;
+		// $data['menuactive'] = 2;
 
-		/////////////////////// get products /////////////////////////////
+		// /////////////////////// get products /////////////////////////////
 		
-		$cartarr = array();
-		foreach ($this->cart->contents() as $carts) {
-			$cartarr[]  = array($this->Products_model->getOne($carts['id']),$carts['qty'],$carts['rowid']);
-		}
-		$data['cartarr'] = $cartarr;
+		// $cartarr = array();
+		// foreach ($this->cart->contents() as $carts) {
+		// 	$cartarr[]  = array($this->Products_model->getOne($carts['id']),$carts['qty'],$carts['rowid']);
+		// }
+		// $data['cartarr'] = $cartarr;
 
-		$this->load->view($theme_path.'/product',$data);
+		$this->load->view('2021_theme_1/products',$data);
 
  
 	}

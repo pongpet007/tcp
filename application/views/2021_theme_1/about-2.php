@@ -2,114 +2,105 @@
 <html lang="en">
 <?php $this->load->view('2021_theme_1/inc/header-meta') ?>
 <?php $this->load->view('2021_theme_1/inc/css') ?>
-<?/*php $this->load->view('2021_theme_1/inc/css1')*/ ?>
+
+
 <body style="background-color: #FFF;">
 
   <?php
   $lang = $this->session->userdata('site_lang_name');
   ?>
 
-  <?php 
-  // $this->load->view('2021_theme_1/inc/header1/header') 
-  ?>
-  <div class="section-header">
 
+  <section class="section-header">
     <?php $this->load->view('2021_theme_1/inc/header2/header') ?>
-
-
-
-
-    <div class="container container-header">
+    <div  class="container  container-header d-md-block ">
       <div class="row">
         <div class="col-md-12">
-         <div class="about-us">
-          <h1>
-            รู้จัก T.C.P
-          </h1>
-          <p>ตอบโจทย์ทุกธุรกิจ คู่คิด SME และ STARTUP</p>
+          <div class="about-us">
+            <h1>
+              รู้จัก T.C.P
+            </h1>
+            <p>ตอบโจทย์ทุกธุรกิจ คู่คิด SME และ STARTUP</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
+  <!-- End Section head -->
+  <section class="section-tab">
+    <div class="container container-header">
+      <div class="row">
+       <!-- Tab Selection -->
 
-  
-</div>
-
-<!-- End Section head -->
-<section class="section-tab">
-  <div class="container container-header">
-    <div class="row">
-     <!-- Tab Selection -->
-
-     <div class="col-md-12 space-tab Top"> 
-      <div class="row text-center row-space-tab" >
-        <div class="space-tab-select item-1 ">
-          <a href="<?=base_url($lang.'/About#vision')?>">
-            <div class="tab-select">
-              <div class="vision">
-                <i class="icofont-unique-idea iconvision"></i>
-                <p>วิสัยทัศน์</p>
-                <span>มุ่งพัฒนาคุณภาพการผลิต</span>
+       <div class="col-md-12 space-tab Top"> 
+        <div class="row text-center row-space-tab" >
+          <div class="space-tab-select item-1 ">
+            <a href="<?=base_url($lang.'/About#vision')?>">
+              <div class="tab-select">
+                <div class="vision">
+                  <i class="icofont-unique-idea iconvision"></i>
+                  <p>วิสัยทัศน์</p>
+                  <span>มุ่งพัฒนาคุณภาพการผลิต</span>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="space-tab-select item-2" >
-          <a href="<?=base_url($lang.'/About#obligation')?>">
-            <div class="tab-select">
-              <div class="vision">
-                <i class="fas fa-bullseye iconvision"></i>
-                <p>พันธกิจ</p>
-                <span>เพื่อตอบสนองด้านธุกิจ</span>
+            </a>
+          </div>
+          <div class="space-tab-select item-2" >
+            <a href="<?=base_url($lang.'/About#obligation')?>">
+              <div class="tab-select">
+                <div class="vision">
+                  <i class="fas fa-bullseye iconvision"></i>
+                  <p>พันธกิจ</p>
+                  <span>เพื่อตอบสนองด้านธุกิจ</span>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
+            </a>
+          </div>
 
-        <div class="space-tab-select item-3" id="sidebar-tab" >
-          <a href="<?=base_url($lang.'/About#history')?>">
-            <div class="tab-select">
-              <div class="vision">
-                <i class="icofont-building-alt iconvision"></i>
-                <p>ประวัติ</p>
-                <span>ก่อตั้งขึ้นเพื่อผลิตบรรจุภัณฑ์</span>
+          <div class="space-tab-select item-3" id="sidebar-tab" >
+            <a href="<?=base_url($lang.'/About#history')?>">
+              <div class="tab-select">
+                <div class="vision">
+                  <i class="icofont-building-alt iconvision"></i>
+                  <p>ประวัติ</p>
+                  <span>ก่อตั้งขึ้นเพื่อผลิตบรรจุภัณฑ์</span>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
+            </a>
+          </div>
 
-        <div class="space-tab-select item-4" id="sidebar-tab" >
-          <a href="<?=base_url($lang.'/About#board')?>">
-            <div class="tab-select">
-              <div class="vision">            
-                <i class="icofont-site-map iconvision"></i>
-                <p>ทีมผู้บริหาร</p>
-                <span>ด้วยการบริหารงานคุณภาพ</span>
+          <div class="space-tab-select item-4" id="sidebar-tab" >
+            <a href="<?=base_url($lang.'/About#board')?>">
+              <div class="tab-select">
+                <div class="vision">            
+                  <i class="icofont-site-map iconvision"></i>
+                  <p>ทีมผู้บริหาร</p>
+                  <span>ด้วยการบริหารงานคุณภาพ</span>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
+            </a>
+          </div>
 
-        <div class="space-tab-select item-5" id="sidebar-tab" >
-          <a href="<?=base_url($lang.'/About#iso')?>">
-            <div class="tab-select">
-              <div class="vision">
-                <!-- <i class="icofont-certificate iconvision"></i> -->
-                <i class="icofont-badge iconvision"></i>
-                <p>การรับรอง</p>
-                <span>ISO 9001:2000</span>
+          <div class="space-tab-select item-5" id="sidebar-tab" >
+            <a href="<?=base_url($lang.'/About#iso')?>">
+              <div class="tab-select">
+                <div class="vision">
+                  <!-- <i class="icofont-certificate iconvision"></i> -->
+                  <i class="icofont-badge iconvision"></i>
+                  <p>การรับรอง</p>
+                  <span>ISO 9001:2000</span>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
+
         </div>
 
       </div>
 
     </div>
-
   </div>
-</div>
 </section>
 <!-- END Selection -->
 
@@ -208,6 +199,7 @@
   <section id="board" class="board">
     <div class="container container-board">
       <div class="row">
+
         <div class="col-md-12">
           <div class="detail-board">
            <h1>
@@ -284,13 +276,129 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-5">
         <img src="<?=base_url()?>assets_2021_theme_1/img/bg/member-join.png" style="width: 100%;">
       </div>
-      <div class="col-md-8">
+      <div class="col-md-7">
+        <div class="name-member">
+          <h2 class="team-board">
+            ทีมบริหาร
+          </h2>
 
+          <!-- <ul class="ul-member">
+            <li>
+              1.นางสาวนวลน้อย  สุนทรกำพลรัตน์
+            </li>
+            <li>
+              Corporate Governace
+            </li>
+          </ul> -->
+
+          <div class="row row-member">
+
+            <div class="col-md-6">
+              <h3 class="h3-name-member">1.นางสาวนวลน้อย &nbsp;&nbsp; สุนทรกำพลรัตน์</h3>
+            </div>
+            <div class="col-md-6">
+              <h3 class="position-member">Corporate &nbsp;&nbsp; Governace</h3>
+            </div>
+
+            <div class="col-md-6">
+              <h3 class="h3-name-member">2.นายภัทร &nbsp;&nbsp;   แสงโรจน์รัตน์</h3>
+            </div>
+            <div class="col-md-6">
+              <h3 class="position-member">Audit and Risk mangement</h3>
+            </div>
+
+            <div class="col-md-6">
+              <h3 class="h3-name-member">3.นายพิศิษฐ์   &nbsp;&nbsp; สุนทรกำพลรัตน์</h3>
+            </div>
+            <div class="col-md-6">
+              <h3 class="position-member">Managing Director</h3>
+            </div>
+
+            <div class="col-md-6">
+              <h3 class="h3-name-member">4.นายพิชาญ &nbsp;&nbsp; สุนทรกำพลรัตน์</h3>
+            </div>
+            <div class="col-md-6">
+              <h3 class="position-member">Managing Director</h3>
+            </div>
+
+            <div class="col-md-6">
+              <h3 class="h3-name-member">5.นายพิชาญ  &nbsp;&nbsp;  สุนทรกำพลรัตน์</h3>
+            </div>
+            <div class="col-md-6">
+              <h3 class="position-member">Managing Director</h3>
+            </div>
+
+            <div class="col-md-6">
+              <h3 class="h3-name-member">6.นางสาวกัลยา  &nbsp;&nbsp;  แต้สงเคราะห์</h3>
+            </div>
+            <div class="col-md-6">
+              <h3 class="position-member">Assistant Managing Director</h3>
+            </div>
+
+            <div class="col-md-6">
+              <h3 class="h3-name-member">7.นางสาวนุสราภรณ์  &nbsp;&nbsp;  อมรวิกัยกุล</h3>
+            </div>
+            <div class="col-md-6">
+              <h3 class="position-member">Prepress Division Manager</h3>
+            </div>
+
+            <div class="col-md-6">
+              <h3 class="h3-name-member">8.นางมั่นชิง  &nbsp;&nbsp;  สุนทรกำพลรัตน์</h3>
+            </div>
+            <div class="col-md-6">
+              <h3 class="position-member">Export Sales Department Manager</h3>
+            </div>
+
+            <div class="col-md-6">
+              <h3 class="h3-name-member">9.นางบังอร &nbsp;&nbsp; สมทรง</h3>
+            </div>
+            <div class="col-md-6">
+              <h3 class="position-member">Local Sales Department</h3>
+            </div>
+
+            <div class="col-md-6">
+              <h3 class="h3-name-member">10.นายกำพลรัตน์  &nbsp;&nbsp;  สุนทรกำพลรัตน์</h3>
+            </div>
+            <div class="col-md-6">
+              <h3 class="position-member">Operation Division Manager</h3>
+            </div>
+
+            <div class="col-md-6">
+              <h3 class="h3-name-member">11.นางสาวกุสุมาลี  &nbsp;&nbsp;  ชำนาญสุทธิพงศ์</h3>
+            </div>
+            <div class="col-md-6">
+              <h3 class="position-member">Assistant Operation Division Manager</h3>
+            </div>
+
+            <div class="col-md-6">
+              <h3 class="h3-name-member">12.นางพิมพา  &nbsp;&nbsp;  บุญทวี</h3>
+            </div>
+            <div class="col-md-6">
+              <h3 class="position-member">Human Resource Division Supervisor</h3>
+            </div>
+
+            <div class="col-md-6">
+              <h3 class="h3-name-member">13.นายทรงพิพัฒน์  &nbsp;&nbsp;  ทะนันไชย</h3>
+            </div>
+            <div class="col-md-6">
+              <h3 class="position-member">Maintenance Division Manager</h3>
+            </div>
+
+          </div>
+
+
+
+        </div>
       </div>
 
+      <div class="col-md-12">
+        <div style="border-bottom: 10px dotted #EEE; margin: 10px 0;">
+
+        </div>
+      </div>
 
     </div>
   </div>
@@ -322,8 +430,8 @@
   
 </section>
 
-<a href="#" class="radius scroll-top" ><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-<p class="open-menu-left" onclick="hideButtonmenu()"><i class="fas fa-chevron-right" aria-hidden="true"></i></a></p>
+<a href="#" class="radius scroll-top " ><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+<p class="open-menu-left " onclick="hideButtonmenu()"><i class="fas fa-chevron-right" aria-hidden="true"></i></a></p>
 <div class="menu-left">
   <div class="space-left-a">
     <a href="#vision" class="menu-left-a" data-toggle="tooltip" data-placement="right" title="<?=lang('vision')?>">

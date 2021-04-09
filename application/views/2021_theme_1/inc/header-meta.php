@@ -44,7 +44,7 @@
     }
   </style>
 
-  <!-- <script src="<?=base_url()?>assets_2021_theme_1/vendor/jquery/jquery.min.js"></script> -->
+  <script src="<?=base_url()?>assets_2021_theme_1/vendor/jquery/jquery.min.js"></script>
   
   <!-- =======================================================
   * Template Name: Gp - v2.2.1

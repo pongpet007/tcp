@@ -1,5 +1,6 @@
 <script src="<?=base_url()?>assets_2021_theme_1/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+
 <!-- <script src="<?=base_url()?>assets_2021_theme_1/vendor/jquery.easing/jquery.easing.min.js"></script> -->
 <!-- <script src="<?=base_url()?>assets_2021_theme_1/vendor/php-email-form/validate.js"></script> -->
 <!-- <script src="<?=base_url()?>assets_2021_theme_1/vendor/venobox/venobox.min.js"></script> -->
@@ -18,6 +19,8 @@
 <script src="../assets_2021_theme_1/owl/vendors/highlight.js"></script>
 <script src="../assets_2021_theme_1/owl/js/app.js"></script>
 
+<!-- Do not Close This !!!!!!!!!!!!!!!!!!! -->
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
 
 <!-- Template Main JS File -->
 <script src="<?=base_url()?>assets_2021_theme_1/js/main.js"></script>
@@ -360,6 +363,72 @@
   })
 
 
+  // Menu Bar Mobile 
+  if( 'ontouchstart' in window ){ var click = 'touchstart'; }
+  else { 
+    var click = 'click'; 
+  }
+
+  $('div.burger').on(click, function(){
+
+    if( !$(this).hasClass('open') ){ openMenu(); } 
+    else { 
+      closeMenu(); 
+    }
+
+  });
+  
+
+  $('div.menu ul li a').on(click, function(e){
+    e.preventDefault();
+    closeMenu();
+  });   
+
+
+  function openMenu(){
+    // $('div.menu ul').style.left = "0";
+    $('div.circle').addClass('expand');
+    $('div.menu').css("visibility","visible");
+    $('div.screen').css("height","610px");
+    $('div.burger').addClass('open'); 
+    // $('div.x, div.y, div.z').addClass('collapse');
+    $('.menu li').addClass('animate');
+    
+    setTimeout(function(){ 
+      $('div.z').hide(); 
+      $('div.x').addClass('rotate30'); 
+      $('div.y').addClass('rotate150'); 
+    }, 70);
+    setTimeout(function(){
+      $('div.x').addClass('rotate45'); 
+      $('div.y').addClass('rotate135');  
+    }, 120);
+    
+    
+
+  }
+  
+  function closeMenu(){
+    $('div.menu').css("visibility","hidden");
+    $('div.screen').css("height","100px");
+    $('div.burger').removeClass('open');  
+    $('div.x').removeClass('rotate45').addClass('rotate30'); 
+    $('div.y').removeClass('rotate135').addClass('rotate150');        
+    $('div.circle').removeClass('expand');
+    $('.menu li').removeClass('animate');
+    
+    setTimeout(function(){      
+      $('div.x').removeClass('rotate30'); 
+      $('div.y').removeClass('rotate150');      
+    }, 50);
+    setTimeout(function(){
+      $('div.z').show(); 
+      $('div.x, div.y, div.z').removeClass('collapse');
+    }, 70);                         
+    
+  }
+
+  // End Menu Bar
 
 
 
