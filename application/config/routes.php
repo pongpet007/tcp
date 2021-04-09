@@ -156,12 +156,12 @@ $route['(VN|vn)\/News\/detail\/(.+)'] = 'News/detail/$1/$2';
 
 
 
-$route['(TH|th)\/Blog'] = 'Blog/index';
-$route['(US|us)\/Blog'] = 'Blog/index';
-$route['(KH|kh)\/Blog'] = 'Blog/index';
-$route['(LA|la)\/Blog'] = 'Blog/index';
-$route['(MM|mm)\/Blog'] = 'Blog/index';
-$route['(VN|vn)\/Blog'] = 'Blog/index';
+$route['(TH|th)\/Blog'] = 'Blog/index/$1';
+$route['(US|us)\/Blog'] = 'Blog/index/$1';
+$route['(KH|kh)\/Blog'] = 'Blog/index/$1';
+$route['(LA|la)\/Blog'] = 'Blog/index/$1';
+$route['(MM|mm)\/Blog'] = 'Blog/index/$1';
+$route['(VN|vn)\/Blog'] = 'Blog/index/$1';
 
 
 

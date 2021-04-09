@@ -269,7 +269,7 @@
           <img src="<?=base_url()?>assets_2021_theme_1/img/bg/member.png?<?= rand()?>" alt="Member of TCP" id="memberImg">
           <!-- The Modal -->
           <div id="myModal" class="modal">
-            <span class="close">&times;</span>
+            <span class="close" id="close">&times;</span>
             <img class="modal-content" id="img01">
             <div id="caption"></div>
           </div>
@@ -498,33 +498,6 @@ $this->load->view('2021_theme_1/inc/footer-js')
 
 
 
-<script>
-  $(document).ready(function() {
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 10,
-      responsiveClass: true,
-      responsive: {
-        0: {
-          items: 2,
-          nav: true,
-          margin: 20
-        },
-        600: {
-          items: 3,
-          nav: false,
-          margin: 20
-        },
-        1000: {
-          items: 3,
-          nav: true,
-          loop: false,
-          margin: 100
-        }
-      }
-    })
-  });
-</script>
 
 
 <!-- <script type="text/javascript">

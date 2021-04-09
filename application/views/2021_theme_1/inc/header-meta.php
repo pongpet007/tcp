@@ -23,13 +23,15 @@
   <!-- <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets_2021_theme_1/css/font-awesome/all.css"> -->
   <!-- <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets_2021_theme_1/css/font-awesome/fontawesome.css"> -->
 
-  <!-- Owl Stylesheets -->
-  <link rel="stylesheet" href="../assets_2021_theme_1/owl/owlcarousel/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="../assets_2021_theme_1/owl/owlcarousel/assets/owl.theme.default.min.css">
-  <!-- javascript -->
-  <script src="../assets_2021_theme_1/owl/vendors/jquery.min.js"></script>
-  <script src="../assets_2021_theme_1/owl/owlcarousel/owl.carousel.js"></script>
 
+
+  <!-- Owl Stylesheets -->
+  <link rel="stylesheet" href="<?=base_url()?>assets_2021_theme_1/owl/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets_2021_theme_1/owl/owlcarousel/assets/owl.theme.default.min.css">
+  
+  <!-- javascript -->
+  <script src="<?=base_url()?>assets_2021_theme_1/owl/vendors/jquery.min.js"></script>
+  <script src="<?=base_url()?>assets_2021_theme_1/owl/owlcarousel/owl.carousel.js"></script>
 
   <!-- Slide Gallerly -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />

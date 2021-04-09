@@ -12,18 +12,22 @@
 
 <!-- AOS -->
 <script src="<?=base_url()?>assets_2021_theme_1/vendor/aos/aos.js"></script>
-<!-- Caroulsel -->
-<script src="<?=base_url()?>assets_2021_theme_1/vendor/owl.carousel/owl.carousel.min.js"></script>
 
 <!-- OWL -->
-<script src="../assets_2021_theme_1/owl/vendors/highlight.js"></script>
-<script src="../assets_2021_theme_1/owl/js/app.js"></script>
+<script src="<?=base_url()?>assets_2021_theme_1/owl/vendors/highlight.js"></script>
+<script src="<?=base_url()?>assets_2021_theme_1/owl/js/app.js"></script>
+
+
+
+
+
+
 
 <!-- Do not Close This !!!!!!!!!!!!!!!!!!! -->
 <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
 
 <!-- Template Main JS File -->
-<script src="<?=base_url()?>assets_2021_theme_1/js/main.js"></script>
+<!-- <script src="<?=base_url()?>assets_2021_theme_1/js/main.js"></script> -->
 
 <!-- Slide Gallerly -->
 <script src="<?=base_url()?>assets_2021_theme_1/js/gallerly.js"></script>
@@ -316,21 +320,25 @@
   var img = document.getElementById("memberImg");
   var modalImg = document.getElementById("img01");
   var captionText = document.getElementById("caption");
-  img.onclick = function(){
+  
+  $('#memberImg').ready(function(){
+    $('#memberImg').click(function(){
     // img.style.width = "80%";
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
-  }
-
+  });
+  });
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
 
   // When the user clicks on <span> (x), close the modal
-  span.onclick = function() { 
-    modal.style.display = "none";
-  } // End Click Zoom images
-
+  $('#close').ready(function(){
+    $('#close').click(function() { 
+      modal.style.display = "none";
+      // var span = document.getElementsByClassName("close")[0];
+  }); // End Click Zoom images
+  });
 
 
   //Show Back to Top button
@@ -373,7 +381,6 @@
   else { 
     var click = 'click'; 
   }
-
   $('div.burger').on(click, function(){
 
     if( !$(this).hasClass('open') ){ openMenu(); } 
@@ -382,14 +389,10 @@
     }
 
   });
-  
-
   $('div.menu ul li a').on(click, function(e){
     e.preventDefault();
     closeMenu();
   });   
-
-
   function openMenu(){
     // $('div.menu ul').style.left = "0";
     $('div.circle').addClass('expand');
@@ -408,9 +411,6 @@
       $('div.x').addClass('rotate45'); 
       $('div.y').addClass('rotate135');  
     }, 120);
-    
-    
-
   }
   
   function closeMenu(){

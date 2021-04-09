@@ -2,106 +2,201 @@
 <html lang="en">
 <?php $this->load->view('2021_theme_1/inc/header-meta') ?>
 <?php $this->load->view('2021_theme_1/inc/css') ?>
-
+<?/*php $this->load->view('2021_theme_1/inc/css1')*/ ?>
 <body style="background-color: #FFF;">
 
-  <?php
-  $lang = $this->session->userdata('site_lang_name');
-  ?>
+	<? $lang = $this->session->userdata('site_lang_name');?>
 
-  <?php 
-  // $this->load->view('2021_theme_1/inc/header1/header') 
-  ?>
-  <section class="section-blog">
-    <?php $this->load->view('2021_theme_1/inc/header2/header') ?>
-    
-  </section>
+	<div class="section-blog">
+		<?php $this->load->view('2021_theme_1/inc/header2/header') ?>
+		<?php $this->load->view('2021_theme_1/inc/css-solution')?>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="top-detail">
+						<h3>
+							<?=lang('BLOG')?>
+						</h3>
+						<p>
+							<?=lang('blog-advive')?>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-  <!-- End Section head -->
+	</div>
 
-
-  <section class="blog-detail">
-    <div class="container container-header" style="padding-bottom: 50px;">
-      <div class="row">
-
-        <div class="col-md-12">
-
-          <nav aria-label="breadcrumb ">
-            <ol class="breadcrumb breadcrumb-self">
-              <li class="breadcrumb-item breadcrumb-self-item"><a href="#"><?=lang('HOME')?></a></li>
-              <li class="breadcrumb-item breadcrumb-self-item"><a href="#"><?=lang('BLOG')?></a></li>
-              <li class="breadcrumb-item breadcrumb-self-item-active" aria-current="page">หัวข้อบทความ</li>
-            </ol>
-          </nav>
-
-          <h1 class="blog-name font-PSL-bold">
-            บรรจุภัณฑ์ที่สัมผัสโดยตรงกับผลิตภัณฑ์ เช่น
-          </h1>
-
-        </div>
+	<section class="section-blog-2">
+		<div class="container container-header">
+			<div class="blog-all">
+				<div class="row">
 
 
-      </div>
-    </div>
+					<div class="col-md-4 space-blog"> 
+						<a href="<?= base_url($lang)?>/Blog/detail">
+							<img src="<?=base_url()?>/assets_2021_theme_1/img/about.jpg" style="width: 100%" class="img-blog-all">
+						</a>
+						<a href="<?= base_url($lang)?>/Blog/detail" class="name-blog-all font-PSL-bold">
+							<h3>
+								หัวข้อบทความ
+							</h3>
+						</a>
+						<p class="detail-blog-all">
+							Aenean quis ultrices arcu. Praesent ullamcorper, tellus id tincidunt commodo, nulla nisi tempor libero, et sodales nulla sem nec mi. Maecenas augue metus, laoreet nec magna sed, mattis porttitor metus. Mauris euismod lorem sit amet nunc efficitur eleifend. Vivamus pellentesque mattis dui, ac lacinia ligula pretium non. Aenean eget tincidunt orci. Integer tempor velit eu dolor scelerisque, vitae faucibus justo vehicula. Ut id sapien in velit ornare mollis. Aenean eleifend euismod justo, sed varius dui. Nulla et sollicitudin metus, lobortis tincidunt enim. Vivamus sit amet urna ut metus mollis feugiat.
+						</p>
+						<div class="but-blog">
+							<a href="<?=base_url($lang.'/Blog/detail/1')?>" class="to-blog">
+								<?=lang('see-details')?>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-md-4 space-blog"> 
+						<a href="<?= base_url($lang)?>/Blog/detail">
+							<img src="<?=base_url()?>/assets_2021_theme_1/img/about.jpg" style="width: 100%" class="img-blog-all">
+						</a>
+						<a href="<?= base_url($lang)?>/Blog/detail" class="name-blog-all font-PSL-bold">
+							<h3>
+								หัวข้อบทความ
+							</h3>
+						</a>
+						<p class="detail-blog-all">
+							Aenean quis ultrices arcu. Praesent ullamcorper, tellus id tincidunt commodo, nulla nisi tempor libero, et sodales nulla sem nec mi. Maecenas augue metus, laoreet nec magna sed, mattis porttitor metus. Mauris euismod lorem sit amet nunc efficitur eleifend. Vivamus pellentesque mattis dui, ac lacinia ligula pretium non. Aenean eget tincidunt orci. Integer tempor velit eu dolor scelerisque, vitae faucibus justo vehicula. Ut id sapien in velit ornare mollis. Aenean eleifend euismod justo, sed varius dui. Nulla et sollicitudin metus, lobortis tincidunt enim. Vivamus sit amet urna ut metus mollis feugiat.
+						</p>
+						<div class="but-blog">
+							<a href="<?=base_url($lang.'/Blog/detail/1')?>" class="to-blog">
+								<?=lang('see-details')?>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-md-4 space-blog"> 
+						<a href="<?= base_url($lang)?>/Blog/detail">
+							<img src="<?=base_url()?>/assets_2021_theme_1/img/about.jpg" style="width: 100%" class="img-blog-all">
+						</a>
+						<a href="<?= base_url($lang)?>/Blog/detail" class="name-blog-all font-PSL-bold">
+							<h3>
+								หัวข้อบทความ
+							</h3>
+						</a>
+						<p class="detail-blog-all">
+							Aenean quis ultrices arcu. Praesent ullamcorper, tellus id tincidunt commodo, nulla nisi tempor libero, et sodales nulla sem nec mi. Maecenas augue metus, laoreet nec magna sed, mattis porttitor metus. Mauris euismod lorem sit amet nunc efficitur eleifend. Vivamus pellentesque mattis dui, ac lacinia ligula pretium non. Aenean eget tincidunt orci. Integer tempor velit eu dolor scelerisque, vitae faucibus justo vehicula. Ut id sapien in velit ornare mollis. Aenean eleifend euismod justo, sed varius dui. Nulla et sollicitudin metus, lobortis tincidunt enim. Vivamus sit amet urna ut metus mollis feugiat.
+						</p>
+						<div class="but-blog">
+							<a href="<?=base_url($lang.'/Blog/detail/1')?>" class="to-blog">
+								<?=lang('see-details')?>
+							</a>
+						</div>
+					</div>
+
+					<div class="col-md-4 space-blog"> 
+						<a href="<?= base_url($lang)?>/Blog/detail">
+							<img src="<?=base_url()?>/assets_2021_theme_1/img/about.jpg" style="width: 100%" class="img-blog-all">
+						</a>
+						<a href="<?= base_url($lang)?>/Blog/detail" class="name-blog-all font-PSL-bold">
+							<h3>
+								หัวข้อบทความ
+							</h3>
+						</a>
+						<p class="detail-blog-all">
+							Aenean quis ultrices arcu. Praesent ullamcorper, tellus id tincidunt commodo, nulla nisi tempor libero, et sodales nulla sem nec mi. Maecenas augue metus, laoreet nec magna sed, mattis porttitor metus. Mauris euismod lorem sit amet nunc efficitur eleifend. Vivamus pellentesque mattis dui, ac lacinia ligula pretium non. Aenean eget tincidunt orci. Integer tempor velit eu dolor scelerisque, vitae faucibus justo vehicula. Ut id sapien in velit ornare mollis. Aenean eleifend euismod justo, sed varius dui. Nulla et sollicitudin metus, lobortis tincidunt enim. Vivamus sit amet urna ut metus mollis feugiat.
+						</p>
+						<div class="but-blog">
+							<a href="<?=base_url($lang.'/Blog/detail/1')?>" class="to-blog">
+								<?=lang('see-details')?>
+							</a>
+						</div>
+					</div>
 
 
-  </section>
 
 
 
 
+					
 
 
+					
 
 
+				</div>
 
 
-  <a href="#" class="radius scroll-top " ><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-  <p class="open-menu-left " onclick="hideButtonmenu()"><i class="fas fa-chevron-right" aria-hidden="true"></i></a></p>
-  <div class="menu-left">
-    <div class="space-left-a">
-      <a href="#vision" class="menu-left-a" data-toggle="tooltip" data-placement="right" title="<?=lang('vision')?>">
-        <i class="icofont-unique-idea iconvision-left"></i>
-      </a>
-    </div>
-    <div class="space-left-a">
-      <a href="#obligation" class="menu-left-a" data-toggle="tooltip" data-placement="right" title="<?=lang('obligation')?>">
-        <i class="fas fa-bullseye iconvision-left"></i>
+			</div>
+		</div>
 
-      </a>
-    </div>
-    <div class="space-left-a">
-      <a href="#history" class="menu-left-a" data-toggle="tooltip" data-placement="right" title="<?=lang('history')?>">
-        <i class="icofont-building-alt iconvision-left"></i>
-
-      </a>  
-    </div>
-    <div class="space-left-a">
-      <a href="#board" class="menu-left-a" data-toggle="tooltip" data-placement="right" title="<?=lang('board')?>">
-        <i class="icofont-site-map iconvision-left"></i>
-
-      </a>
-    </div>
-    <div class="space-left-a">
-      <a href="#iso" class="menu-left-a" data-toggle="tooltip" data-placement="right" title="<?=lang('iso')?>">
-        <i class="icofont-badge iconvision-left"></i>
-
-      </a>
-    </div>
-  </div>
+	</section>
 
 
+<script type="text/javascript">
+// Menu Bar Mobile 
+if( 'ontouchstart' in window ) { 
+	var click = 'touchstart'; 
+}
+else { 
+	var click = 'click'; 
+}
+$('div.burger').on(click, function(){
 
-  <?php 
-  $this->load->view('2021_theme_1/inc/footer2/footer');
-  ?>
+	if( !$(this).hasClass('open') ){ openMenu(); } 
+	else { 
+		closeMenu(); 
+	}
+});
+$('div.menu ul li a').on(click, function(e){
+	e.preventDefault();
+	closeMenu();
+});   
+function openMenu(){
+	// $('div.menu ul').style.left = "0";
+	$('div.circle').addClass('expand');
+	$('div.menu').css("visibility","visible");
+	$('div.screen').css("height","610px");
+	$('div.burger').addClass('open'); 
+	// $('div.x, div.y, div.z').addClass('collapse');
+	$('.menu li').addClass('animate');
+	setTimeout(function(){ 
+		$('div.z').hide(); 
+		$('div.x').addClass('rotate30'); 
+		$('div.y').addClass('rotate150'); 
+	}, 70);
+	setTimeout(function(){
+		$('div.x').addClass('rotate45'); 
+		$('div.y').addClass('rotate135');  
+	}, 120);
+}
+
+function closeMenu(){
+	$('div.menu').css("visibility","hidden");
+	$('div.screen').css("height","100px");
+	$('div.burger').removeClass('open');  
+	$('div.x').removeClass('rotate45').addClass('rotate30'); 
+	$('div.y').removeClass('rotate135').addClass('rotate150');        
+	$('div.circle').removeClass('expand');
+	$('.menu li').removeClass('animate');
+
+	setTimeout(function(){      
+		$('div.x').removeClass('rotate30'); 
+		$('div.y').removeClass('rotate150');      
+	}, 50);
+	setTimeout(function(){
+		$('div.z').show(); 
+		$('div.x, div.y, div.z').removeClass('collapse');
+	}, 70);                         
+
+}
+// End Menu Bar
+</script>
+
+<?php 
+$this->load->view('2021_theme_1/inc/footer2/footer') 
+?>
 
 
-  <?php 
-  $this->load->view('2021_theme_1/inc/footer-js') 
-  ?>
-
-
+<?php 
+$this->load->view('2021_theme_1/inc/footer-js') 
+?>
 
 
 

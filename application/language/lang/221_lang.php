@@ -48,7 +48,10 @@ $lang["by-phone"] = 'ทางโทรศัพท์';
 $lang["facebook"] = 'เฟสบุ๊ค';
 $lang["tags"] = 'ป้ายกำกับสินค้า : ';
 $lang["Sample work"] = 'ตัวอย่างงาน';
-
+$lang["BY"] = 'โดย : ';
+$lang["blog-advive"] = 'บทความและเกร็ดความรู้น่าสนใจที่ทาง T.C.P แนะนำ';
+$lang["Posted date"] = 'วันที่โพสต์ : ';
+$lang["Views"] = 'จำนวนผู้เข้าชม : ';
 
 
 

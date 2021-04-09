@@ -40,19 +40,20 @@
 						} 
 						?>
 						
-						<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<a class="btn btn-secondary dropdown-toggle dropdown-full" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<?php foreach ($countrys as $country) { ?>
 								<? $uri =  uri_string(); ?>
 								<? $uri = str_ireplace($this->session->userdata('site_lang_name')."/", $country->iso2."/", $uri); ?>
 								<? if ($country->iso2 == $lang) { ?>
 									<?   echo $country->iso2; ?>
+									<i class="fas fa-chevron-down i-drop-menu"></i>
 									<?
 								} 
 							} 
 							?>
 						</a>
 
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<div class="dropdown-menu drop-lang" aria-labelledby="dropdownMenuLink">
 							<?php foreach ($countrys as $country) { ?>
 								<? $uri =  uri_string(); ?>
 								<? $uri = str_ireplace($this->session->userdata('site_lang_name')."/", $country->iso2."/", $uri); ?>

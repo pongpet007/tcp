@@ -1769,7 +1769,56 @@
 
 
     /* -------------------------------------------------------- Blog -------------------------------------------------------- */
-    .section-blog {
+    .section-blog{
+        background : url(<?=base_url()?>/assets_2021_theme_1/img/bg/blog-banner.jpg) center center;
+        background-size: cover;
+    }
+    .blog-all {
+        padding-top: 50px;
+    }
+    a.name-blog-all {
+        display: block;
+        font-size: 24px;
+        text-align: left;
+        color: #0147a9;
+        padding-top : 15px;
+    }
+    p.detail-blog-all {
+        font-size: 22px;
+        color: #808080;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        line-height: 23px;
+        letter-spacing: .5px;
+    }
+
+
+    @media (max-width: 767px) and (min-width: 300px) {
+
+    }
+    @media (max-width: 1023px) and (min-width: 768px) {
+
+    }
+    @media (max-width: 1359px) and (min-width: 1024px) {
+
+    }
+    @media (max-width: 1400px) and (min-width: 1360px) {
+
+    }
+    @media (min-width: 1401px) {
+
+    }
+
+
+
+    /* -------------------------------------------------------- End Blog -------------------------------------------------------- */
+
+
+    /* -------------------------------------------------------- Blog Detail -------------------------------------------------------- */
+    .section-blog-detail {
         background-color: #041741;
         height: 240px;
     }
@@ -1778,6 +1827,7 @@
     }
     .breadcrumb-self {
         background-color: #f8f8f8;
+        padding-left: 0;
     }
     .breadcrumb-self-item a {
         font-size: 24px;
@@ -1798,6 +1848,38 @@
         color: #000;
         letter-spacing: .5px;
     }
+    ul.head-blog-detail {
+        list-style: none;
+        padding-left: 0;
+    }
+    .admin-head {
+        color: #a7a7a7;
+    }
+    ul.head-blog-detail li{
+        display: inline-flex;
+        font-size: 24px;
+        padding-right: 15px;
+    }
+
+
+
+
+
+    @media (max-width: 767px) and (min-width: 300px) {
+
+    }
+    @media (max-width: 1023px) and (min-width: 768px) {
+
+    }
+    @media (max-width: 1359px) and (min-width: 1024px) {
+
+    }
+    @media (max-width: 1400px) and (min-width: 1360px) {
+
+    }
+    @media (min-width: 1401px) {
+
+    }
 
 
 
@@ -1805,8 +1887,7 @@
 
 
 
-
-    /* -------------------------------------------------------- End Blog -------------------------------------------------------- */
+    /* -------------------------------------------------------- End Blog Detail -------------------------------------------------------- */
 
     /* -------------------------------------------------------- Products -------------------------------------------------------- */
     .section-products {
@@ -1841,6 +1922,48 @@
         background-color: #b8272c;
         font-size: 24px;
         color: #FFF;
+    }
+    .but-blog {
+        margin-top: 35px;
+    }
+    a.to-blog {
+        background-color: #0046a5;
+        padding: 10px 40px;
+        font-size: 20px;
+        color: #FFF;
+        transition: all 0.5s ease-in-out;
+    }
+    a.to-blog:hover {
+        background-color: #005BDB;
+        transition: all 0.5s ease-in-out;
+    }
+    .space-blog {
+        margin-bottom: 50px;
+    }
+    .img-blog-all {
+        transition: all 0.5s ease-in-out;
+    }
+    img.img-blog-all:hover {
+        opacity: 0.7;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+
+    @media (max-width: 767px) and (min-width: 300px) {
+
+    }
+    @media (max-width: 1023px) and (min-width: 768px) {
+
+    }
+    @media (max-width: 1359px) and (min-width: 1024px) {
+
+    }
+    @media (max-width: 1400px) and (min-width: 1360px) {
+
+    }
+    @media (min-width: 1401px) {
+
     }
 
     /* -------------------------------------------------------- End Products -------------------------------------------------------- */
@@ -1975,6 +2098,21 @@
     .name-gallerly a {
         color: #818181;
         font-size: 24px;
+    }
+    @media (max-width: 767px) and (min-width: 300px) {
+
+    }
+    @media (max-width: 1023px) and (min-width: 768px) {
+
+    }
+    @media (max-width: 1359px) and (min-width: 1024px) {
+
+    }
+    @media (max-width: 1400px) and (min-width: 1360px) {
+
+    }
+    @media (min-width: 1401px) {
+
     }
 
     /* -------------------------------------------------------- End Products detail -------------------------------------------------------- */

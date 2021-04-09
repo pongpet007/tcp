@@ -46,5 +46,11 @@ $lang["by-phone"] = 'Phone';
 $lang["facebook"] = 'Facebook';
 $lang["tags"] = 'Tags : ';
 $lang["Sample work"] = 'Sample work';
+$lang["blog-advive"] = 'Interesting articles and knowledge that T.C.P recommends';
+$lang["BY"] = 'By : ';
+$lang["Posted date"] = 'Posted date : ';
+$lang["Views"] = 'Views : ';
+
+
 
 ?>

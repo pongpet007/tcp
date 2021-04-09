@@ -19,7 +19,7 @@ class Blog extends CI_Controller {
 
 	}
 
-	public function index()
+	public function index($lang)
 	{
 
 		// $data['counter'] = $this->Counter_model->count();
@@ -122,69 +122,69 @@ class Blog extends CI_Controller {
 	}
 	
 
-	public function detail($langu="",$blog_id){
+	public function detail($lang, $blog_id){
 
-		$data['site_lang_name'] = $this->session->userdata('site_lang_name');
-		$data['counter'] = $this->Counter_model->count();
-		$data["categorys"] = $this->Category_model->getAll();
- 		////////////////////// Theme ///////////////////////////////////
-		$company = $this->Company_model->getOne(1);		
-		$data['companyData'] = $company;
-		$data['meta_title'] = $company->meta_title;
-		$data['meta_keyword'] = $company->meta_keyword;
-		$data['meta_description'] = $company->meta_description;
+		// $data['site_lang_name'] = $this->session->userdata('site_lang_name');
+		// $data['counter'] = $this->Counter_model->count();
+		// $data["categorys"] = $this->Category_model->getAll();
+ 	// 	////////////////////// Theme ///////////////////////////////////
+		// $company = $this->Company_model->getOne(1);		
+		// $data['companyData'] = $company;
+		// $data['meta_title'] = $company->meta_title;
+		// $data['meta_keyword'] = $company->meta_keyword;
+		// $data['meta_description'] = $company->meta_description;
 
-		$theme_path = $company->theme_path;
-		$data['theme_path'] = $theme_path;
-		$data["theme_assets_path"] = $company->theme_assets_path;
+		// $theme_path = $company->theme_path;
+		// $data['theme_path'] = $theme_path;
+		// $data["theme_assets_path"] = $company->theme_assets_path;
  		
- 		$menus = $this->Menu_model->getMain();
-		// echo $this->db->last_query();
-		// exit();
+ 	// 	$menus = $this->Menu_model->getMain();
+		// // echo $this->db->last_query();
+		// // exit();
 
-		foreach ($menus as $menu) {
-			$menu->submenu = $this->Menu_model->getsub($menu->menu_id);
-		}
-		$data['menus'] = $menus ;		
+		// foreach ($menus as $menu) {
+		// 	$menu->submenu = $this->Menu_model->getsub($menu->menu_id);
+		// }
+		// $data['menus'] = $menus ;		
 		$data['countrys'] = $this->Country_model->getAll();
 
-		$blog = $this->Blog_model->getOne($blog_id);
-		$image_group_blog_id = 2;
-			if (isset($blog)) {
-				$blog->images = $this->Image_manage_model->getinuseProduct($image_group_blog_id,$blog->blog_id);
-			}
+		// $blog = $this->Blog_model->getOne($blog_id);
+		// $image_group_blog_id = 2;
+		// 	if (isset($blog)) {
+		// 		$blog->images = $this->Image_manage_model->getinuseProduct($image_group_blog_id,$blog->blog_id);
+		// 	}
 				
-		$data['blog'] = $blog;
+		// $data['blog'] = $blog;
 
-		//echo $this->db->last_query();
-		//exit();
-		##################################################
+		// //echo $this->db->last_query();
+		// //exit();
+		// ##################################################
 		
-		/////////////////////// get products /////////////////////////////
+		// /////////////////////// get products /////////////////////////////
 		
-		$cartarr = array();
-		foreach ($this->cart->contents() as $carts) {
-			$cartarr[]  = array($this->Products_model->getOne($carts['id']),$carts['qty'],$carts['rowid']);
-		}
-		$data['cartarr'] = $cartarr;
+		// $cartarr = array();
+		// foreach ($this->cart->contents() as $carts) {
+		// 	$cartarr[]  = array($this->Products_model->getOne($carts['id']),$carts['qty'],$carts['rowid']);
+		// }
+		// $data['cartarr'] = $cartarr;
 
-		$blog_tags = $this->Blog_model->getTags();
-			$blog_tags_new = array();
-			foreach ($blog_tags as $tag) {
-				 if(strstr($tag->tags, ',')){
-				 	$keywords = explode(',', $tag->tags);
-				 	foreach ($keywords as $keyword) {
-				 		$blog_tags_new[] = trim($keyword);
-				 	}
-				 }
-				 else{
-				 	$keyword = $tag->tags;
-				 	$blog_tags_new[] = $keyword;
-				 }
-			}
-			$data['blog_tags'] = array_unique($blog_tags_new);
+		// $blog_tags = $this->Blog_model->getTags();
+		// 	$blog_tags_new = array();
+		// 	foreach ($blog_tags as $tag) {
+		// 		 if(strstr($tag->tags, ',')){
+		// 		 	$keywords = explode(',', $tag->tags);
+		// 		 	foreach ($keywords as $keyword) {
+		// 		 		$blog_tags_new[] = trim($keyword);
+		// 		 	}
+		// 		 }
+		// 		 else{
+		// 		 	$keyword = $tag->tags;
+		// 		 	$blog_tags_new[] = $keyword;
+		// 		 }
+		// 	}
+		// 	$data['blog_tags'] = array_unique($blog_tags_new);
 			
-		$this->load->view($theme_path.'/blog_detail',$data);
+		$this->load->view('2021_theme_1/blog-detail',$data);
 
 	}
 
