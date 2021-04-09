@@ -39,6 +39,12 @@ $lang["Contact Us"] = 'Contact Us';
 $lang["Ask more"] = 'Ask more';
 
 $lang["see-details"] = 'See details';
-
+$lang["Share"] = 'Share';
+$lang["see-more-ask"] = 'Interested contact for further inquiries.';
+$lang["add-line"] = 'Add line';
+$lang["by-phone"] = 'Phone';
+$lang["facebook"] = 'Facebook';
+$lang["tags"] = 'Tags : ';
+$lang["Sample work"] = 'Sample work';
 
 ?>

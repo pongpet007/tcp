@@ -21,7 +21,7 @@
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
   <!-- <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets_2021_theme_1/css/font-awesome/all.css"> -->
-   <!-- <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets_2021_theme_1/css/font-awesome/fontawesome.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets_2021_theme_1/css/font-awesome/fontawesome.css"> -->
 
   <!-- Owl Stylesheets -->
   <link rel="stylesheet" href="../assets_2021_theme_1/owl/owlcarousel/assets/owl.carousel.min.css">
@@ -29,6 +29,11 @@
   <!-- javascript -->
   <script src="../assets_2021_theme_1/owl/vendors/jquery.min.js"></script>
   <script src="../assets_2021_theme_1/owl/owlcarousel/owl.carousel.js"></script>
+
+
+  <!-- Slide Gallerly -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
   <!-- Template Main CSS File -->
   <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet"> -->

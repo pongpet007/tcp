@@ -25,6 +25,11 @@
 <!-- Template Main JS File -->
 <script src="<?=base_url()?>assets_2021_theme_1/js/main.js"></script>
 
+<!-- Slide Gallerly -->
+<script src="<?=base_url()?>assets_2021_theme_1/js/gallerly.js"></script>
+
+
+
 <script type="text/javascript">
   jQuery(document).ready(function ($) {
     var timelines = $('.cd-horizontal-timeline'),

@@ -1845,4 +1845,145 @@
 
     /* -------------------------------------------------------- End Products -------------------------------------------------------- */
 
+
+    /* -------------------------------------------------------- Products detail -------------------------------------------------------- */
+    .detail-name-pro {
+        color: #616161;
+    }
+    ul.ul-share {
+        list-style: none;
+        display: flex;
+        padding: 0;
+    }
+    .menu-pro-detail {
+        font-size: 26px;
+        letter-spacing: .5px;
+    }
+    .share-face {
+        background-color: #31427a;
+        padding: 0px 20px;
+        border-radius: 5px;
+    }
+    .share-face a {
+        font-size: 24px;
+        color: #FFF;
+    }
+    ul.ul-share li {
+        padding-right: 5px;
+    }
+    .share-line {
+        padding: 0px 20px;
+        background-color: #3E8E43;
+        border-radius: 5px;
+    }
+    .share-line a {
+        font-size: 24px;
+        color: #FFF;
+    }
+    .face-color , .line-color {
+        font-size: 20px;
+    }
+    .share-twitter {
+        padding: 0px 20px;
+        background-color: #3D94B5;
+        border-radius: 5px;
+    }
+    .share-twitter a {
+        font-size: 24px;
+        color: #FFF;
+    }
+    .share-mail {
+        padding: 0px 20px;
+        background-color: #03877B;
+        border-radius: 5px;
+    }
+    .share-mail a {
+        font-size: 24px;
+        color: #FFF;
+    }
+    .share-print {
+        background-color: #D27928;
+        border-radius: 5px;
+    }
+    .share-print a {
+        padding: 0px 20px;
+        font-size: 24px;
+        color: #FFF;
+    }
+    .btn-more-detail {
+        background-color: #b8272c;
+        color: #FFF;
+        font-size: 22px;
+        padding: 5px 50px;
+        transition: all .3s ease-in-out
+    }
+    a.btn-more-detail:hover {
+        background-color: #86060b !important;
+        color: #E6E6E6;
+        transition: all .3s ease-in-out
+    }
+    .drop-more-new {
+        left: 88px !important;
+        z-index: 1550;
+    }
+    .contact-by {
+        font-size: 20px;
+        transition: all .3s ease-in-out
+    }
+    a.contact-by:hover {
+        background-color: #b8272c;
+        color: #FFF;
+        transition: all .3s ease-in-out
+    }
+    .tags {
+        display: block;
+    }
+    .h3-tags {
+
+    }
+    .tags-a {
+        display: inline-block;
+        padding : 0 10px;
+    }
+    .tags-a  a {
+        font-size: 24px;
+        color: #656565;
+    }
+    .nav-tabs-new {
+        /*border-bottom: none;*/
+    }
+    .nav-item-work {
+        border-bottom: 8px solid #0346a1;
+        margin-bottom: -4px;
+
+    }
+    a.nav-link-work {
+        border : none !important;
+        background-color: #f8f8f8 !important;
+        font-size: 24px;
+        padding-left: 0;
+
+    }
+    .gallery-div {
+        display: block;
+        margin-top : 50px;
+    }
+    .name-gallerly {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .name-gallerly a {
+        color: #818181;
+        font-size: 24px;
+    }
+
+    /* -------------------------------------------------------- End Products detail -------------------------------------------------------- */
+
+
+
+
+
+
+
+
 </style>
