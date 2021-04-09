@@ -90,7 +90,7 @@
 	.space-product-solution {
 		margin-bottom: 20px;
 	}
-	a.see-more-solution {
+	button.see-more-solution {
 		padding: 10px 50px;
 		text-align: center;
 		color: #FFF;
@@ -98,12 +98,13 @@
 		border-radius: 5px;
 		font-size: 25px;
 		transition: all .8s ease;
+		border:none;
 	}
 	.see-a-solution {
 		padding-top: 50px;
 		text-align: center;
 	}
-	a.see-more-solution:hover {
+	button.see-more-solution:hover {
 		background-color: #213b74;
 		transition: all .8s ease;
 	}

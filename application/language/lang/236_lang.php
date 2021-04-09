@@ -38,5 +38,7 @@ $lang["Knowledge from us"] = 'Knowledge from us';
 $lang["Contact Us"] = 'Contact Us';
 $lang["Ask more"] = 'Ask more';
 
+$lang["see-details"] = 'See details';
+
 
 ?>

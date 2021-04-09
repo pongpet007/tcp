@@ -40,6 +40,7 @@ $lang["Blogs"] = 'บทความ';
 $lang["Knowledge from us"] = 'สาระความรู้จากเรา';
 $lang["Contact Us"] = 'ติดต่อเรา';
 $lang["Ask more"] = 'สอบถามเพิ่มเติม';
+$lang["see-details"] = 'ชมรายละเอียด';
 
 
 

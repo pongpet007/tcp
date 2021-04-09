@@ -431,7 +431,18 @@
   // End Menu Bar
 
 
+  // loadmore
+  function loadmore() {
 
+    var start = $('#start').val();
+    start = parseInt(start) + 36;
+    $.get('https://www.brandexdirectory.com/Home2/loadmore/' + start,function(data){
+      $('#product_foryou').append(data);
+      $('#start').val(start);
+    });
+
+  }
+  // End loadmore
 
 
 

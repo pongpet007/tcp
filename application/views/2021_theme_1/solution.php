@@ -320,12 +320,22 @@
 
 				<div class="col-md-12">
 					<div class="see-a-solution">
-						<a href="<?= base_url($lang) ?>/Products" class="see-more-solution">
+						<button onclick="loadmore()" class="see-more-solution">
 							ดูเพิ่มเติม
-						</a>
+						</button>
+						<input type="hidden" name="start" id="start" value="0">
 					</div>
 					
 				</div>
+
+				<!-- <div class="row">
+					<div class="col-md-12 text-center" style="padding-top: 15px;">
+						<button onclick="loadmore()" class="" style=" width:266px; background-color: #73c2fd; border-radius: 25px;border: 0px;  padding: 10px;">
+							<span style="font-weight: bold;color: #fff">สินค้าเพิ่มเติม</span>
+						</button>
+						<input type="hidden" name="start" id="start" value="0">
+					</div>
+				</div>	 -->
 
 			</div>
 		</div>

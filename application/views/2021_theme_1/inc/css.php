@@ -1816,6 +1816,32 @@
     .products-detail {
         background-color: #f8f8f8;
     }
+    h2.h2-name-pro {
+        padding-top: 20px;
+        color: #363636;
+    }
+    p.detail-pro-page-allpro {
+        font-size: 24px;
+        letter-spacing: .5px;
+        color: #808080;
+        line-height: 25px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        min-height: 125px;
+        margin-bottom: 30px;
+    }
+    a.see-details {
+        width: 170px;
+        height: 50px;
+        padding: 5px 25px;
+        text-align: center;
+        background-color: #b8272c;
+        font-size: 24px;
+        color: #FFF;
+    }
 
     /* -------------------------------------------------------- End Products -------------------------------------------------------- */
 

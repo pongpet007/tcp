@@ -288,108 +288,108 @@ class Products extends CI_Controller {
 	}
 
 
-	public function detail($langu="",$pro_id){
+	public function detail($lang){
 		
 
-		$data['site_lang_name'] = $this->session->userdata('site_lang_name');
+		// $data['site_lang_name'] = $this->session->userdata('site_lang_name');
 
-		if ($data['lang']=221) {
-			$data['language'] = "เปลี่ยนภาษา";
-		}else{
-			$data['language'] = "Change Language";
-		}
+		// if ($data['lang']=221) {
+		// 	$data['language'] = "เปลี่ยนภาษา";
+		// }else{
+		// 	$data['language'] = "Change Language";
+		// }
 		
-		$data['counter'] = $this->Counter_model->count();
-		$data["categorys"] = $this->Category_model->getAll();
-		$company = $this->Company_model->getOne(1);		
-		$data['companyData'] = $company;
+		// $data['counter'] = $this->Counter_model->count();
+		// $data["categorys"] = $this->Category_model->getAll();
+		// $company = $this->Company_model->getOne(1);		
+		// $data['companyData'] = $company;
 		
 		
-		$theme_path = $company->theme_path;
-		$data['theme_path'] = $theme_path;
-		$data["theme_assets_path"] = $company->theme_assets_path;
+		// $theme_path = $company->theme_path;
+		// $data['theme_path'] = $theme_path;
+		// $data["theme_assets_path"] = $company->theme_assets_path;
 
-		$menus = $this->Menu_model->getMain();
-		// echo $this->db->last_query();
-		// exit();
+		// $menus = $this->Menu_model->getMain();
+		// // echo $this->db->last_query();
+		// // exit();
 
-		foreach ($menus as $menu) {
-			$menu->submenu = $this->Menu_model->getsub($menu->menu_id);
-		}
-		$data['menus'] = $menus ;		
+		// foreach ($menus as $menu) {
+		// 	$menu->submenu = $this->Menu_model->getsub($menu->menu_id);
+		// }
+		// $data['menus'] = $menus ;		
 		$data['countrys'] = $this->Country_model->getAll();
 
-		$data['lang'] = $this->session->userdata('site_lang');
-		// $data['config'] = $this->Config_model->getConfig();
-		$data['footer_newss'] = $this->News_model->getAll(4,0,array('news_type_id'=>0));
-		$image_group_id = 1;
-		$product  = $this->Products_model->getOne($pro_id);
-		$product->images = $this->Image_manage_model->getinuseProduct($image_group_id,$product->pro_id);
+		// $data['lang'] = $this->session->userdata('site_lang');
+		// // $data['config'] = $this->Config_model->getConfig();
+		// $data['footer_newss'] = $this->News_model->getAll(4,0,array('news_type_id'=>0));
+		// $image_group_id = 1;
+		// $product  = $this->Products_model->getOne($pro_id);
+		// $product->images = $this->Image_manage_model->getinuseProduct($image_group_id,$product->pro_id);
 
 		
-		$data['meta_title'] = $product->meta_title;
-		$data['meta_keyword'] = $product->meta_keyword;
-		$data['meta_description'] = $product->meta_description;
+		// $data['meta_title'] = $product->meta_title;
+		// $data['meta_keyword'] = $product->meta_keyword;
+		// $data['meta_description'] = $product->meta_description;
 
-		$cat_id = $product->cat_id?$product->cat_id:0;
+		// $cat_id = $product->cat_id?$product->cat_id:0;
 
-		$brand_id = $product->brand_id?$product->brand_id:0;
-		$promotion_id = $product->promotion_id?$product->promotion_id:0;
+		// $brand_id = $product->brand_id?$product->brand_id:0;
+		// $promotion_id = $product->promotion_id?$product->promotion_id:0;
 
-		$data['category'] = $this->Category_model->getOne($cat_id);		
+		// $data['category'] = $this->Category_model->getOne($cat_id);		
 		
-		$data['brand'] = $this->Brand_model->getOne($brand_id);
-		$data['promotion'] = $this->Promotion_model->getOne($promotion_id);
-		$data['product'] = $product;
+		// $data['brand'] = $this->Brand_model->getOne($brand_id);
+		// $data['promotion'] = $this->Promotion_model->getOne($promotion_id);
+		// $data['product'] = $product;
 
-		$data['categorys'] = $this->Category_model->getAll();
+		// $data['categorys'] = $this->Category_model->getAll();
 
-		$realatedproducts = $this->Products_model->getAll2(20, 0,array('cat_id'=>$cat_id),'rand()');
-		$image_group_id = 1;
-		foreach ($realatedproducts as $product) { 
-			$product->images = $this->Image_manage_model->getinuseProduct($image_group_id,$product->pro_id);
-		}
+		// $realatedproducts = $this->Products_model->getAll2(20, 0,array('cat_id'=>$cat_id),'rand()');
+		// $image_group_id = 1;
+		// foreach ($realatedproducts as $product) { 
+		// 	$product->images = $this->Image_manage_model->getinuseProduct($image_group_id,$product->pro_id);
+		// }
 		
-		$data['realatedproducts'] = $realatedproducts;
-		$countrealatedproducts = 0;
-		foreach ($realatedproducts as $key => $realatedproductss) {
-			$countrealatedproducts = $countrealatedproducts+1;
-		}
-		$data['realatedproductscount'] = $countrealatedproducts;
+		// $data['realatedproducts'] = $realatedproducts;
+		// $countrealatedproducts = 0;
+		// foreach ($realatedproducts as $key => $realatedproductss) {
+		// 	$countrealatedproducts = $countrealatedproducts+1;
+		// }
+		// $data['realatedproductscount'] = $countrealatedproducts;
 		
-		$data['leftpro'] = $this->Products_model->getAll(20, 0,array(),'rand()');
+		// $data['leftpro'] = $this->Products_model->getAll(20, 0,array(),'rand()');
 		
-		$data['rightpro'] = $this->Products_model->getAll(20, 0,array(),'rand()');
+		// $data['rightpro'] = $this->Products_model->getAll(20, 0,array(),'rand()');
 
 		
 
-		$data['pro_id'] = $pro_id;
+		// $data['pro_id'] = $pro_id;
 
-		$pictures = $this->Products_picture_model->getAll($pro_id);
+		// $pictures = $this->Products_picture_model->getAll($pro_id);
 		
-		$count_pic = 0;
-		foreach ($pictures as $key => $pictures_new) {
-			$count_pic = $count_pic + 1;
-		}
-		$data['pictures'] = $pictures;
+		// $count_pic = 0;
+		// foreach ($pictures as $key => $pictures_new) {
+		// 	$count_pic = $count_pic + 1;
+		// }
+		// $data['pictures'] = $pictures;
 
-		$data['count_pic'] = $count_pic;
+		// $data['count_pic'] = $count_pic;
 		
-		$data['colors'] = $this->Products_picture_model->getAllColor($pro_id);
+		// $data['colors'] = $this->Products_picture_model->getAllColor($pro_id);
 		
-		$data['menuactive'] = 2;
-		$data['pages'] = "product/detail";
+		// $data['menuactive'] = 2;
+		// $data['pages'] = "product/detail";
 		
-		/////////////////////// get products /////////////////////////////
+		// /////////////////////// get products /////////////////////////////
 		
-		$cartarr = array();
-		foreach ($this->cart->contents() as $carts) {
-			$cartarr[]  = array($this->Products_model->getOne($carts['id']),$carts['qty'],$carts['rowid']);
-		}
-		$data['cartarr'] = $cartarr;
+		// $cartarr = array();
+		// foreach ($this->cart->contents() as $carts) {
+		// 	$cartarr[]  = array($this->Products_model->getOne($carts['id']),$carts['qty'],$carts['rowid']);
+		// }
+		// $data['cartarr'] = $cartarr;
 
 
-		$this->load->view($theme_path.'/product_detail',$data);
+		$this->load->view('2021_theme_1/product-detail',$data);
 
 	}
 

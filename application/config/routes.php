@@ -262,6 +262,12 @@ $route['(VN|vn)\/Favorite'] = 'Favorite';
 
 
 
+$route['(TH|th)\/Products\/detail'] = 'Products/detail/$1';
+$route['(US|us)\/Products\/detail'] = 'Products/detail/$1';
+$route['(KH|kh)\/Products\/detail'] = 'Products/detail/$1';
+$route['(LA|la)\/Products\/detail'] = 'Products/detail/$1';
+$route['(MM|mm)\/Products\/detail'] = 'Products/detail/$1';
+$route['(VN|vn)\/Products\/detail'] = 'Products/detail/$1';
 
 
 $route['(TH|th)\/Products\/detail\/(\d+)'] = 'Products/detail/$1/$2';
