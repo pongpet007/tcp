@@ -19,10 +19,10 @@
         <div class="col-md-12">
           <div class="about-us">
             <h1>
-              ติดต่อเรา
+              <?=lang('Contact Us')?>
             </h1>
             <p>
-              หากท่านสนใจสามารถติดต่อสอบถามเราเพิ่มเติมได้ที <span style="color: #FD4549;">/////รอเปลี่ยนภาพื้นหลัง</span>
+              <?=lang('If you are interested')?>
             </p>
           </div>
         </div>
@@ -37,11 +37,11 @@
     <div class="container container-header" style="padding-bottom: 50px;">
       <div class="row">
         <div class="col-md-6">
-          <h2 style="color: #17337d; letter-spacing: .5px;">
-            ติดต่อเรา
+          <h2 class="contact-us-h2">
+            <?=lang('Contact Us')?>
           </h2>
-          <h3 style="color: #808183; letter-spacing: .5px; line-height: 50px">
-            กรุณากรอกข้อมูลเพื่อให้ทางเราติดต่อกลับ
+          <h3 class="input-contact" style="">
+            <?=lang('Please fill contact')?>
           </h3>
 
           <div class="row">
@@ -49,31 +49,31 @@
               <form method="" action="#" class="form-contact-mail" style="">
                 <div class="row">
                   <div class="col-md-6">
-                    <h3>
-                      ชื่อผู้ติดต่อ*
+                    <h3 class="detail-fill-contact font-PSL-bold">
+                      <?=lang('Name contact')?>*
                     </h3>
-                    <input type="text" name="name" class="input-contact" placeholder="กรุณากรอกชื่อ">
+                    <input type="text" name="name" class="input-contact" placeholder="<?=lang('Please fill name')?>">
                   </div>
                   <div class="col-md-6">
-                    <h3>
-                      เบอร์โทรศัพท์*
+                    <h3 class="detail-fill-contact font-PSL-bold">
+                      <?=lang('Phone number')?>*
                     </h3>
-                    <input type="text" name="name" class="input-contact" placeholder="กรุณากรอกเบอร์โทรศัพท์">
+                    <input type="text" name="name" class="input-contact" placeholder="<?=lang('Please fill phone number')?>">
                   </div>
                   <div class="col-md-12">
-                    <h3>
-                      อีเมล*
+                    <h3 class="detail-fill-contact font-PSL-bold">
+                      <?=lang('EMAIL')?>*
                     </h3>
-                    <input type="text" name="name" class="input-contact" placeholder="กรุณากรอกอีเมล">
+                    <input type="text" name="name" class="input-contact" placeholder="<?=lang('Please fill E-mail')?>">
                   </div>
                   <div class="col-md-12">
-                    <h3>
-                      ข้อความ*
+                    <h3 class="detail-fill-contact font-PSL-bold">
+                      <?=lang('Text')?>*
                     </h3>
-                    <textarea name="messages" class="input-contact" placeholder="ข้อความ" type="textarea" style=""></textarea>
+                    <textarea name="messages" class="input-contact" placeholder="<?=lang('Text')?>" type="textarea" style=""></textarea>
                   </div>
 
-                  <div class="col-md-12" style="display: -webkit-inline-box;" >
+                  <div class="col-md-12 display-capcha" style="" >
                     <div class="g-recaptcha" data-sitekey="6LfudvkUAAAAAE8r05xmweDiQQVswvV6KmryzIKb" data-theme="light" data-type="image" data-size="normal">
                       <div style="width: 304px; height: 78px;">
                         <div>
@@ -87,7 +87,7 @@
                     </div>                 
                     <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=onload&amp;hl=en" async="" defer=""></script>
 
-                    <button class="btn-sent-mail" type="submit">ส่งข้อความ</button>
+                    <button class="btn-sent-mail" type="submit"><?=lang('Sent form')?></button>
 
                   </div>
                 </div>
@@ -98,8 +98,8 @@
 
 
         <div class="col-md-6">
-          <h2 style="color: #17337d; letter-spacing: .5px;">
-            ที่อยู่ในการติดต่อเรา
+          <h2 class="address-contact" style="">
+            <?=lang('Address to contact us')?>
           </h2>
 
           <ul class="contact-lines">
@@ -108,7 +108,7 @@
                 <span class="icon-contact">
                   <i class="fas fa-building i-font-contact"></i>
                 </span>
-                <b class="contatc-h4">บริษัท ที.ซี.พี อินดัสทรี้ จำกัด</b>
+                <b class="contatc-h4"><?=lang('T.C.P Industry Company Limited')?></b>
               </p>
             </li>
             <li>
@@ -116,7 +116,7 @@
                 <span class="icon-contact">
                   <i class="fas fa-map-marker-alt i-font-contact"></i>
                 </span>
-                <b class="contatc-h4">ที่อยู่ : <span class="color-contact-2">82,84 ซ.ประชาอุทิศ 69 แขวงทุ่งครุ เขตทุ่งครุ กทม. 10140</span></b>
+                <b class="contatc-h4"><?=lang('Address')?><span class="color-contact-2">82,84 <?=lang('Soi Pracha Uthit 69')?> <?=lang('Thung Khru')?> <?=lang('District Thung Khru')?> <?=lang('BANGKOK')?> 10140</span></b>
               </p>
             </li>
 
@@ -125,7 +125,7 @@
                 <span class="icon-contact">
                   <i class="fas fa-phone-alt i-font-contact"></i>
                 </span>
-                <b class="contatc-h4">เบอร์โทรศัพท์ : 
+                <b class="contatc-h4"><?=lang('Phone number')?> : 
                   <br>
                   <a href="tel:+662-426-1567-70">+662-426-1567-70</a>
                   <br>
@@ -143,7 +143,7 @@
                 <span class="icon-contact">
                   <i class="far fa-envelope-open i-font-contact"></i>
                 </span>
-                <b class="contatc-h4">อีเมล : <a href="mailto:crlighting@gmail.com">info@tcpindustry.com</a></b>
+                <b class="contatc-h4"><?=lang('EMAIL')?> : <a href="mailto:crlighting@gmail.com">info@tcpindustry.com</a></b>
               </p>
             </li>
             <li>
@@ -151,7 +151,7 @@
                 <span class="icon-contact">
                   <i class="fab fa-facebook-f i-font-contact"></i>
                 </span>
-                <b class="contatc-h4">เฟสบุ๊ค : <span class="color-contact-2">TCPINDUSTRY</span></b>
+                <b class="contatc-h4"><?=lang('facebook')?> : <a href="#"><span class="color-contact-2">TCPINDUSTRY</span></a></b>
               </p>
             </li>
             <li>
@@ -159,7 +159,7 @@
                 <span class="icon-contact">
                   <i class="fab fa-line i-font-contact"></i>
                 </span>
-                <b class="contatc-h4">ไลน์ : <a href="#">@tcpindustry</a></b>
+                <b class="contatc-h4"><?=lang('Line')?> : <a href="#">@tcpindustry</a></b>
               </p>
             </li>
             <li>
@@ -167,21 +167,21 @@
                 <span class="icon-contact">
                   <i class="fas fa-globe-asia i-font-contact"></i>
                 </span>
-                <b class="contatc-h4">เว็บไซต์เพิ่มเติม : <a href="http://tcpindustry.brandexdirectory.com">tcpindustry.brandexdirectory.com</a></b>
+                <b class="contatc-h4"><?=lang('More websites')?> : <a href="http://tcpindustry.brandexdirectory.com">tcpindustry.brandexdirectory.com</a></b>
               </p>
             </li>
           </ul>
 
 
-          <h2 style="color: #17337d; letter-spacing: .5px;">
-            เวลาทำการ
+          <h2 class="time-do-work font-PSL-bold" style="">
+            <?=lang('Business hours')?>
           </h2>
 
           <ul class="contact-lines">
            <li>
             <p class="info-item">
               <i class="fas fa-history i-font-contact-time"></i>
-              <b class="contatc-h4-2">จันทร์ - เสาร์ <span class="color-contact-2">เวลา 8:00 น. - 17:00 น. (ออฟฟิศ)</span></b>
+              <b class="contatc-h4-2"><?=lang('Mon - Sat')?><span class="color-contact-2"><?=lang('time')?> 8:00 น. - 17:00 น. (<?=lang('office')?>)</span></b>
             </p>
           </li>
         </ul>
@@ -203,7 +203,13 @@
     <div class="row">
       <div class="col-md-12">
         <div class="img-map">
-          <img src="<?=base_url()?>assets_2021_theme_1/img/bg/map.png" style="width : 100%" alt="TCPINDUSTRY">
+          <img src="<?=base_url()?>assets_2021_theme_1/img/bg/map.png" style="width : 100%" alt="TCPINDUSTRY" id="memberImg">
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <span class="close" id="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -222,7 +228,7 @@
 
 
 <a href="#" class="radius scroll-top " ><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-<p class="open-menu-left " onclick="hideButtonmenu()"><i class="fas fa-chevron-right" aria-hidden="true"></i></a></p>
+<!-- <p class="open-menu-left " onclick="hideButtonmenu()"><i class="fas fa-chevron-right" aria-hidden="true"></i></a></p>
 <div class="menu-left">
   <div class="space-left-a">
     <a href="#vision" class="menu-left-a" data-toggle="tooltip" data-placement="right" title="<?=lang('vision')?>">
@@ -253,9 +259,49 @@
 
     </a>
   </div>
-</div>
+</div> -->
+
+<style type="text/css">
+  .nav-1:hover {
+    border-top: 5px solid  #4186FA;
+    margin-top: -3px;
+    transition: all 0.3s ease-in;
+  }
+  .nav-2:hover {
+    border-top: 5px solid  #4186FA;
+    margin-top: -3px;
+    transition: all 0.3s ease-in;
+  }
+  .nav-3:hover {
+    border-top: 5px solid  #4186FA;
+    margin-top: -3px;
+    transition: all 0.3s ease-in;
+  }
+  .nav-4:hover {
+    border-top: 5px solid  #4186FA;
+    margin-top: -3px;
+    transition: all 0.3s ease-in;
+  }
+  .nav-5:hover {
+    border-top: 5px solid  #4186FA;
+    margin-top: -3px;
+    transition: all 0.3s ease-in;
+  }
+  .nav-6:hover {
+    border-top: 5px solid  #4186FA;
+    margin-top: -3px;
+    transition: all 0.3s ease-in;
+  }
+</style>
+
 
 <script type="text/javascript">
+  $('#memberImg').ready(function(){
+    $('.nav-7').addClass('nav-active');
+  });
+</script>
+
+<!-- <script type="text/javascript">
 // Menu Bar Mobile 
 if( 'ontouchstart' in window ) { 
   var click = 'touchstart'; 
@@ -313,7 +359,7 @@ function closeMenu(){
 
 }
 // End Menu Bar
-</script>
+</script> -->
 
 <?php 
 $this->load->view('2021_theme_1/inc/footer2/footer');

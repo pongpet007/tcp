@@ -14,29 +14,28 @@
   <link href="<?=base_url()?>assets_2021_theme_1/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="<?=base_url()?>assets_2021_theme_1/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="<?=base_url()?>assets_2021_theme_1/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="<?=base_url()?>assets_2021_theme_1/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- <link href="<?=base_url()?>assets_2021_theme_1/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
   <!-- <link href="<?=base_url()?>assets_2021_theme_1/vendor/venobox/venobox.css" rel="stylesheet"> -->
   
   <link href="<?=base_url()?>assets_2021_theme_1/vendor/aos/aos.css" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-  <!-- <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets_2021_theme_1/css/font-awesome/all.css"> -->
-  <!-- <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets_2021_theme_1/css/font-awesome/fontawesome.css"> -->
-
+  <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets_2021_theme_1/css/font-awesome/all.css">
+  <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets_2021_theme_1/css/font-awesome/fontawesome.css">
 
 
   <!-- Owl Stylesheets -->
   <link rel="stylesheet" href="<?=base_url()?>assets_2021_theme_1/owl/owlcarousel/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="<?=base_url()?>assets_2021_theme_1/owl/owlcarousel/assets/owl.theme.default.min.css">
-  
   <!-- javascript -->
   <script src="<?=base_url()?>assets_2021_theme_1/owl/vendors/jquery.min.js"></script>
   <script src="<?=base_url()?>assets_2021_theme_1/owl/owlcarousel/owl.carousel.js"></script>
+  <!-- <script src="<?=base_url()?>assets_2021_theme_1/vendor/jquery/jquery.min.js"></script> -->
 
   <!-- Slide Gallerly -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   
-
   <!-- Template Main CSS File -->
   <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet"> -->
   <?/*?>
@@ -51,7 +50,7 @@
     }
   </style>
 
-  <script src="<?=base_url()?>assets_2021_theme_1/vendor/jquery/jquery.min.js"></script>
+  
   
   <!-- =======================================================
   * Template Name: Gp - v2.2.1

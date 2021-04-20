@@ -15,7 +15,7 @@
 		color: #FFF;
 		font-size: 23px;
 	}
-	.menu , .menu-about {
+	.menu-footer , .menu-about {
 		font-size: 23px;
 		padding-top: 10px;
 	}
@@ -29,15 +29,15 @@
 		color: #FFF;
 		
 	}
-	.menu div {
+	.menu-footer div {
 		list-style: none;
 		font-size: 23px;
 		
 	}
-	.menu div a{
+	.menu-footer div a{
 		color: #FFF;
 	}
-	.menu div {
+	.menu-footer div {
 		color: #092c6c;
 	}
 	.menu-about div {

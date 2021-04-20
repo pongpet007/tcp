@@ -1,4 +1,6 @@
 <? $lang = $this->session->userdata('site_lang_name');?>
+
+
 <header id="header2" class="">
 	<div class="container container-header d-lg-block d-sm-none d-none">
 		<div class="row row-header">
@@ -45,7 +47,7 @@
 								<? $uri =  uri_string(); ?>
 								<? $uri = str_ireplace($this->session->userdata('site_lang_name')."/", $country->iso2."/", $uri); ?>
 								<? if ($country->iso2 == $lang) { ?>
-									<?   echo $country->iso2; ?>
+									<?   echo $country->short_name; ?>
 									<i class="fas fa-chevron-down i-drop-menu"></i>
 									<?
 								} 
@@ -59,7 +61,7 @@
 								<? $uri = str_ireplace($this->session->userdata('site_lang_name')."/", $country->iso2."/", $uri); ?>
 								<? if ($country->iso2 != $lang) { ?>
 									<a class="dropdown-item" href="<?=base_url($uri)?>">
-										<?   echo $country->iso2; ?>
+										<?   echo $country->short_name; ?>
 									</a>
 									<?
 								} 
@@ -91,7 +93,7 @@
 
 							</li>
 							<li class="nav-item nav-2">
-								<a class="nav-link nav-active" href="<?=base_url($lang.'/About')?>" >
+								<a class="nav-link" href="<?=base_url($lang.'/About')?>" >
 									<?=lang('know tcp')?>
 									<span class="span-menu"><?=lang('aboutus')?></span>
 								</a>
@@ -174,10 +176,10 @@
 								<div class="circle-logo">
 									<img src="<?=base_url()?>assets_2021_theme_1//img/bg/logo.png" style="width: 100%;">
 								</div>
-								<h4 class="font-PSL-bold" style="color: #000;">
+								<h4 class="font-PSL-bold" style="color: #000; font-size: 20px;">
 									บริษัท ทีซีพี อินดั้สทรี้ จำกัด
 								</h4>
-								<h4 style="color: #565656;">
+								<h4 style="color: #565656; font-size: 20px;">
 									TCP
 								</h4>
 								<hr>
@@ -241,7 +243,7 @@
 									<? $uri = str_ireplace($this->session->userdata('site_lang_name')."/", $country->iso2."/", $uri); ?>
 									<a class="text-reset" style="color: #000;" href="<?=base_url($uri)?>">
 										<img src="<?= base_url()?>images/country_flags/<? echo $country->iso2; ?>.png" alt="kulthorn" class="img-flag" style="margin-top: -5px;">
-										<?=$country->iso2?>
+										<?= $country->iso2?>
 									</a>
 								<?php } ?>
 
@@ -295,14 +297,37 @@ $this->load->view('2021_theme_1/inc/header2/css.php')
 	.navbar-2 .bg-light {
 		background-color: transparent !important;
 		margin-top: 10px;
+		/*border-top : 1px solid #4c5969;*/
+	}
+	.nav-1 {
 		border-top : 1px solid #4c5969;
 	}
+	.nav-2 {
+		border-top : 1px solid #4c5969;
+	}
+	.nav-3 {
+		border-top : 1px solid #4c5969;
+	}
+	.nav-4 {
+		border-top : 1px solid #4c5969;
+	}
+	.nav-5 {
+		border-top : 1px solid #4c5969;
+	}
+	.nav-6 {
+		border-top : 1px solid #4c5969;
+	}
+	.nav-7 {
+		border-top : 1px solid #4c5969;
+	}
+
+
 	.hr-header {
 		border-top: 1px solid #EEE; 
 	}
 	.navbar-expand-lg .navbar-nav .nav-link {
-		padding-left: 2rem;
-		padding-right: 2rem;
+		padding-left: 3.5rem;
+		padding-right: 3.5rem;
 		font-size: 23px;
 		color: #FFF;
 	}
@@ -323,7 +348,7 @@ $this->load->view('2021_theme_1/inc/header2/css.php')
 		
 	}
 	.section-contactus {
-		background : url(<?=base_url()?>image_new/bg/solution-banner.jpg)  no-repeat center center ;
+		background : url(<?=base_url()?>image_new/bg/contactus-banner.png)  no-repeat center center ;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -404,40 +429,61 @@ $this->load->view('2021_theme_1/inc/header2/css.php')
 	}
 
 	
-	@media (max-width: 500px) and (min-width: 300px) {
+	@media (min-width: 300px) and (max-width: 767px) {
 
 		.section-header {
 			height: 450px;
 		}
+		.item-1::before, .item-2::before, .item-3::before, .item-4::before {
+			margin-top: 10px;
+		}
+
 	}
-	@media (max-width: 768px) and (min-width: 501px) {
+	@media (min-width: 768px) and (max-width: 1023px) {
 		.section-header {
 			height: 560px;
 		}
 		
 	}
-	@media (max-width: 1024px) and (min-width: 769px) {
+	@media (max-width: 1279px) and (min-width: 1024px) {
 		.navbar-expand-lg .navbar-nav .nav-link {
+			padding-left: 2.5rem;
+			padding-right: 2.5rem;
+		}
+	}
+	@media (max-width: 1300px) and (min-width: 1280px) {
+		.navbar-expand-lg .navbar-nav .nav-link {
+			padding-left: 3.5rem;
+			padding-right: 3.5rem;
+		}
+	}
+	@media (max-width: 1400px) and (min-width: 1301px) {
+		.navbar-expand-lg .navbar-nav .nav-link {
+			padding-left: 3.5rem;
+			padding-right: 3.5rem;
+		}
+	}
+	@media (min-width: 1025px) {
+		/*.navbar-expand-lg .navbar-nav .nav-link {
 			padding-left: 1.8rem;
 			padding-right: 1.8rem;
-		}
-		.section-header {
-			height: 650px;
+			}*/
+			.section-header {
+				height: 650px;
+			}
+			.nav-active {
+				border-top: 5px solid #07a7ff;
+				margin-top: -3px;
+			}
+			.nav-active {
+				/*padding-top: 8px;*/
+			}
+			.nav-active:after {
+				top: 12px;
+			}
+			.nav-link:hover {
+
+			}
 		}
 
-	}
-	@media (min-width: 1024px) {
-		.nav-active {
-			border-top: 5px solid #07a7ff;
-			margin-top: -12px;
-		}
-		.nav-active {
-			padding-top: 12px;
-		}
-		.nav-active:after {
-			top: 12px;
-		}
-		.nav-link:hover
-	}
-	
-</style>
+	</style>

@@ -34,7 +34,7 @@
             <p class="detail-pro-page-allpro">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fermentum non velit nec tincidunt. Vivamus in est convallis, elementum ligula sed, interdum purus. Proin eu aliquet nulla, ut fringilla sem. 
             </p>
-            <a href="#" class="see-details">
+            <a href="<?=base_url($this->session->userdata('site_lang_name').'/Products/detail')?>" class="see-details">
               <?=lang('see-details')?>
             </a>
           </div>
@@ -50,7 +50,7 @@
             <p class="detail-pro-page-allpro">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fermentum non velit nec tincidunt. Vivamus in est convallis, elementum ligula sed, interdum purus. Proin eu aliquet nulla, ut fringilla sem. 
             </p>
-            <a href="#" class="see-details">
+            <a href="<?=base_url($this->session->userdata('site_lang_name').'/Products/detail')?>" class="see-details">
               <?=lang('see-details')?>
             </a>
           </div>
@@ -62,12 +62,6 @@
 
 
   </section>
-
-
-
-
-
-
 
 
 
@@ -106,7 +100,47 @@
     </div>
   </div>
 
-<script type="text/javascript">
+
+  <style type="text/css">
+    .nav-1:hover {
+      border-top: 5px solid  #4186FA;
+      margin-top: -3px;
+      transition: all 0.3s ease-in;
+    }
+    .nav-2:hover {
+      border-top: 5px solid  #4186FA;
+      margin-top: -3px;
+      transition: all 0.3s ease-in;
+    }
+    .nav-3:hover {
+      border-top: 5px solid  #4186FA;
+      margin-top: -3px;
+      transition: all 0.3s ease-in;
+    }
+    .nav-5:hover {
+      border-top: 5px solid  #4186FA;
+      margin-top: -3px;
+      transition: all 0.3s ease-in;
+    }
+    .nav-6:hover {
+      border-top: 5px solid  #4186FA;
+      margin-top: -3px;
+      transition: all 0.3s ease-in;
+    }
+    .nav-7:hover {
+      border-top: 5px solid  #4186FA;
+      margin-top: -3px;
+      transition: all 0.3s ease-in;
+    }
+  </style>
+
+  <script type="text/javascript">
+    $('#memberImg').ready(function(){
+      $('.nav-4').addClass('nav-active');
+    });
+  </script>
+
+<!-- <script type="text/javascript">
 // Menu Bar Mobile 
 if( 'ontouchstart' in window ) { 
   var click = 'touchstart'; 
@@ -164,16 +198,16 @@ function closeMenu(){
 
 }
 // End Menu Bar
-</script>
+</script> -->
 
-  <?php 
-  $this->load->view('2021_theme_1/inc/footer2/footer');
-  ?>
+<?php 
+$this->load->view('2021_theme_1/inc/footer2/footer');
+?>
 
 
-  <?php 
-  $this->load->view('2021_theme_1/inc/footer-js') 
-  ?>
+<?php 
+$this->load->view('2021_theme_1/inc/footer-js') 
+?>
 
 
 

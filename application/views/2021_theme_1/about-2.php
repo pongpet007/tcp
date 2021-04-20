@@ -18,9 +18,11 @@
         <div class="col-md-12">
           <div class="about-us">
             <h1>
-              รู้จัก T.C.P
+              <?=lang('know tcp')?>
             </h1>
-            <p>ตอบโจทย์ทุกธุรกิจ คู่คิด SME และ STARTUP</p>
+            <p>
+              <?=lang('Answers to all businesses')?>
+            </p>
           </div>
         </div>
       </div>
@@ -40,8 +42,12 @@
               <div class="tab-select">
                 <div class="vision">
                   <i class="icofont-unique-idea iconvision"></i>
-                  <p>วิสัยทัศน์</p>
-                  <span>มุ่งพัฒนาคุณภาพการผลิต</span>
+                  <p>
+                    <?=lang('vision')?>
+                  </p>
+                  <span>
+                    <?=lang('Aiming to improve')?>
+                  </span>
                 </div>
               </div>
             </a>
@@ -51,8 +57,12 @@
               <div class="tab-select">
                 <div class="vision">
                   <i class="fas fa-bullseye iconvision"></i>
-                  <p>พันธกิจ</p>
-                  <span>เพื่อตอบสนองด้านธุกิจ</span>
+                  <p>
+                    <?=lang('obligation')?>
+                  </p>
+                  <span>
+                    <?=lang('Respond for business')?>
+                  </span>
                 </div>
               </div>
             </a>
@@ -63,8 +73,12 @@
               <div class="tab-select">
                 <div class="vision">
                   <i class="icofont-building-alt iconvision"></i>
-                  <p>ประวัติ</p>
-                  <span>ก่อตั้งขึ้นเพื่อผลิตบรรจุภัณฑ์</span>
+                  <p>
+                    <?=lang('history')?>
+                  </p>
+                  <span>
+                    <?=lang('Was established to produce packaging')?>
+                  </span>
                 </div>
               </div>
             </a>
@@ -75,8 +89,12 @@
               <div class="tab-select">
                 <div class="vision">            
                   <i class="icofont-site-map iconvision"></i>
-                  <p>ทีมผู้บริหาร</p>
-                  <span>ด้วยการบริหารงานคุณภาพ</span>
+                  <p>
+                    <?=lang('board')?>
+                  </p>
+                  <span>
+                    <?=lang('With quality management')?>
+                  </span>
                 </div>
               </div>
             </a>
@@ -88,8 +106,12 @@
                 <div class="vision">
                   <!-- <i class="icofont-certificate iconvision"></i> -->
                   <i class="icofont-badge iconvision"></i>
-                  <p>การรับรอง</p>
-                  <span>ISO 9001:2000</span>
+                  <p>
+                    <?=lang('Certification')?>
+                  </p>
+                  <span>
+                    ISO 9001:2000
+                  </span>
                 </div>
               </div>
             </a>
@@ -172,13 +194,13 @@
         </p>
 
 
-        <img src="<?=base_url('image_new/bg/about-history.png')?>" width="100%">
+        
 
         <picture>
-          <source media="(min-width:650px)" srcset="<?=base_url('image_new/bg/about-history.png')?>">                
-            <source media="(min-width:768px)" srcset="<?=base_url('image_new/bg/about-history.png')?>" src="" type="" style="width:100%;">
-              <!-- <img src="<?=base_url('image_new/bg/about-history.png')?>" alt="history" style="width:100%;"> -->
-            </picture>
+          <source media="(min-width:769px)" srcset="<?=base_url('image_new/bg/timeline-about.png')?>">                
+          <source media="(max-width:768px)" srcset="<?=base_url('image_new/bg/timeline-about.png')?>" src="" type="" style="width:100%;">
+          <img src="<?=base_url('image_new/bg/timeline-about.png')?>" width="100%">
+        </picture>
 
             <div style="margin-top: 30px;">
               <p>
@@ -215,14 +237,23 @@
             </div>
             <div class="col-md-7">
               <div class="detail-director">
-                <h2 class="name-board-1">
+
+                <h2 class="name-director d-sm-none d-block">
+                  นายสุนทร สุนทรกำพลรัตน์
+                  
+                </h2>
+                <h2 class="position-director d-sm-none d-block">
+                  กรรมการบริษัท
+                </h2>
+
+                <h2 class="name-board-1  d-sm-block d-none">
                   นายสุนทร สุนทรกำพลรัตน์
                 </h2>
 
-                <p class="detail-com">
+                <p class="detail-com  d-sm-block d-none">
                   ด้วยการบริหารงานคุณภาพของทีมงานในฝ่ายต่างๆ ประกอบด้วย ฝ่ายมาตรฐานคุณภาพ, ฝ่ายบัญชี, ฝ่ายการเงิน, ฝ่ายบุคคลฝ่ายขาย, ฝ่ายจัดซื้อ, ฝ่ายออกแบบ, ฝ่ายวางแผนการผลิต, ฝ่ายผลิต, ฝ่ายไอที และการพัฒนาองค์กร เพื่อครอบคลุมกระบวนการผลิต รองรับงานพิมพ์ที่มีคุณภาพรวดเร็ว เพราะทุกกระบวนการผลิต  สามารถผลิตสำเร็จภายในโรงงาน ประกอบด้วย แผนกออกแบบ, แผนกคัด, แผนกอาบเคลือบ, แผนกประกบลูกฟูก, แผนกไดคัท, แผนกติดประกอบ, แผนกจัดส่ง และแผนกซ่อมบำรุง 
                 </p>
-                <div class="hover-detail-director">
+                <div class="hover-detail-director d-sm-block d-none">
 
                   <div class="arrow_box">
                     <h3 class="arrow">
@@ -236,7 +267,7 @@
         </div>
       </div>
 
-      <div class="col-md-12">
+      <div class="col-md-12 ">
         <div class="other-board">
           <div class="row">
             <div class="col-md-6">
@@ -431,7 +462,7 @@
 </section>
 
 <a href="#" class="radius scroll-top " ><i class="fa fa-angle-up" aria-hidden="true"></i></a>
-<p class="open-menu-left " onclick="hideButtonmenu()"><i class="fas fa-chevron-right" aria-hidden="true"></i></a></p>
+<p class="open-menu-left " onclick="hideButtonmenu();"><i class="fas fa-chevron-right" aria-hidden="true"></i></a></p>
 <div class="menu-left">
   <div class="space-left-a">
     <a href="#vision" class="menu-left-a" data-toggle="tooltip" data-placement="right" title="<?=lang('vision')?>">
@@ -465,9 +496,63 @@
 </div>
 
 
+<style type="text/css">
+  .nav-1:hover {
+    border-top: 5px solid  #4186FA;
+    margin-top: -3px;
+    transition: all 0.3s ease-in;
+  }
+  .nav-3:hover {
+    border-top: 5px solid  #4186FA;
+    margin-top: -3px;
+    transition: all 0.3s ease-in;
+  }
+  .nav-4:hover {
+    border-top: 5px solid  #4186FA;
+    margin-top: -3px;
+    transition: all 0.3s ease-in;
+  }
+  .nav-5:hover {
+    border-top: 5px solid  #4186FA;
+    margin-top: -3px;
+    transition: all 0.3s ease-in;
+  }
+  .nav-6:hover {
+    border-top: 5px solid  #4186FA;
+    margin-top: -3px;
+    transition: all 0.3s ease-in;
+  }
+  .nav-7:hover {
+    border-top: 5px solid  #4186FA;
+    margin-top: -3px;
+    transition: all 0.3s ease-in;
+  }
+</style>
+
+<script type="text/javascript">
+  $('#memberImg').ready(function(){
+    $('.nav-2').addClass('nav-active');
+  });
+
+  var $mybutton = $('.scroll-top'),
+  $menuleft = $('.open-menu-left'),
+  $barleft = $('.menu-left'),
+  $menulefta = $('.menu-left-a');
+
+  function hideButtonmenu() {
+    $menuleft.removeClass('active-open-menu-left');
+    $barleft.addClass('active-menuleft');
+    $menulefta.addClass('active-menu-left-a');
+  }
+</script>
 
 <?php 
 $this->load->view('2021_theme_1/inc/footer2/footer') 
+?>
+
+
+<?php 
+$this->load->view('2021_theme_1/inc/footer-js') 
 ?>
 
 
@@ -490,11 +575,6 @@ $this->load->view('2021_theme_1/inc/footer2/footer')
 
 </main>
 
-
-
-<?php 
-$this->load->view('2021_theme_1/inc/footer-js') 
-?>
 
 
 
@@ -540,6 +620,7 @@ $this->load->view('2021_theme_1/inc/footer-js')
   function hide(x) {
     x.style.background-color = #333;
   }
+  
 </script>
 
 

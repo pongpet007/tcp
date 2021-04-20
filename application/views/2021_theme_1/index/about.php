@@ -1,7 +1,7 @@
 <section id="index-about">
   <div class="container" data-aos="fade-up">
     <div class="row">
-      <div class="col-lg-6 pl-30 pr-30" data-aos="fade-left" data-aos-delay="100">
+      <div class="col-lg-6 col-12 pl-30 pr-30" data-aos="fade-left" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-12 pt-60 pb-60" id="home-bg-1" >
             <div class="row">
@@ -16,7 +16,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6 pl-30 pr-30" data-aos="fade-right" data-aos-delay="100">
+      <div class="col-lg-6 col-12 pl-30 pr-30" data-aos="fade-right" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-12 pt-60 pb-60" id="home-bg-2" >
             <div class="row">

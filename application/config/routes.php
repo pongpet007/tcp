@@ -85,7 +85,19 @@ $route['(LA|la)\/Contactus'] = 'Contactus/index/$1';
 $route['(MM|mm)\/Contactus'] = 'Contactus/index/$1';
 $route['(VN|vn)\/Contactus'] = 'Contactus/index/$1';
 
+$route['(TH|th)\/Job'] = 'Job/index/$1';
+$route['(US|us)\/Job'] = 'Job/index/$1';
+$route['(KH|kh)\/Job'] = 'Job/index/$1';
+$route['(LA|la)\/Job'] = 'Job/index/$1';
+$route['(MM|mm)\/Job'] = 'Job/index/$1';
+$route['(VN|vn)\/Job'] = 'Job/index/$1';
 
+$route['(TH|th)\/Job\/detail\/(.+)'] = 'Job/detail/$1/$2';
+$route['(US|us)\/Job\/detail\/(.+)'] = 'Job/detail/$1/$2';
+$route['(KH|kh)\/Job\/detail\/(.+)'] = 'Job/detail/$1/$2';
+$route['(LA|la)\/Job\/detail\/(.+)'] = 'Job/detail/$1/$2';
+$route['(MM|mm)\/Job\/detail\/(.+)'] = 'Job/detail/$1/$2';
+$route['(VN|vn)\/Job\/detail\/(.+)'] = 'Job/detail/$1/$2';
 
 
 

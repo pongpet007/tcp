@@ -145,7 +145,7 @@
     #header {
         transition: all 0.5s;
         z-index: 997;
-        padding: 15px 0;
+        padding: 40px 0;
     }
 
     #header.header-scrolled,
@@ -172,7 +172,8 @@
     }
 
     #header .logo img {
-        max-height: 40px;
+        max-height: 50px;
+        /*width: 100%;*/
     }
 
 
@@ -196,7 +197,7 @@
     .nav-menu>ul>li {
         position: relative;
         white-space: nowrap;
-        padding: 10px 0 10px 28px;
+        padding: 10px 28px 10px 28px;
     }
 
     .nav-menu a {
@@ -206,13 +207,13 @@
         transition: 0.3s;
         font-size: 24px;
         font-family: "PSLDISPLAYPRO";
-        font-weight: 600;
+        /*font-weight: 600;*/
     }
 
     .nav-menu a:hover,
     .nav-menu .active>a,
     .nav-menu li:hover>a {
-        color: #ffc451;
+        /*color: #ffc451;*/
     }
 
     .nav-menu .drop-down ul {
@@ -282,6 +283,7 @@
         position: absolute;
         right: 15px;
     }
+    
 
     @media (max-width: 1366px) {
         .nav-menu .drop-down .drop-down ul {
@@ -439,30 +441,30 @@
     --------------------------------------------------------------*/
 
     #hero {
-        width: 100%;
+       /* width: 100%;
         height: 100vh;
         background: url("../img/hero-bg.jpg") top center;
         background-size: cover;
-        position: relative;
+        position: relative;*/
     }
 
     #hero:before {
-        content: "";
+        /*content: "";
         background: rgba(0, 0, 0, 0.6);
         position: absolute;
         bottom: 0;
         top: 0;
         left: 0;
-        right: 0;
+        right: 0;*/
     }
 
     #hero .container {
-        position: relative;
+       /* position: relative;
         padding-top: 74px;
-        text-align: center;
+        text-align: center;*/
     }
 
-    #hero h1 {
+    /*#hero h1 {
         margin: 0;
         font-size: 56px;
         font-weight: 700;
@@ -473,69 +475,145 @@
 
     #hero h1 span {
         color: #ffc451;
-    }
+        }*/
 
-    #hero h2 {
-        color: rgba(255, 255, 255, 0.9);
+        #hero h2 {
+        /*color: rgba(255, 255, 255, 0.9);
         margin: 10px 0 0 0;
-        font-size: 24px;
+        font-size: 24px;*/
     }
 
     #hero .icon-box {
-        padding: 30px 20px;
+       /* padding: 30px 20px;
         transition: ease-in-out 0.3s;
         border: 1px solid rgba(255, 255, 255, 0.3);
         height: 100%;
-        text-align: center;
+        text-align: center;*/
     }
 
     #hero .icon-box i {
-        font-size: 32px;
+        /*font-size: 32px;
         line-height: 1;
-        color: #ffc451;
+        color: #ffc451;*/
     }
 
     #hero .icon-box h3 {
-        font-weight: 700;
+        /*font-weight: 700;
         margin: 10px 0 0 0;
         padding: 0;
         line-height: 1;
         font-size: 20px;
-        line-height: 26px;
+        line-height: 26px;*/
     }
 
     #hero .icon-box h3 a {
-        color: #fff;
-        transition: ease-in-out 0.3s;
-    }
+       /* color: #fff;
+       transition: ease-in-out 0.3s;*/
+   }
 
-    #hero .icon-box h3 a:hover {
-        color: #ffc451;
-    }
+   #hero .icon-box h3 a:hover {
+    color: #ffc451;
+}
 
-    #hero .icon-box:hover {
-        border-color: #ffc451;
-    }
+#hero .icon-box:hover {
+    border-color: #ffc451;
+}
 
-    @media (min-width: 1024px) {
-        #hero {
-            background-attachment: fixed;
-        }
-    }
+.banner-slide-1 {
+    height: 100vh;
+}
+.text-slide {
+    margin-top: -20px;
+    text-align: left;
+    top: 300px;
+}
+h1.think-tcp {
+    font-size: 100px;
+    letter-spacing: .5px;
+}
+h2.think-tcp {
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+h3.think-tcp {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+span.think-tcp {
+    font-size: 50px;
+}
+ul.banner-detail {
+    list-style: none;
+    display: inline-flex;
+    padding-top: 50px;
+    padding-left: 100px;
+}
+:root {
+  /* Base font size */
+  font-size: 10px;   
+  
+  /* Set neon color */
+  --neon-text-color: #519acd;
+  --neon-border-color: #002857;
+}
 
-    @media (max-width: 768px) {
-        #hero {
-            height: auto;
-        }
-        #hero h1 {
-            font-size: 28px;
-            line-height: 36px;
-        }
-        #hero h2 {
-            font-size: 20px;
-            line-height: 24px;
-        }
+li.number-banner {
+    padding-right: 20px;
+}
+.neon-border {
+    width: 70px;
+    height: 70px;
+    
+    text-align: center;
+    border: 1px solid #519acd;
+    border-radius: 50%;
+    text-transform: uppercase;
+    animation: flicker 1.5s infinite alternate;   
+    text-shadow:  -0.2rem -0.2rem 1rem #609abf,
+    0.2rem 0.2rem 1rem #609abf,
+    0 0 2rem var(--neon-text-color),
+    0 0 4rem var(--neon-text-color),
+    0 0 6rem var(--neon-text-color),
+    0 0 8rem var(--neon-text-color),
+    0 0 10rem var(--neon-text-color);
+    box-shadow: 0 0 .5rem #609abf,
+    inset 0 0 .5rem #609abf,
+    0 0 2rem var(--neon-border-color),
+    inset 0 0 2rem var(--neon-border-color),
+    0 0 4rem var(--neon-border-color),
+    inset 0 0 4rem var(--neon-border-color);        
+}
+.neon-border h1 {
+    font-size: 5rem;
+    color: var(--neon-text-color);
+    outline: none;
+}
+.detail-neon {
+    width: 190px;
+
+}
+.detail-neon h1 {
+    font-size: 50px;
+}
+.detail-neon p {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+
+
+
+
+
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
     }
+}
+
+@media (max-width: 768px) {
+
+}
 
 
     /*--------------------------------------------------------------
@@ -544,7 +622,7 @@
 
     section {
         padding: 60px 0;
-        overflow: hidden;
+        /*overflow: hidden;*/
     }
 
     .section-title {
@@ -1516,15 +1594,18 @@
         font-size: 28px;
         color: #FFF;
         text-align: center;
-        margin-top: 240px;
+        margin-top: 150px;
         padding-bottom: 150px;
     }
     .about-us h1 {
         font-weight: 500;
+        font-size: 40px;
+        
     }
     .detail-vision h1 , .detail-obligation h1 , .detail-history h1 , .detail-iso h1{
         color: #0147a6;
         letter-spacing: 1px;
+        font-size: 40px;
     }
     .detail-vision p , .detail-obligation p , .detail-history p , .detail-iso p{
         font-size: 24px;
@@ -1536,6 +1617,7 @@
     }
     .detail-board h1 {
         color: #0146a5;
+        font-size: 35px;
     }
     
     .detail-board p {
@@ -1631,11 +1713,272 @@
     .board-person:hover .img-board-person {
         opacity: 0.5;
     }
+    .h3-name-member {
+        font-size: 28px;
+    }
+    .position-member {
+        font-size: 28px;
+    }
     @media (max-width: 767px) and (min-width: 300px) {
+        h2.name-board-1 {
+            background-color: #ffffff94;
+        }
+        p.detail-com {
+            background-color: #ffffff94;
+        }
+        .other-board {
+            padding: 0;
+        }
+        .hover-board-1 {
+            margin-top: 20px;
+        }
+        .hover-board-2 {
+            margin-top: 20px;
+        }
+        .bg-member {
+            margin-top: 20px;
+        }
+        .name-director {
+            font-size: 28px;
+            text-align: right;
+        }
+        .position-director {
+            font-size: 24px;
+            text-align: right;
+        }
+        .board-head {
+            height: 180px;
+        }
+        .name-member {
+            margin-top: 20px;
+        }
+        .h3-name-member {
+            font-size: 24px;
+        }
+        .position-member {
+            font-size: 24px;
+        }
+    }
+    @media (max-width: 1023px) and (min-width: 768px) {
+        .h3-name-member {
+            font-size: 20px;
+        }
+        .position-member {
+            font-size: 20px;
+        }
+        h2.team-board {
+            font-size: 35px;
+        }
+        .other-board {
+            padding: 30px 0px;
+        }
+        .arrow_box {
+            margin-top: 0;
+        }
+    }
+    @media (max-width: 1279px) and (min-width: 1024px) {
+        .other-board {
+            padding: 30px 140px;
+        }
+        .h3-name-member {
+            font-size: 24px;
+        }
+        .position-member {
+            font-size: 24px;
+        }
+    }
+    @media (max-width: 1359px) and (min-width: 1280px) {
+        .other-board {
+            padding: 30px 200px;
+        }
+    }
+    @media (max-width: 1400px) and (min-width: 1360px) {
+
+    }
+    @media (min-width: 1401px) {
+
+    }
+
+
+    /* -------------------------------------------------------- End  About -------------------------------------------------------- */
+
+    /* -------------------------------------------------------- Solution -------------------------------------------------------- */
+    .section-header-solution {
+        background : url(<?=base_url()?>image_new/bg/solution-banner.jpg)  no-repeat center center ;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 800px;
+    }
+    .top-detail {
+        text-align: center;
+        color: #FFF;
+        padding-top: 200px;
+        padding-bottom: 280px;
+    }
+    .top-detail h3 {
+        font-size: 45px;
+        
+        letter-spacing: 3px;
+    }
+    .top-detail p {
+        font-size: 30px;
+    }
+    .section-solution-1 {
+        background : url(<?=base_url()?>/assets_2021_theme_1/img/bg/bg-solution-setion.png) center center;
+        background-size: cover;
+    }
+    .detail-1 h3{
+        font-size: 30px;
+        color: #4d4d4d;
+    }
+    .detail-1 p {
+        font-size: 25px;
+        color: #4d4d4d;
+    }
+    .bg-process {
+        background-color: #0297db;
+        margin-bottom : 20px;
+    }
+    .detail-process {
+        padding: 10px 15px;
+        color: #FFF;
+    }
+    p.detail-process-p {
+        overflow: hidden;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+    }
+    .detail-process h1 {
+        font-weight: bold;
+        /*font-size: 28px;*/
+    }
+    .detail-process h2 {
+        font-weight: bold;
+        margin-top: -5px;
+    }
+    .detail-process p {
+        font-size: 25px;
+        line-height: 20px;
+    }
+
+    .detail-2 p{
+        font-size: 23px;
+    }
+    .section-solution-2 {
+        /*background : url(<?=base_url()?>/assets_2021_theme_1/img/bg/bg-solution-setion.png);*/
+        /*background-color: #FFF;*/
+    }
+    .detail-3 h2 {
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .detail-3 p {
+        font-size: 26px;
+        text-align: center;
+        color: #8d8d8f;
+    }
+    div.detail-product-short {
+        padding-top: 20px;
+        color: #8d8d8d;
+        font-size: 26px;
+        text-align: left;
+        line-height: 25px;
+
+    }
+    .space-product-solution {
+        margin-bottom: 20px;
+    }
+    button.see-more-solution {
+        padding: 10px 50px;
+        text-align: center;
+        color: #FFF;
+        background-color: #b7282e;
+        border-radius: 5px;
+        font-size: 25px;
+        transition: all .8s ease;
+        border:none;
+    }
+    .see-a-solution {
+        padding-top: 50px;
+        text-align: center;
+    }
+    button.see-more-solution:hover {
+        background-color: #213b74;
+        transition: all .8s ease;
+    }
+    .detail-process {
+        cursor: pointer;
+    }
+    .watchvideo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform : translates(-50%,-50%);
+        z-index: 10000;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-self: center; 
+        visibility: hidden;
+        opacity: 0;
+        background-color: #000000cf;
+    }
+    .active-video {
+        transition: all 0.3s ease-in-out;
+        visibility: visible;
+        opacity: 1;
+    }
+    .watchvideo iframe{
+        position: absolute;
+        top: 30%;
+        max-width: 500px;
+        outline: none;
+    }
+    .watchvideo video {
+        position: absolute;
+        top: 30%;
+        max-width: 500px;
+        outline: none;
+    }
+    .close-video {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        cursor: pointer;
+        filter: invert(1);
+        font-size: 30px;
+    }
+    .solution-h3-pre {
+        font-size: 24px;
+    }
+    @media (max-width: 990px) {
+        .watchvideo video {
+            max-width: 90%;
+        }
+    }
+
+    @media (max-width: 767px) and (min-width: 300px) {
+        .section-header-solution {
+            height: 480px !important;
+        }
+        div.detail-product-short {
+            font-size: 20px;
+            line-height: 18px;
+        }
+
 
     }
     @media (max-width: 1023px) and (min-width: 768px) {
-
+        .section-header-solution {
+            height: 500px !important;
+        }
     }
     @media (max-width: 1359px) and (min-width: 1024px) {
 
@@ -1648,7 +1991,12 @@
     }
 
 
-    /* -------------------------------------------------------- End  About -------------------------------------------------------- */
+
+
+
+
+    /* -------------------------------------------------------- End  Solution -------------------------------------------------------- */
+
 
 
     /* -------------------------------------------------------- Contactus -------------------------------------------------------- */
@@ -1748,14 +2096,106 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
+    h2.contact-us-h2 {
+        color: #17337d;
+        letter-spacing: .5px;
+        font-size: 28px;
+    }
+    h3.input-contact {
+        color: #808183;
+        letter-spacing: .5px;
+        line-height: 50px;
+        font-size : 24px;
+    }
+    h3.detail-fill-contact {
+        font-size: 22px;
+    }
+    .address-contact {
+        color: #17337d;
+        letter-spacing: .5px;
+        font-size: 24px;
+    }
+    .time-do-work {
+        color: #17337d;
+        letter-spacing: .5px;
+        font-size: 28px;
+    }
+    .display-capcha {
+        display: -webkit-inline-box;
+    }
     @media (max-width: 767px) and (min-width: 300px) {
-
+        .section-contactus {
+            height: 500px !important;
+            margin-top: 60px;
+        }
+        .g-recaptcha {
+            display: inline-block;
+        }
+        header {
+            background-color: #0E2046;
+            position: fixed;
+            z-index: 16666;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            top: 0;
+        }
+        button.btn-sent-mail {
+            padding: 5px 50px;
+        }
+        .address-contact {
+            margin-top: 20px;
+        }
+        b.contatc-h4 {
+            display: block;
+        }
+        .close {
+            top: 50px;
+        }
+        h3.input-contact {
+            line-height: 30px;
+        }
     }
     @media (max-width: 1023px) and (min-width: 768px) {
-
+        header {
+            background-color: #0E2046;
+            position: fixed;
+            z-index: 16666;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            top: 0;
+        }
+        .close {
+            top: 50px;
+        }
+        .display-capcha {
+            display: block;
+            text-align: center;
+        }
+        button.btn-sent-mail {
+            padding: 5px 50px;
+            min-height: 0; 
+            margin-top: 20px;  
+        }
+        b.contatc-h4 {
+            display: block;
+        }
+        .section-contactus { 
+            height: 500px !important;
+        }
+        h3.input-contact {
+            line-height: 30px;
+        }
+        input[type="text"].input-contact {
+            font-size: 20px;
+            padding: 5px 8px;
+        }
     }
     @media (max-width: 1359px) and (min-width: 1024px) {
-
+        b.contatc-h4 {
+            display: block;
+        }
     }
     @media (max-width: 1400px) and (min-width: 1360px) {
 
@@ -1772,6 +2212,7 @@
     .section-blog{
         background : url(<?=base_url()?>/assets_2021_theme_1/img/bg/blog-banner.jpg) center center;
         background-size: cover;
+        height: 800px;
     }
     .blog-all {
         padding-top: 50px;
@@ -1794,10 +2235,15 @@
         line-height: 23px;
         letter-spacing: .5px;
     }
+    .name-blog {
+        font-size: 26px;
+    }
 
 
     @media (max-width: 767px) and (min-width: 300px) {
-
+        .section-blog{
+            height: 500px;
+        }
     }
     @media (max-width: 1023px) and (min-width: 768px) {
 
@@ -1861,14 +2307,41 @@
         padding-right: 15px;
     }
 
-
+    .nav-tabs-new {
+        margin-bottom: 30px;
+    }
+    a.name-blog-all h3 {
+        font-size: 24px;
+    }
 
 
 
     @media (max-width: 767px) and (min-width: 300px) {
 
+        .section-blog-detail {
+            z-index: 999;
+            height: 50px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: fixed;
+        }
+        .blog-detail {
+            margin-top: 40px;
+        }
     }
     @media (max-width: 1023px) and (min-width: 768px) {
+        .section-blog-detail {
+            z-index: 999;
+            height: 50px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: fixed;
+        }
+        .blog-detail {
+            margin-top: 40px;
+        }
 
     }
     @media (max-width: 1359px) and (min-width: 1024px) {
@@ -1922,6 +2395,12 @@
         background-color: #b8272c;
         font-size: 24px;
         color: #FFF;
+        transition: all 0.3s ease-in-out;
+    }
+    a.see-details:hover {
+        background-color: #031428;
+        border-radius: 25px;
+        transition: all 0.3s ease-in-out;
     }
     .but-blog {
         margin-top: 35px;
@@ -1951,10 +2430,14 @@
 
 
     @media (max-width: 767px) and (min-width: 300px) {
-
+        .section-products {
+            height: 60px;
+        }
     }
     @media (max-width: 1023px) and (min-width: 768px) {
-
+        .section-products {
+            height: 60px;
+        }
     }
     @media (max-width: 1359px) and (min-width: 1024px) {
 
@@ -1972,6 +2455,10 @@
     /* -------------------------------------------------------- Products detail -------------------------------------------------------- */
     .detail-name-pro {
         color: #616161;
+    }
+    hr.border-products-detail {
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
     ul.ul-share {
         list-style: none;
@@ -2062,7 +2549,9 @@
         display: block;
     }
     .h3-tags {
-
+        font-size: 24px;
+        align-items: center;
+        align-self: center;
     }
     .tags-a {
         display: inline-block;
@@ -2074,6 +2563,7 @@
     }
     .nav-tabs-new {
         /*border-bottom: none;*/
+        margin-top: 20px;
     }
     .nav-item-work {
         border-bottom: 8px solid #0346a1;
@@ -2099,11 +2589,99 @@
         color: #818181;
         font-size: 24px;
     }
+    .tags-all {
+        display: inline-block;
+    }
+    .button-ask {
+        display: inline-block;
+        float: right;
+    }
+    .scrollbar {
+        max-height: 150px;
+        overflow-y: auto;
+        margin-bottom: 25px;
+        margin-right: -5px;
+    }
+    .scrollbar::-webkit-scrollbar {
+        width: 5px;
+
+    }
+    .scrollbar::-webkit-scrollbar-thumb {
+        background-color:  #0346a1;
+    }
+    .scrollbar::-webkit-scrollbar-track {
+        background-color: #EEE;
+    }
     @media (max-width: 767px) and (min-width: 300px) {
+        ul.ul-share {
+            display: -webkit-inline-box;
+        }
+        ul.ul-share li {
+            padding: 2px 2px;
+            display: -webkit-inline-box;
+        }
+        .tags-all {
+            display: block;
+        }
+        .scrollbar {
+            display: inline-block;
+        }
+        hr.border-products-detail {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .button-ask {
+            margin-bottom: 20px;
+            float: none;
+            text-align: center;
+            display: block;
+        }
+        .drop-more-new {
+            left: 0 !important;
+            text-align: center;
+            min-width: 32rem;
+        }
+
+        .section-products {
+            z-index: 999;
+            height: 60px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: fixed;
+        }
+        .products-detail {
+            margin-top: 40px;
+        }
+        .detail-name-pro {
+            font-size: 20px;
+        }
 
     }
     @media (max-width: 1023px) and (min-width: 768px) {
-
+        .button-ask {
+            display: block;
+            float: none;
+            margin-bottom: 20px;
+        }
+        .drop-more-new {
+            left: 220px !important;
+            z-index: 1550;
+        }
+        .tags-all {
+            display: inline-block;
+        }
+        .section-products {
+            z-index: 999;
+            height: 60px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: fixed;
+        }
+        .products-detail {
+            margin-top: 40px;
+        }
     }
     @media (max-width: 1359px) and (min-width: 1024px) {
 
@@ -2117,7 +2695,74 @@
 
     /* -------------------------------------------------------- End Products detail -------------------------------------------------------- */
 
+    /* -------------------------------------------------------- Job  -------------------------------------------------------- */
+    .section-job{
+        background : url(<?=base_url()?>/assets_2021_theme_1/img/bg/job-banner.jpg) center center;
+        background-size: cover;
+    }
+    .h2-job-topic {
+        text-align: center;
+        font-size: 28px;
+    }
+    .text-position h3{
+        text-align: center;
+        font-size: 24px;
+        color: #FFF;
+    }
+    .text-detail h3 {
+        text-align: center;
+        font-size: 24px;
+        color: #FFF;
+    }
+    .table-join {
+        margin-top: 50px;
+    }
+    tr.head-join {
+        background-color: #0b3156;
+        height: 50px;
+    }
+    tr.job-detail-tr-1 {
+        background-color: #01449f;
+        height: 50px;
+    }
+    .name-job h3 {
+        text-align: center;
+        font-size: 24px;
+        color: #FFF;
+    }
+    .detail-job h3 {
+        text-align: center;
+        font-size: 24px;
+    }
+    .detail-job a {
+        color: #FFF;
+    }
+    a.job-quali:hover {
+        color: #D0EDFF;
+        transition: all 0.3s ease-out;
+    }
 
+    @media (max-width: 767px) and (min-width: 300px) {
+        .section-job {
+            height: 500px;
+        }
+    }
+    @media (max-width: 1023px) and (min-width: 768px) {
+        .section-job{
+            height: 500px;
+        }
+    }
+    @media (max-width: 1359px) and (min-width: 1024px) {
+
+    }
+    @media (max-width: 1400px) and (min-width: 1360px) {
+
+    }
+    @media (min-width: 1401px) {
+
+    }
+
+    /* -------------------------------------------------------- End Job  -------------------------------------------------------- */
 
 
 

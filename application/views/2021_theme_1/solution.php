@@ -7,25 +7,30 @@
 
 	<? $lang = $this->session->userdata('site_lang_name');?>
 
-	<div class="section-header-solution">
+	<section class="section-header-solution">
 		<?php $this->load->view('2021_theme_1/inc/header2/header') ?>
-		<?php $this->load->view('2021_theme_1/inc/css-solution')?>
+		
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="top-detail">
 						<h3>
-							โซลูชั่น
+							<?= lang('Solution')?>
 						</h3>
 						<p>
-							กระบนวนการพิมพ์ด้วยเครื่องจักร และเทคโนโลยีที่ทันสมัย
+							<?= lang('Machine And modern technology')?>
 						</p>
+
+						
 					</div>
 				</div>
 			</div>
 		</div>
 
-	</div>
+	</section>
+
+
+
 	<section class="section-solution-1">
 		<div class="container container-header">
 			<div class="row">
@@ -35,7 +40,7 @@
 							PROCESS
 						</h3>
 						<p>
-							กระบวนการพิมพ์ด้วยเครื่องจักร และเทคโนโลยีที่ทันสมัย
+							<?= lang('Machine And modern technology')?>
 						</p>
 					</div>
 				</div>
@@ -44,11 +49,11 @@
 
 						<div class="col-md-3">
 							<div class="bg-process">
-								<div class="detail-process">
+								<div class="detail-process" onclick="togglevideo();">
 									<h1>
 										01
 									</h1>
-									<h3>
+									<h3 class="solution-h3-pre">
 										PREPRESS
 									</h3>
 									<p class="detail-process-p">
@@ -58,13 +63,15 @@
 							</div>
 						</div>
 
+
+
 						<div class="col-md-3">
 							<div class="bg-process">
 								<div class="detail-process">							
 									<p class="detail-process-p">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis mollis viverra. Aenean semper ac nisl in tempus. In pellentesque magna id sollicitudin scelerisque. Nunc non tempor enim, sit amet scelerisque ligula.
 									</p>
-									<h3>
+									<h3 class="solution-h3-pre">
 										PREPRESS
 									</h3>
 									<h1>
@@ -80,7 +87,7 @@
 									<h1>
 										03
 									</h1>
-									<h3>
+									<h3 class="solution-h3-pre">
 										PREPRESS
 									</h3>
 									<p class="detail-process-p">
@@ -98,7 +105,7 @@
 									<p class="detail-process-p">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis mollis viverra. Aenean semper ac nisl in tempus. In pellentesque magna id sollicitudin scelerisque. Nunc non tempor enim, sit amet scelerisque ligula.
 									</p>
-									<h3>
+									<h3 class="solution-h3-pre">
 										PREPRESS
 									</h3>
 									<h1>
@@ -114,7 +121,7 @@
 									<h1>
 										05
 									</h1>
-									<h3>
+									<h3 class="solution-h3-pre">
 										PREPRESS
 									</h3>
 									<p class="detail-process-p">
@@ -132,7 +139,7 @@
 									<p class="detail-process-p">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis mollis viverra. Aenean semper ac nisl in tempus. In pellentesque magna id sollicitudin scelerisque. Nunc non tempor enim, sit amet scelerisque ligula.
 									</p>
-									<h3>
+									<h3 class="solution-h3-pre">
 										PREPRESS
 									</h3>
 									<h1>
@@ -148,7 +155,7 @@
 									<h1>
 										07
 									</h1>
-									<h3>
+									<h3 class="solution-h3-pre">
 										PREPRESS
 									</h3>
 									<p class="detail-process-p">
@@ -166,7 +173,7 @@
 									<p class="detail-process-p">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis mollis viverra. Aenean semper ac nisl in tempus. In pellentesque magna id sollicitudin scelerisque. Nunc non tempor enim, sit amet scelerisque ligula.
 									</p>
-									<h3>
+									<h3 class="solution-h3-pre">
 										PREPRESS
 									</h3>
 									<h1>
@@ -190,15 +197,15 @@
 				<div class="col-md-12">
 					<div class="detail-3">
 						<h2>
-							เรามีเครื่องจักรที่ทันสมัย
+							<?=lang('We have modern machines.')?>
 						</h2>
 						<p>
-							กระบวนการพิมพ์ด้วยเครื่องจักร และเทคโนโลยีที่ทันสมัย
+							<?=lang('Machine printing process And modern technology')?>
 						</p>
 					</div>					
 				</div>
 
-				<div class="col-md-3 space-product-solution"> 
+				<div class="col-md-3 col-6 space-product-solution"> 
 					<div class="row">
 						<div class="col-md-12 product">
 							<a href="<?= base_url($lang)?>/Products/detail/1">
@@ -213,7 +220,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-3 space-product-solution"> 
+				<div class="col-md-3 col-6 space-product-solution"> 
 					<div class="row">
 						<div class="col-md-12 product">
 							<a href="<?= base_url($lang)?>/Products/detail/1">
@@ -228,7 +235,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-3 space-product-solution"> 
+				<div class="col-md-3 col-6 space-product-solution"> 
 					<div class="row">
 						<div class="col-md-12 product">
 							<a href="<?= base_url($lang)?>/Products/detail/1">
@@ -243,7 +250,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-3 space-product-solution"> 
+				<div class="col-md-3 col-6 space-product-solution"> 
 					<div class="row">
 						<div class="col-md-12 product">
 							<a href="<?= base_url($lang)?>/Products/detail/1">
@@ -258,7 +265,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-3 space-product-solution"> 
+				<div class="col-md-3 col-6 space-product-solution"> 
 					<div class="row">
 						<div class="col-md-12 product">
 							<a href="<?= base_url($lang)?>/Products/detail/1">
@@ -273,7 +280,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-3 space-product-solution"> 
+				<div class="col-md-3 col-6 space-product-solution"> 
 					<div class="row">
 						<div class="col-md-12 product">
 							<a href="<?= base_url($lang)?>/Products/detail/1">
@@ -288,7 +295,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-3 space-product-solution"> 
+				<div class="col-md-3 col-6 space-product-solution"> 
 					<div class="row">
 						<div class="col-md-12 product">
 							<a href="<?= base_url($lang)?>/Products/detail/1">
@@ -303,7 +310,7 @@
 					</div>
 				</div>
 
-				<div class="col-md-3 space-product-solution"> 
+				<div class="col-md-3 col-6 space-product-solution"> 
 					<div class="row">
 						<div class="col-md-12 product">
 							<a href="<?= base_url($lang)?>/Products/detail/1">
@@ -321,7 +328,7 @@
 				<div class="col-md-12">
 					<div class="see-a-solution">
 						<button onclick="loadmore()" class="see-more-solution">
-							ดูเพิ่มเติม
+							<?=lang('See more')?>
 						</button>
 						<input type="hidden" name="start" id="start" value="0">
 					</div>
@@ -342,7 +349,7 @@
 
 	</section>
 
-	<section class="section-solution-2">
+	<!-- <section class="section-solution-2">
 		<div class="container container-header">
 			<div class="row">
 				<div class="col-md-12">
@@ -351,9 +358,133 @@
 			</div>
 		</div>
 
-	</section>
+	</section> -->
+
+	<style type="text/css">
+		.nav-1:hover {
+			border-top: 5px solid  #4186FA;
+			margin-top: -3px;
+			transition: all 0.3s ease-in;
+		}
+		.nav-2:hover {
+			border-top: 5px solid  #4186FA;
+			margin-top: -3px;
+			transition: all 0.3s ease-in;
+		}
+		.nav-4:hover {
+			border-top: 5px solid  #4186FA;
+			margin-top: -3px;
+			transition: all 0.3s ease-in;
+		}
+		.nav-5:hover {
+			border-top: 5px solid  #4186FA;
+			margin-top: -3px;
+			transition: all 0.3s ease-in;
+		}
+		.nav-6:hover {
+			border-top: 5px solid  #4186FA;
+			margin-top: -3px;
+			transition: all 0.3s ease-in;
+		}
+		.nav-7:hover {
+			border-top: 5px solid  #4186FA;
+			margin-top: -3px;
+			transition: all 0.3s ease-in;
+		}
+	</style>
+
+
+
+	<div class="watchvideo" id="watchvideo">
+		<!-- <video src="<?=base_url()?>assets_2021_theme_1/video/Wiz Khalifa - See You Again.webm" controls="true"></video> -->
+		<iframe width="50%" height="315" src="https://www.youtube.com/embed/J_i1XQmp0e0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen controls="true" id="YouTube"> </iframe>
+		<!-- <i class="far fa-times-circle close-video" onclick="togglevideo();"></i> -->
+		<span class="close" onclick="togglevideo();" id="stop-button">&times;</span>
+	</div>
 
 	<script type="text/javascript">
+		$('#memberImg').ready(function(){
+			$('.nav-3').addClass('nav-active');
+		});
+
+		// $('div.detail-process').click(function() {
+		// 	$('.watchvideo').addClass('watchvideo active-video');
+		// 	// video.pause();
+		// 	// video.currentTime = 0;
+		// });
+		
+		// function togglevideo() {
+		// 	$('.watchvideo').addClass('watchvideo active-video');
+		// }
+		// When the user clicks on <span> (x), close the modal
+
+		
+		function togglevideo() {
+			var watchvideo = document.querySelector(".watchvideo");
+			var video = document.querySelector("video");
+			var iframe = document.querySelector("YouTube");
+			watchvideo.classList.toggle("active-video");
+			// iframe.pauseVideo();
+			// iframe.stopVideo();
+			// iframe.currentTime = 0;
+			// video.pause();
+			// video.currentTime = 0;
+		}
+
+
+		// global variable for the player
+		var player;
+
+		// this function gets called when API is ready to use
+		function onYouTubePlayerAPIReady() {
+	    // create the global player from the specific iframe (#video)
+	    player = new YT.Player('video', {
+        events: {
+            // call this function when player is ready to use
+            'onReady': onPlayerReady
+		        }
+		    });
+		}
+
+		$('#stop-button').ready(function(){
+		    $('#stop-button').click(function(){
+		    var stopButton = document.getElementById("stop-button");
+		    stopButton.addEventListener("click", function() {
+		        player.stopVideo();
+		    });
+		  });
+		 });
+
+		 
+
+
+		function onPlayerReady(event) {
+
+		    // bind events
+		    var playButton = document.getElementById("play-button");
+		    playButton.addEventListener("click", function() {
+		        player.playVideo();
+		    });
+
+		    var pauseButton = document.getElementById("pause-button");
+		    pauseButton.addEventListener("click", function() {
+		        player.pauseVideo();
+		    });
+		     var stopButton = document.getElementById("stop-button");
+		    stopButton.addEventListener("click", function() {
+		        player.stopVideo();
+		    });
+		   
+		}
+		// Inject YouTube API script
+		var tag = document.createElement('script');
+		tag.src = "https://www.youtube.com/player_api";
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+	</script>
+
+<!-- 	<script type="text/javascript">
 // Menu Bar Mobile 
 if( 'ontouchstart' in window ) { 
 	var click = 'touchstart'; 
@@ -411,7 +542,7 @@ function closeMenu(){
 
 }
 // End Menu Bar
-</script>
+</script> -->
 
 
 <?php 

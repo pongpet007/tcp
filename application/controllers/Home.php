@@ -5,14 +5,14 @@ class Home extends CI_Controller {
 
 	function __construct(){
 		parent::__construct();
-
+		$this->load->model('Country_model');
 	}
 
 	
 	public function index3()
 	{	
-		$data = array();
-		$this->load->view('2021_theme_1/index2',$data);	
+		// $data = array();
+		// $this->load->view('2021_theme_1/index2',$data);	
 
 	}
 	public function index()
@@ -37,8 +37,13 @@ class Home extends CI_Controller {
 		// 	$this->session->set_userdata('viewed',1);
 		// }
 
-		
-		$data = array();
+		$lang = $this->session->userdata('site_lang_name');
+		$data["lang"] = $lang;
+		// print_r($lang);
+		// exit();
+
+		$data['countrys'] = $this->Country_model->getAll();
+		// $data = array();
 
 		$this->load->view('2021_theme_1/index',$data);	
 

@@ -7,7 +7,7 @@
 
 	<? $lang = $this->session->userdata('site_lang_name');?>
 
-	<div class="section-blog">
+	<section class="section-blog">
 		<?php $this->load->view('2021_theme_1/inc/header2/header') ?>
 		<?php $this->load->view('2021_theme_1/inc/css-solution')?>
 		<div class="container">
@@ -25,7 +25,7 @@
 			</div>
 		</div>
 
-	</div>
+	</section>
 
 	<section class="section-blog-2">
 		<div class="container container-header">
@@ -38,7 +38,7 @@
 							<img src="<?=base_url()?>/assets_2021_theme_1/img/about.jpg" style="width: 100%" class="img-blog-all">
 						</a>
 						<a href="<?= base_url($lang)?>/Blog/detail" class="name-blog-all font-PSL-bold">
-							<h3>
+							<h3 class="name-blog">
 								หัวข้อบทความ
 							</h3>
 						</a>
@@ -57,7 +57,7 @@
 							<img src="<?=base_url()?>/assets_2021_theme_1/img/about.jpg" style="width: 100%" class="img-blog-all">
 						</a>
 						<a href="<?= base_url($lang)?>/Blog/detail" class="name-blog-all font-PSL-bold">
-							<h3>
+							<h3 class="name-blog">
 								หัวข้อบทความ
 							</h3>
 						</a>
@@ -76,7 +76,7 @@
 							<img src="<?=base_url()?>/assets_2021_theme_1/img/about.jpg" style="width: 100%" class="img-blog-all">
 						</a>
 						<a href="<?= base_url($lang)?>/Blog/detail" class="name-blog-all font-PSL-bold">
-							<h3>
+							<h3 class="name-blog">
 								หัวข้อบทความ
 							</h3>
 						</a>
@@ -95,7 +95,7 @@
 							<img src="<?=base_url()?>/assets_2021_theme_1/img/about.jpg" style="width: 100%" class="img-blog-all">
 						</a>
 						<a href="<?= base_url($lang)?>/Blog/detail" class="name-blog-all font-PSL-bold">
-							<h3>
+							<h3 class="name-blog">
 								หัวข้อบทความ
 							</h3>
 						</a>
@@ -129,7 +129,47 @@
 	</section>
 
 
-<script type="text/javascript">
+
+	<style type="text/css">
+		.nav-1:hover {
+			border-top: 5px solid  #4186FA;
+			margin-top: -3px;
+			transition: all 0.3s ease-in;
+		}
+		.nav-2:hover {
+			border-top: 5px solid  #4186FA;
+			margin-top: -3px;
+			transition: all 0.3s ease-in;
+		}
+		.nav-3:hover {
+			border-top: 5px solid  #4186FA;
+			margin-top: -3px;
+			transition: all 0.3s ease-in;
+		}
+		.nav-4:hover {
+			border-top: 5px solid  #4186FA;
+			margin-top: -3px;
+			transition: all 0.3s ease-in;
+		}
+		.nav-5:hover {
+			border-top: 5px solid  #4186FA;
+			margin-top: -3px;
+			transition: all 0.3s ease-in;
+		}
+		.nav-7:hover {
+			border-top: 5px solid  #4186FA;
+			margin-top: -3px;
+			transition: all 0.3s ease-in;
+		}
+	</style>
+
+
+	<script type="text/javascript">
+		$('#memberImg').ready(function(){
+			$('.nav-6').addClass('nav-active');
+		});
+	</script>
+<!-- <script type="text/javascript">
 // Menu Bar Mobile 
 if( 'ontouchstart' in window ) { 
 	var click = 'touchstart'; 
@@ -187,7 +227,7 @@ function closeMenu(){
 
 }
 // End Menu Bar
-</script>
+</script> -->
 
 <?php 
 $this->load->view('2021_theme_1/inc/footer2/footer') 

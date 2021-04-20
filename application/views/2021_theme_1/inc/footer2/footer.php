@@ -7,7 +7,7 @@
 				<img src="<?=base_url()?>image_new/logo/logo-footer.png" width="100%">
 				<div class="contact-social">
 					<p>
-						มุ่งมั่นพัฒนาคุณภาพการผลิตโดยนำเอาเทคโนโลยีการพิมพ์ที่ทันสมัยจากต่างประเทศเข้ามาพัฒนาการผลิต ซึ่งถือได้ว่าเป็นโรงพิมพ์ที่ทันสมัยแห่งหนึ่งในประเทศไทยทั้งยังมีระบบตรวจ
+						<?=lang('detail-company-footer')?>
 					</p>
 
 					<a href="#">
@@ -30,30 +30,51 @@
 			</div>
 
 			<div class="col-lg-2 col-sm-2 col-6">
-				<div class="menu">										
+				<div class="menu-footer">										
 					<div style="margin-bottom: 10px; color: #FFF;">
-						เมนู
+						<?=lang('MENU')?>
 					</div>
 					<div>
-						<i class="icofont-curved-right"></i><a href="">หน้าหลัก</a>
+						<i class="icofont-curved-right"></i>
+						<a href="<?=base_url($this->session->userdata('site_lang_name').'/Home')?>">
+							<?=lang('HOME')?>
+						</a>
 					</div>
 					<div>
-						<i class="icofont-curved-right"></i><a href="">รู้จัก T.C.P</a>
+						<i class="icofont-curved-right"></i>
+						<a href="<?=base_url($this->session->userdata('site_lang_name').'/About')?>">
+							<?=lang('know tcp')?>
+						</a>
 					</div>
 					<div>
-						<i class="icofont-curved-right"></i><a href="">โซลูชั่น</a>
+						<i class="icofont-curved-right"></i>
+						<a href="<?=base_url($this->session->userdata('site_lang_name').'/Solution')?>">
+							<?=lang('Solution')?>
+						</a>
 					</div>
 					<div>
-						<i class="icofont-curved-right"></i><a href="">สินค้าและบริการ</a>
+						<i class="icofont-curved-right"></i>
+						<a href="<?=base_url($this->session->userdata('site_lang_name').'/Products')?>">
+							<?=lang('Products and Service')?>
+						</a>
 					</div>
 					<div>
-						<i class="icofont-curved-right"></i><a href="">รับสมัครงาน</a>
+						<i class="icofont-curved-right"></i>
+						<a href="<?=base_url($this->session->userdata('site_lang_name').'/Job')?>">
+							<?=lang('Recruit')?>
+						</a>
 					</div>
 					<div>
-						<i class="icofont-curved-right"></i><a href="">บทความ</a>
+						<i class="icofont-curved-right"></i>
+						<a href="<?=base_url($this->session->userdata('site_lang_name').'/Blog')?>">
+							<?=lang('BLOG')?>
+						</a>
 					</div>
 					<div>
-						<i class="icofont-curved-right"></i><a href="">ติดต่อเรา</a>
+						<i class="icofont-curved-right"></i>
+						<a href="<?=base_url($this->session->userdata('site_lang_name').'/Contactus')?>">
+							<?=lang('Contact Us')?>
+						</a>
 					</div>
 
 					
@@ -64,22 +85,37 @@
 			<div class="col-lg-2 col-sm-2 col-6">
 				<div class="menu-about">
 					<div style="margin-bottom: 10px; color: #FFF;">
-						รู้จัก T.C.P
+						<?=lang('know tcp')?>
 					</div>
 					<div>
-						<i class="icofont-curved-right"></i><a href="">วิสัยทัศน์</a>
+						<i class="icofont-curved-right"></i>
+						<a href="<?=base_url($this->session->userdata('site_lang_name').'/About#vision')?>">
+							<?=lang('vision')?>
+						</a>
 					</div>
 					<div>
-						<i class="icofont-curved-right"></i><a href="">พันธกิจ</a>
+						<i class="icofont-curved-right"></i>
+						<a href="<?=base_url($this->session->userdata('site_lang_name').'/About#obligation')?>">
+							<?=lang('obligation')?>
+						</a>
 					</div>
 					<div>
-						<i class="icofont-curved-right"></i><a href="">ประวัติ</a>
+						<i class="icofont-curved-right"></i>
+						<a href="<?=base_url($this->session->userdata('site_lang_name').'/About#history')?>">
+							<?=lang('history')?>
+						</a>
 					</div>
 					<div>
-						<i class="icofont-curved-right"></i><a href="">ทีมผู้บริหาร</a>
+						<i class="icofont-curved-right"></i>
+						<a href="<?=base_url($this->session->userdata('site_lang_name').'/About#board')?>">
+							<?=lang('board')?>
+						</a>
 					</div>
 					<div>
-						<i class="icofont-curved-right"></i><a href="">การรับรอง</a>
+						<i class="icofont-curved-right"></i>
+						<a href="<?=base_url($this->session->userdata('site_lang_name').'/About#iso')?>">
+							<?=lang('Certification')?>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -90,19 +126,19 @@
 
 					<div class="col-md-12 col-sm-12 col-6">
 						<div class="contact-footer">
-							<h4>
-								ติดต่อเรา
-							</h4>
+							<h2>
+								<?=lang('Contact Us')?>
+							</h2>
 							<p style="font-size: 20px;">
-								82, 84 ซอย ประชาอุทิศ 69 แขวงทุ่งครุ  เขตทุ่งครุ กทม 10140
+								82, 84 <?=lang('Soi Pracha Uthit 69')?> <?=lang('Thung Khru')?> <?=lang('District Thung Khru')?> <?=lang('BANGKOK')?> 10140
 							</p>		
 						</div>
 					</div>
 
 					<div class="col-md-12 col-sm-12 col-6">
 						<div class="contact-footer">
-							<h4 style="margin-bottom: -5px;">
-								โทร
+							<h4 style="margin-bottom: -5px; font-size: 20px;">
+								<?=lang('tel')?>
 							</h4>
 							<div class="phone-call">
 								<a href="tel:+662-426-1567-70">+662-426-1567-70</a>
@@ -116,9 +152,9 @@
 					<div class="col-md-12 col-sm-12 col-12">
 						<div class="contact-footer">
 
-							<h4 style="padding-top: 5px; margin-bottom: -5px;">
-								เว็บไซต์เพิ่มเติม
-							</h4>
+							<h2 style="padding-top: 5px; margin-bottom: -5px;">
+								<?=lang('More websites')?>
+							</h2>
 							<span >
 								<a href="http://tcpindustry.brandexdirectory.com" style="color: #FFF; font-size: 23px;">tcpindustry.brandexdirectory.com</a>
 							</span>
