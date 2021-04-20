@@ -1760,6 +1760,28 @@ li.number-banner {
         }
     }
     @media (max-width: 1023px) and (min-width: 768px) {
+        .board-1 {
+            background: url(http://localhost:90/tcp/assets_2021_theme_1/img/bg/board-2.png);
+        }
+        div.hover-board-1 , h1.h1-rank-1 {
+            /*visibility: hidden;*/
+        }
+        .board-2 {
+            background: url(http://localhost:90/tcp/assets_2021_theme_1/img/bg/board-2.png);
+        }
+        p.detail-com {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box !important; 
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+        div.hover-detail-director {
+            visibility: visible !important;
+            opacity: 1;
+        }
+
+
         .h3-name-member {
             font-size: 20px;
         }
@@ -2373,6 +2395,7 @@ li.number-banner {
     h2.h2-name-pro {
         padding-top: 20px;
         color: #363636;
+        font-size: 24px;
     }
     p.detail-pro-page-allpro {
         font-size: 24px;

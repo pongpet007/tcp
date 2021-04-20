@@ -19,22 +19,22 @@
 
 <!-- javascript -->
 <!-- <script src="<?=base_url()?>assets_2021_theme_1/owl/vendors/jquery.min.js"></script>
-<script src="<?=base_url()?>assets_2021_theme_1/owl/owlcarousel/owl.carousel.js"></script> -->
+  <script src="<?=base_url()?>assets_2021_theme_1/owl/owlcarousel/owl.carousel.js"></script> -->
 
 
-<!-- Do not Close This !!!!!!!!!!!!!!!!!!! -->
-<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+  <!-- Do not Close This !!!!!!!!!!!!!!!!!!! -->
+  <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
 
-<!-- Template Main JS File -->
-<!-- <script src="<?=base_url()?>assets_2021_theme_1/js/main.js"></script> -->
+  <!-- Template Main JS File -->
+  <!-- <script src="<?=base_url()?>assets_2021_theme_1/js/main.js"></script> -->
 
-<!-- Slide Gallerly -->
-<script src="<?=base_url()?>assets_2021_theme_1/js/gallerly.js"></script>
+  <!-- Slide Gallerly -->
+  <script src="<?=base_url()?>assets_2021_theme_1/js/gallerly.js"></script>
 
 
 
-<script type="text/javascript">
-  jQuery(document).ready(function ($) {
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
   //   var timelines = $('.cd-horizontal-timeline'),
   //   eventsMinDistance = 120;
 
@@ -376,7 +376,9 @@
 
 
   // Menu Bar Mobile 
-  if( 'ontouchstart' in window ){ var click = 'touchstart'; }
+  if( 'ontouchstart' in window ){ 
+    var click = 'touchstart'; 
+  }
   else { 
     var click = 'click'; 
   }
@@ -436,16 +438,16 @@
 
 
   // loadmore
-  function loadmore() {
+  // function loadmore() {
 
-    var start = $('#start').val();
-    start = parseInt(start) + 36;
-    $.get('https://www.brandexdirectory.com/Home2/loadmore/' + start,function(data){
-      $('#product_foryou').append(data);
-      $('#start').val(start);
-    });
+  //   var start = $('#start').val();
+  //   start = parseInt(start) + 36;
+  //   $.get('https://www.brandexdirectory.com/Home2/loadmore/' + start,function(data){
+  //     $('#product_foryou').append(data);
+  //     $('#start').val(start);
+  //   });
 
-  }
+  // }
   // End loadmore
 
 

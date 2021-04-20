@@ -205,135 +205,28 @@
 					</div>					
 				</div>
 
-				<div class="col-md-3 col-6 space-product-solution"> 
-					<div class="row">
-						<div class="col-md-12 product">
-							<a href="<?= base_url($lang)?>/Products/detail/1">
-								<img src="<?=base_url()?>/assets_2021_theme_1/img/about.jpg" style="width: 100%">
-							</a>
-							<a href="<?= base_url($lang)?>/Products/detail/1">
-								<div class="detail-product-short">
-									เครื่อง Digital Proof ผ่านกระบวนการ CMS (Color Management System)
-								</div>
-							</a>
-						</div> 
-					</div>
-				</div>
+				<? foreach ($products as $product) { ?>
 
-				<div class="col-md-3 col-6 space-product-solution"> 
-					<div class="row">
-						<div class="col-md-12 product">
-							<a href="<?= base_url($lang)?>/Products/detail/1">
-								<img src="<?=base_url()?>/assets_2021_theme_1/img/about.jpg" style="width: 100%">
-							</a>
-							<a href="<?= base_url($lang)?>/Products/detail/1">
-								<div class="detail-product-short">
-									เครื่อง Digital Proof ผ่านกระบวนการ CMS (Color Management System)
-								</div>
-							</a>
-						</div> 
+					<div class="col-md-3 col-6 space-product-solution"> 
+						<div class="row">
+							<div class="col-md-12 product">
+								<a href="<?= base_url($lang)?>/Products/detail/1">
+									<img src="<?=base_url()?>/assets_2021_theme_1/img/about.jpg" style="width: 100%">
+								</a>
+								<a href="<?= base_url($lang)?>/Products/detail/1">
+									<div class="detail-product-short">
+										<?=$product->name?>
+									</div>
+								</a>
+							</div> 
+						</div>
 					</div>
-				</div>
 
-				<div class="col-md-3 col-6 space-product-solution"> 
-					<div class="row">
-						<div class="col-md-12 product">
-							<a href="<?= base_url($lang)?>/Products/detail/1">
-								<img src="<?=base_url()?>/assets_2021_theme_1/img/about.jpg" style="width: 100%">
-							</a>
-							<a href="<?= base_url($lang)?>/Products/detail/1">
-								<div class="detail-product-short">
-									เครื่อง Digital Proof ผ่านกระบวนการ CMS (Color Management System)
-								</div>
-							</a>
-						</div> 
-					</div>
-				</div>
+				<? } ?>
 
-				<div class="col-md-3 col-6 space-product-solution"> 
-					<div class="row">
-						<div class="col-md-12 product">
-							<a href="<?= base_url($lang)?>/Products/detail/1">
-								<img src="<?=base_url()?>/assets_2021_theme_1/img/about.jpg" style="width: 100%">
-							</a>
-							<a href="<?= base_url($lang)?>/Products/detail/1">
-								<div class="detail-product-short">
-									เครื่อง Digital Proof ผ่านกระบวนการ CMS (Color Management System)
-								</div>
-							</a>
-						</div> 
-					</div>
-				</div>
+				
 
-				<div class="col-md-3 col-6 space-product-solution"> 
-					<div class="row">
-						<div class="col-md-12 product">
-							<a href="<?= base_url($lang)?>/Products/detail/1">
-								<img src="<?=base_url()?>/assets_2021_theme_1/img/about.jpg" style="width: 100%">
-							</a>
-							<a href="<?= base_url($lang)?>/Products/detail/1">
-								<div class="detail-product-short">
-									เครื่อง Digital Proof ผ่านกระบวนการ CMS (Color Management System)
-								</div>
-							</a>
-						</div> 
-					</div>
-				</div>
-
-				<div class="col-md-3 col-6 space-product-solution"> 
-					<div class="row">
-						<div class="col-md-12 product">
-							<a href="<?= base_url($lang)?>/Products/detail/1">
-								<img src="<?=base_url()?>/assets_2021_theme_1/img/about.jpg" style="width: 100%">
-							</a>
-							<a href="<?= base_url($lang)?>/Products/detail/1">
-								<div class="detail-product-short">
-									เครื่อง Digital Proof ผ่านกระบวนการ CMS (Color Management System)
-								</div>
-							</a>
-						</div> 
-					</div>
-				</div>
-
-				<div class="col-md-3 col-6 space-product-solution"> 
-					<div class="row">
-						<div class="col-md-12 product">
-							<a href="<?= base_url($lang)?>/Products/detail/1">
-								<img src="<?=base_url()?>/assets_2021_theme_1/img/about.jpg" style="width: 100%">
-							</a>
-							<a href="<?= base_url($lang)?>/Products/detail/1">
-								<div class="detail-product-short">
-									เครื่อง Digital Proof ผ่านกระบวนการ CMS (Color Management System)
-								</div>
-							</a>
-						</div> 
-					</div>
-				</div>
-
-				<div class="col-md-3 col-6 space-product-solution"> 
-					<div class="row">
-						<div class="col-md-12 product">
-							<a href="<?= base_url($lang)?>/Products/detail/1">
-								<img src="<?=base_url()?>/assets_2021_theme_1/img/about.jpg" style="width: 100%">
-							</a>
-							<a href="<?= base_url($lang)?>/Products/detail/1">
-								<div class="detail-product-short">
-									เครื่อง Digital Proof ผ่านกระบวนการ CMS (Color Management System)
-								</div>
-							</a>
-						</div> 
-					</div>
-				</div>
-
-				<div class="col-md-12">
-					<div class="see-a-solution">
-						<button onclick="loadmore()" class="see-more-solution">
-							<?=lang('See more')?>
-						</button>
-						<input type="hidden" name="start" id="start" value="0">
-					</div>
-					
-				</div>
+				
 
 				<!-- <div class="row">
 					<div class="col-md-12 text-center" style="padding-top: 15px;">
@@ -344,6 +237,22 @@
 					</div>
 				</div>	 -->
 
+			</div>
+
+			<div id="product_foryou" class="row">
+					
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="see-a-solution">
+						<button onclick="loadmore()" class="see-more-solution">
+							<?=lang('See more')?>
+						</button>
+						<input type="hidden" name="start" id="start" value="0">
+					</div>
+
+				</div>
 			</div>
 		</div>
 
@@ -419,130 +328,89 @@
 		// When the user clicks on <span> (x), close the modal
 
 		
+		function loadmore() {
+			var start = $('#start').val();
+			start = parseInt(start) + 8;
+			$.get('<?=base_url('Solution/loadmore/') ?>' + start,function(data){
+				//alert(data);
+				$('#product_foryou').append(data);
+				$('#start').val(start);
+			});
+
+		}
+
+
+
+
 		function togglevideo() {
 			var watchvideo = document.querySelector(".watchvideo");
 			var video = document.querySelector("video");
-			var iframe = document.querySelector("YouTube");
+			var iframe = document.getElementById("#YouTube");
 			watchvideo.classList.toggle("active-video");
-			// iframe.pauseVideo();
-			// iframe.stopVideo();
-			// iframe.currentTime = 0;
-			// video.pause();
-			// video.currentTime = 0;
+			iframe.pauseVideo();
+			iframe.stopVideo();
+
+			iframe.currentTime = 0;
+			iframe.pause();
+
+			video.pause();
+			video.currentTime = 0;
 		}
 
 
 		// global variable for the player
-		var player;
+	// 	var player;
 
-		// this function gets called when API is ready to use
-		function onYouTubePlayerAPIReady() {
-	    // create the global player from the specific iframe (#video)
-	    player = new YT.Player('video', {
-        events: {
-            // call this function when player is ready to use
-            'onReady': onPlayerReady
-		        }
-		    });
-		}
+	// 	// this function gets called when API is ready to use
+	// 	function onYouTubePlayerAPIReady() {
+	//     // create the global player from the specific iframe (#video)
+	//     player = new YT.Player('video', {
+	//     	events: {
+ //            // call this function when player is ready to use
+ //            'onReady': onPlayerReady
+ //        }
+ //    });
+	// }
 
-		$('#stop-button').ready(function(){
-		    $('#stop-button').click(function(){
-		    var stopButton = document.getElementById("stop-button");
-		    stopButton.addEventListener("click", function() {
-		        player.stopVideo();
-		    });
-		  });
-		 });
-
-		 
+	// $('#stop-button').ready(function(){
+	// 	$('#stop-button').click(function(){
+	// 		var stopButton = document.getElementById("stop-button");
+	// 		stopButton.addEventListener("click", function() {
+	// 			player.stopVideo();
+	// 		});
+	// 	});
+	// });
 
 
-		function onPlayerReady(event) {
 
-		    // bind events
-		    var playButton = document.getElementById("play-button");
-		    playButton.addEventListener("click", function() {
-		        player.playVideo();
-		    });
 
-		    var pauseButton = document.getElementById("pause-button");
-		    pauseButton.addEventListener("click", function() {
-		        player.pauseVideo();
-		    });
-		     var stopButton = document.getElementById("stop-button");
-		    stopButton.addEventListener("click", function() {
-		        player.stopVideo();
-		    });
-		   
-		}
-		// Inject YouTube API script
-		var tag = document.createElement('script');
-		tag.src = "https://www.youtube.com/player_api";
-		var firstScriptTag = document.getElementsByTagName('script')[0];
-		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	// function onPlayerReady(event) {
 
-	</script>
+	// 	    // bind events
+	// 	    var playButton = document.getElementById("play-button");
+	// 	    playButton.addEventListener("click", function() {
+	// 	    	player.playVideo();
+	// 	    });
 
-<!-- 	<script type="text/javascript">
-// Menu Bar Mobile 
-if( 'ontouchstart' in window ) { 
-	var click = 'touchstart'; 
-}
-else { 
-	var click = 'click'; 
-}
-$('div.burger').on(click, function(){
+	// 	    var pauseButton = document.getElementById("pause-button");
+	// 	    pauseButton.addEventListener("click", function() {
+	// 	    	player.pauseVideo();
+	// 	    });
+	// 	    var stopButton = document.getElementById("stop-button");
+	// 	    stopButton.addEventListener("click", function() {
+	// 	    	player.stopVideo();
+	// 	    });
 
-	if( !$(this).hasClass('open') ){ openMenu(); } 
-	else { 
-		closeMenu(); 
-	}
-});
-$('div.menu ul li a').on(click, function(e){
-	e.preventDefault();
-	closeMenu();
-});   
-function openMenu(){
-	// $('div.menu ul').style.left = "0";
-	$('div.circle').addClass('expand');
-	$('div.menu').css("visibility","visible");
-	$('div.screen').css("height","610px");
-	$('div.burger').addClass('open'); 
-	// $('div.x, div.y, div.z').addClass('collapse');
-	$('.menu li').addClass('animate');
-	setTimeout(function(){ 
-		$('div.z').hide(); 
-		$('div.x').addClass('rotate30'); 
-		$('div.y').addClass('rotate150'); 
-	}, 70);
-	setTimeout(function(){
-		$('div.x').addClass('rotate45'); 
-		$('div.y').addClass('rotate135');  
-	}, 120);
-}
+	// 	}
+	// 	// Inject YouTube API script
+	// 	var tag = document.createElement('script');
+	// 	tag.src = "https://www.youtube.com/player_api";
+	// 	var firstScriptTag = document.getElementsByTagName('script')[0];
+	// 	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-function closeMenu(){
-	$('div.menu').css("visibility","hidden");
-	$('div.screen').css("height","100px");
-	$('div.burger').removeClass('open');  
-	$('div.x').removeClass('rotate45').addClass('rotate30'); 
-	$('div.y').removeClass('rotate135').addClass('rotate150');        
-	$('div.circle').removeClass('expand');
-	$('.menu li').removeClass('animate');
+</script>
 
-	setTimeout(function(){      
-		$('div.x').removeClass('rotate30'); 
-		$('div.y').removeClass('rotate150');      
-	}, 50);
-	setTimeout(function(){
-		$('div.z').show(); 
-		$('div.x, div.y, div.z').removeClass('collapse');
-	}, 70);                         
 
-}
-// End Menu Bar
-</script> -->
 
 
 <?php 

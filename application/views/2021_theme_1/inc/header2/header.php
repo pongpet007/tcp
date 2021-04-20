@@ -444,6 +444,7 @@ $this->load->view('2021_theme_1/inc/header2/css.php')
 			height: 560px;
 		}
 		
+		
 	}
 	@media (max-width: 1279px) and (min-width: 1024px) {
 		.navbar-expand-lg .navbar-nav .nav-link {

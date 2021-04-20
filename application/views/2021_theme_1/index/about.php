@@ -8,7 +8,7 @@
               <div class="col-lg-6 style1">
                 <h1>พันธกิจ</h1>
                 <p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam </p>
-                <button class="button btn-primary">ชมด้านใน</button>
+                <button class="button btn-primary" onclick="goto_obligation()">ชมด้านใน</button>
               </div>
               <div class="col-lg-6">
               </div>
@@ -23,7 +23,7 @@
               <div class="col-lg-6 style1">
                 <h1>วิสัยทัศน์</h1>
                 <p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam </p>
-                <button class="button btn-primary">ชมด้านใน</button>
+                <button class="button btn-primary" onclick="goto_vision()">ชมด้านใน</button>
               </div>
               <div class="col-lg-6">
               </div>
@@ -34,3 +34,12 @@
     </div>
   </div>
 </section>
+
+<script type="text/javascript">
+  function goto_obligation() {
+    window.location="<?=base_url($this->session->userdata('site_lang_name').'/About#obligation')?>";
+  }
+  function goto_vision() {
+    window.location="<?=base_url($this->session->userdata('site_lang_name').'/About#vision')?>";
+  }
+</script>

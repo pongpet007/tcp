@@ -399,6 +399,9 @@
 		.about-us {
 			padding-bottom: 60px;
 		}
+		#header {
+			padding: 30px 0;
+		}
 
 	}
 
