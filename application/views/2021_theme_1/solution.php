@@ -14,7 +14,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="top-detail">
-						<h3>
+						<h3 class="font-PSL-bold">
 							<?= lang('Solution')?>
 						</h3>
 						<p>
@@ -36,10 +36,10 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="detail-1">
-						<h3>
+						<h3 class="font-PSL-bold">
 							PROCESS
 						</h3>
-						<p>
+						<p >
 							<?= lang('Machine And modern technology')?>
 						</p>
 					</div>
@@ -53,7 +53,7 @@
 									<h1>
 										01
 									</h1>
-									<h3 class="solution-h3-pre">
+									<h3 class="solution-h3-pre font-PSL-bold">
 										PREPRESS
 									</h3>
 									<p class="detail-process-p">
@@ -68,15 +68,16 @@
 						<div class="col-md-3">
 							<div class="bg-process">
 								<div class="detail-process">							
-									<p class="detail-process-p">
+									<p class="detail-process-p-2 ">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis mollis viverra. Aenean semper ac nisl in tempus. In pellentesque magna id sollicitudin scelerisque. Nunc non tempor enim, sit amet scelerisque ligula.
 									</p>
-									<h3 class="solution-h3-pre">
-										PREPRESS
-									</h3>
 									<h1>
 										02
 									</h1>
+									<h3 class="solution-h3-pre font-PSL-bold">
+										PREPRESS
+									</h3>
+									
 								</div>
 							</div>
 						</div>
@@ -87,7 +88,7 @@
 									<h1>
 										03
 									</h1>
-									<h3 class="solution-h3-pre">
+									<h3 class="solution-h3-pre font-PSL-bold">
 										PREPRESS
 									</h3>
 									<p class="detail-process-p">
@@ -102,15 +103,16 @@
 						<div class="col-md-3">
 							<div class="bg-process">
 								<div class="detail-process">							
-									<p class="detail-process-p">
+									<p class="detail-process-p-2 ">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis mollis viverra. Aenean semper ac nisl in tempus. In pellentesque magna id sollicitudin scelerisque. Nunc non tempor enim, sit amet scelerisque ligula.
 									</p>
-									<h3 class="solution-h3-pre">
-										PREPRESS
-									</h3>
 									<h1>
 										04
 									</h1>
+									<h3 class="solution-h3-pre font-PSL-bold">
+										PREPRESS
+									</h3>
+									
 								</div>
 							</div>
 						</div>
@@ -121,7 +123,7 @@
 									<h1>
 										05
 									</h1>
-									<h3 class="solution-h3-pre">
+									<h3 class="solution-h3-pre font-PSL-bold">
 										PREPRESS
 									</h3>
 									<p class="detail-process-p">
@@ -136,15 +138,16 @@
 						<div class="col-md-3">
 							<div class="bg-process">
 								<div class="detail-process">							
-									<p class="detail-process-p">
+									<p class="detail-process-p-2 ">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis mollis viverra. Aenean semper ac nisl in tempus. In pellentesque magna id sollicitudin scelerisque. Nunc non tempor enim, sit amet scelerisque ligula.
 									</p>
-									<h3 class="solution-h3-pre">
-										PREPRESS
-									</h3>
 									<h1>
 										06
 									</h1>
+									<h3 class="solution-h3-pre font-PSL-bold">
+										PREPRESS
+									</h3>
+									
 								</div>
 							</div>
 						</div>
@@ -155,7 +158,7 @@
 									<h1>
 										07
 									</h1>
-									<h3 class="solution-h3-pre">
+									<h3 class="solution-h3-pre font-PSL-bold">
 										PREPRESS
 									</h3>
 									<p class="detail-process-p">
@@ -170,15 +173,16 @@
 						<div class="col-md-3">
 							<div class="bg-process">
 								<div class="detail-process">							
-									<p class="detail-process-p">
+									<p class="detail-process-p-2 ">
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis mollis viverra. Aenean semper ac nisl in tempus. In pellentesque magna id sollicitudin scelerisque. Nunc non tempor enim, sit amet scelerisque ligula.
 									</p>
-									<h3 class="solution-h3-pre">
-										PREPRESS
-									</h3>
 									<h1>
 										08
 									</h1>
+									<h3 class="solution-h3-pre font-PSL-bold">
+										PREPRESS
+									</h3>
+									
 								</div>
 							</div>
 						</div>
@@ -196,7 +200,7 @@
 
 				<div class="col-md-12">
 					<div class="detail-3">
-						<h2>
+						<h2 class="font-PSL-bold">
 							<?=lang('We have modern machines.')?>
 						</h2>
 						<p>
@@ -215,7 +219,7 @@
 								</a>
 								<a href="<?= base_url($lang)?>/Products/detail/1">
 									<div class="detail-product-short">
-										<?=$product->name?>
+										<?=$product->detail?>
 									</div>
 								</a>
 							</div> 
@@ -240,7 +244,7 @@
 			</div>
 
 			<div id="product_foryou" class="row">
-					
+
 			</div>
 
 			<div class="row">

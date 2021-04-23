@@ -16,8 +16,8 @@
     <div  class="container  container-header d-md-block ">
       <div class="row">
         <div class="col-md-12">
-          <div class="about-us">
-            <h1>
+          <div class="about-us ">
+            <h1 class="font-PSL-bold">
               <?=lang('know tcp')?>
             </h1>
             <p>
@@ -42,7 +42,8 @@
               <div class="tab-select">
                 <div class="vision">
                   <i class="icofont-unique-idea iconvision"></i>
-                  <p>
+                  <!-- <img class="vision-img-svg" src="<?=base_url('assets_2021_theme_1/img/vision.svg')?>"> -->
+                  <p class="font-PSL-bold">
                     <?=lang('vision')?>
                   </p>
                   <span>
@@ -57,7 +58,8 @@
               <div class="tab-select">
                 <div class="vision">
                   <i class="fas fa-bullseye iconvision"></i>
-                  <p>
+                  <!-- <img class="vision-img-svg" src="<?=base_url('assets_2021_theme_1/img/mission.svg')?>"> -->
+                  <p class="font-PSL-bold">
                     <?=lang('obligation')?>
                   </p>
                   <span>
@@ -73,7 +75,7 @@
               <div class="tab-select">
                 <div class="vision">
                   <i class="icofont-building-alt iconvision"></i>
-                  <p>
+                  <p class="font-PSL-bold">
                     <?=lang('history')?>
                   </p>
                   <span>
@@ -89,7 +91,7 @@
               <div class="tab-select">
                 <div class="vision">            
                   <i class="icofont-site-map iconvision"></i>
-                  <p>
+                  <p class="font-PSL-bold">
                     <?=lang('board')?>
                   </p>
                   <span>
@@ -106,7 +108,7 @@
                 <div class="vision">
                   <!-- <i class="icofont-certificate iconvision"></i> -->
                   <i class="icofont-badge iconvision"></i>
-                  <p>
+                  <p class="font-PSL-bold">
                     <?=lang('Certification')?>
                   </p>
                   <span>
@@ -136,7 +138,7 @@
       </div>
       <div class="col-md-6">
         <div class="detail-vision">
-          <h1>
+          <h1 class="font-PSL-bold">
             วิสัยทัศน์
           </h1>
           <div class="scrollbar" id="vision-p">
@@ -161,12 +163,15 @@
     <div class="row">
       <div class="col-md-6">
         <div class="detail-obligation">
-
-          <h1>
+          <h1 class="font-PSL-bold">
             พันธกิจ
           </h1>
           <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;เพื่อตอบสนองด้านเศรษฐกิจ ทางบริษัทฯ จึงได้จัดตั้งโรงงาน ณ ที่ปัจจุบัน บนถนนประชาอุทิศ แขวงทุ่งครุ เขตทุ่งครุ กรุงเทพฯ ในปีพุทธศักราช 2532 เพื่อขยายรากฐานกำลังการผลิตให้มีปริมาณมากขึ้น โดนใช้ชื่อว่า "บริษัท ที.ซี.พี อินดัสทรี้ จำกัด" บนเนื้อที่ 12 ไร่ พื้นที่สำนักงาน 1,386 ตารางเมตร พื้นที่โรงงาน 9,000 ตารางเมตร ด้วยบุคลากรมากกว่า 300 คน โดยมีกำลังการผลิต 15,000 ตันต่อปี เพื่อนสร้างสรรค์บรรจุภัณฑ์คุณภาพออกสู่ตลาดทั้งในประเทศและต่างประเทศ อย่างต่อเนื่องจนถึงปัจจุบัน 
+            1. ดำเนินธุรกิจด้านการพิมพ์แบบครบวงจร ด้วยกระบวนการผลิตภายในเองทั้งหมด<br>
+            2. มุ่งเน้นการพัฒนาเทคโนโลยีการผลิตที่ทันสมัย<br>
+            3. สร้างผลงานอย่างมีคุณภาพสำหรับลูกค้า โดยยึดหลักการทำงานตามระบบมาตรฐานที่สากลยอมรับ<br>
+            4. พัฒนาบุคลากรควบคู่กันไปกับการพัฒนาองค์กรอย่างต่อเนื่องและสม่ำเสมอ<br>
+            5. มีความรับผิดชอบต่อชุมชน สังคม และสิ่งแวดล้อม
           </p>
 
         </div>
@@ -184,10 +189,10 @@
    <div class="row">
      <div class="col-md-12">
       <div class="detail-history">
-        <h1>
+        <h1 class="font-PSL-bold">
           ประวัติ
         </h1>
-        <p>
+        <p class="font-PSL-bold">
           บริษัท ที.ซี.พี อินดัสทรี้ จำกัด เป็นผู้ดำเนินการเกี่ยวกับสิ่งพิมพ์ด้านบรรจุภัณฑ์ประเภทกระดาษ รวมถึงบรรจุภัณฑ์ประเภทลูกฟูกออฟเซ็ท
           <br>
           และสิ่งพิมพ์ที่เกี่ยวกับกระดาษอื่นๆ เช่น กล่องบรรจุสินค้า , โปสเตอร์ , ป้าย , โบรชัวร์ , สติ๊กเกอร์ มากกว่า 65 ปี
@@ -198,12 +203,12 @@
 
         <picture>
           <source media="(min-width:769px)" srcset="<?=base_url('image_new/bg/timeline-about.png')?>">                
-          <source media="(max-width:768px)" srcset="<?=base_url('image_new/bg/timeline-about.png')?>" src="" type="" style="width:100%;">
-          <img src="<?=base_url('image_new/bg/timeline-about.png')?>" width="100%">
-        </picture>
+            <source media="(max-width:768px)" srcset="<?=base_url('image_new/bg/timeline-about.png')?>" src="" type="" style="width:100%;">
+              <img src="<?=base_url('image_new/bg/timeline-about.png')?>" width="100%">
+            </picture>
 
             <div style="margin-top: 30px;">
-              <p>
+              <p class="font-PSL-bold">
                 ทุกกระบวนการ เราดำเนินการผลิตภายในบริษัท ตั้งแต่การจัดทำตัวอย่าง, การทำเพลทพิมพ์ด้วยระบบคอมพิวเตอร์, การทำบล็อคไดคัท รวมถึงกระบวนการอาบเคลือบประเภทต่างๆ นอกจากนี้ยังสามารถทำ Hot Stamp , Emboss และการอัดลาย เพื่อเพิ่มความสวยงามและมูลค่าให้แก่สินค้าได้อีกด้วย
               </p>
             </div>
@@ -224,7 +229,7 @@
 
         <div class="col-md-12">
           <div class="detail-board">
-           <h1>
+           <h1 class="font-PSL-bold">
              คณะกรรมการบริษัท
            </h1>
            <p>
@@ -238,15 +243,15 @@
             <div class="col-md-7">
               <div class="detail-director">
 
-                <h2 class="name-director d-sm-none d-block">
+                <h2 class="name-director font-PSL-bold d-sm-none d-block">
                   นายสุนทร สุนทรกำพลรัตน์
                   
                 </h2>
-                <h2 class="position-director d-sm-none d-block">
+                <h2 class="position-director font-PSL-bold  d-sm-none d-block" >
                   กรรมการบริษัท
                 </h2>
 
-                <h2 class="name-board-1  d-sm-block d-none">
+                <h2 class="name-board-1 font-PSL-bold d-sm-block d-none">
                   นายสุนทร สุนทรกำพลรัตน์
                 </h2>
 
@@ -256,7 +261,7 @@
                 <div class="hover-detail-director d-sm-block d-none">
 
                   <div class="arrow_box">
-                    <h3 class="arrow">
+                    <h3 class="arrow font-PSL-bold">
                       กรรมการบริษัท
                     </h3>
                   </div>
@@ -270,7 +275,7 @@
       <div class="col-md-12 ">
         <div class="other-board">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-6">
               <div class="hover-board-1">
                 <div class="board-1">
                   <div class="position-rank-1">
@@ -279,7 +284,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-6">
               <div class="hover-board-2">
                 <div class="board-2">
                   <div class="position-rank-2">
@@ -312,7 +317,7 @@
       </div>
       <div class="col-md-7">
         <div class="name-member">
-          <h2 class="team-board">
+          <h2 class="team-board font-PSL-bold">
             ทีมบริหาร
           </h2>
 
@@ -420,13 +425,45 @@
 
           </div>
 
+         <!--  <div class="table-responsive">
+            <table class="table">
+              <tbody>
+
+                <tr>
+                  <td >
+                    งานบริการสอบบัญชี อัตราค่าบริการมีดังนี้
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    ประเภทของงบการเงิน
+                  </td>
+                  <td>
+                    อัตราค่าบริการ
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <td>
+                    งบการเงินไม่ประกอบการ
+                  </td>
+                  <td>
+                    1000 บาท
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div> -->
 
 
         </div>
       </div>
 
       <div class="col-md-12">
-        <div style="border-bottom: 10px dotted #EEE; margin: 10px 0;">
+        <div class="border-about" style="">
 
         </div>
       </div>
@@ -443,11 +480,11 @@
     <div class="row">
       <div class="col-md-6">
         <div class="detail-iso">
-          <h1>
+          <h1 class="font-PSL-bold">
             การรับรองคุณภาพ
           </h1>
           <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;ด้วยระบบการบริหารคุณภาพ ISO 9001:2000 ครอบคลุมการบริการตลอดจนทุกกระบวนการ และทุกกิจกรรมของบรัษัทฯ ซึ่งว่าด้วยมาตรฐานคุณภาพ คือ มุ่งมั่นพัฒนาคุณภาพการผลิตโดยนำเอาเทคโนโลยีการพิมพ์ที่ทันสมัยจากต่างประเทศเข้ามาพัฒนาการผลิต ซึ่งถือได้ว่าเป็นโรงพิมพ์ที่ทันสมัยแห่งหนึ่งในประเทศไทย ทั้งยังมีระบบตรวจสอบประกันคุณภาพทุกขั้นตอนของการผลิต เพื่อสนองความต้องการ และความพึงพอใจขอลูกค้า
+            ด้วยระบบการบริหารคุณภาพ ISO 9001:2000 ครอบคลุมการบริการตลอดจนทุกกระบวนการ และทุกกิจกรรมของบรัษัทฯ ซึ่งว่าด้วยมาตรฐานคุณภาพ คือ มุ่งมั่นพัฒนาคุณภาพการผลิตโดยนำเอาเทคโนโลยีการพิมพ์ที่ทันสมัยจากต่างประเทศเข้ามาพัฒนาการผลิต ซึ่งถือได้ว่าเป็นโรงพิมพ์ที่ทันสมัยแห่งหนึ่งในประเทศไทย ทั้งยังมีระบบตรวจสอบประกันคุณภาพทุกขั้นตอนของการผลิต เพื่อสนองความต้องการ และความพึงพอใจขอลูกค้า
           </p>
         </div>
       </div>

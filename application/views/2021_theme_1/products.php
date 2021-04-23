@@ -32,7 +32,7 @@
               กล่องลูกฟูกออฟเซ็ท กล่องแสตนโชว์ กล่องพีวีซี ทุกขนาด
             </h2>
             <p class="detail-pro-page-allpro">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fermentum non velit nec tincidunt. Vivamus in est convallis, elementum ligula sed, interdum purus. Proin eu aliquet nulla, ut fringilla sem. 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fermentum non velit nec tincidunt. Vivamus in est convallis, elementum ligula sed, interdum purus. Proin eu aliquet nulla, ut fringilla sem.  Proin eu aliquet nulla, ut fringilla sem.  Proin eu aliquet nulla, ut fringilla sem.  Proin eu aliquet nulla, ut fringilla sem.  ut fringilla sem.  ut fringilla sem.  ut fringilla sem. 
             </p>
             <a href="<?=base_url($this->session->userdata('site_lang_name').'/Products/detail')?>" class="see-details">
               <?=lang('see-details')?>

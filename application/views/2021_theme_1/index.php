@@ -9,7 +9,7 @@
 
 <body>
 
- 
+
 
   <?php $this->load->view('2021_theme_1/inc/header1/header') ?>
   <?php $this->load->view('2021_theme_1/index/banner') ?>
@@ -33,8 +33,17 @@
   </footer>
 
 
+  <style type="text/css">
+    .nav-1:after ,.nav-2:after ,.nav-3:after ,.nav-4:after ,.nav-5:after ,.nav-6:after {
+      background-color: #0B3259 !important;
+    }
+  </style>
+
   <!-- End Footer -->
-  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <a href="#" class="back-to-top">
+    <!-- <i class="ri-arrow-up-line"></i> -->
+    <i class="fas fa-chevron-up ri-arrow-up-line"></i>
+  </a>
   <!-- <div id="preloader"></div> -->
   <!-- Vendor JS Files -->
   <?php $this->load->view('2021_theme_1/inc/footer-js-home') ?>

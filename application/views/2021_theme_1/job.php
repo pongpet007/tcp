@@ -13,11 +13,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="top-detail">
-						<h3>
+					<div class="top-detail-job">
+						<h3 class="font-PSL-bold">
 							<?=lang('Recruit')?>
 						</h3>
-						<p>
+						<p >
 							<?=lang('come to be a part')?>
 						</p>
 					</div>

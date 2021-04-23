@@ -90,6 +90,6 @@ $lang["Business hours"] = 'Business hours';
 $lang["Mon - Sat"] = 'Mon - Sat  ';
 $lang["time"] = ' Time ';
 $lang["office"] = 'Office';
-
+$lang["Quotation"] = 'Quotation';
 
 ?>

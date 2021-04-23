@@ -13,8 +13,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="top-detail">
-						<h3>
+					<div class="top-detail-blog">
+						<h3 class="font-PSL-bold">
 							<?=lang('BLOG')?>
 						</h3>
 						<p>
@@ -38,7 +38,7 @@
 							<img src="<?=base_url()?>/assets_2021_theme_1/img/about.jpg" style="width: 100%" class="img-blog-all">
 						</a>
 						<a href="<?= base_url($lang)?>/Blog/detail" class="name-blog-all font-PSL-bold">
-							<h3 class="name-blog">
+							<h3 class="name-blog font-PSL-bold">
 								หัวข้อบทความ
 							</h3>
 						</a>
@@ -57,7 +57,7 @@
 							<img src="<?=base_url()?>/assets_2021_theme_1/img/about.jpg" style="width: 100%" class="img-blog-all">
 						</a>
 						<a href="<?= base_url($lang)?>/Blog/detail" class="name-blog-all font-PSL-bold">
-							<h3 class="name-blog">
+							<h3 class="name-blog font-PSL-bold">
 								หัวข้อบทความ
 							</h3>
 						</a>
@@ -76,7 +76,7 @@
 							<img src="<?=base_url()?>/assets_2021_theme_1/img/about.jpg" style="width: 100%" class="img-blog-all">
 						</a>
 						<a href="<?= base_url($lang)?>/Blog/detail" class="name-blog-all font-PSL-bold">
-							<h3 class="name-blog">
+							<h3 class="name-blog font-PSL-bold">
 								หัวข้อบทความ
 							</h3>
 						</a>
@@ -95,7 +95,7 @@
 							<img src="<?=base_url()?>/assets_2021_theme_1/img/about.jpg" style="width: 100%" class="img-blog-all">
 						</a>
 						<a href="<?= base_url($lang)?>/Blog/detail" class="name-blog-all font-PSL-bold">
-							<h3 class="name-blog">
+							<h3 class="name-blog font-PSL-bold">
 								หัวข้อบทความ
 							</h3>
 						</a>

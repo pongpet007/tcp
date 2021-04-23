@@ -5,7 +5,7 @@
 
       <div class="row">
 
-        <div class="col-lg-3">
+        <div class="col-lg-2">
           <h1 class="logo">
             <a href="<?=base_url()?>">
               <img src="<?=base_url()?>image_new/logo/logo-footer.png">
@@ -14,9 +14,9 @@
 
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-lg-8">
          <nav class="nav-menu ">
-          <ul>
+          <ul class="ul-header-home">
             <li class="active nav-1">
               <a href="<?=base_url()?>">
                 <?=lang('HOME')?>
@@ -58,7 +58,7 @@
       </div>
 
 
-      <div class="col-lg-3" style="align-self: center; ">
+      <div class="col-lg-2" style="align-self: center; ">
        <div class="dropdown dropdonw-lang">
         <?php foreach ($countrys as $country) { ?>
           <? $uri =  uri_string(); ?>

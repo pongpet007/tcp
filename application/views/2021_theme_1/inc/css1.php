@@ -13,35 +13,37 @@
     }
     #home-bg-2 {
         background-image: url(<?=base_url('image_new/design-web/home2.jpg')?>);
-        background-size: 100%;
+        background-size: auto 100%;
         background-repeat: no-repeat;
     }
     #home-bg-1 .style1 h1 , #home-bg-1 .style1 p , #home-bg-2 .style1 h1 , #home-bg-2 .style1 p {
         color: #ffffff;
     }
     #home-bg-1 .style1 h1 , #home-bg-2 .style1 h1 {
-        font-size: 56px;
+        font-size: 40px;
     }
     #home-bg-1 .style1 p , #home-bg-2 .style1 p {
-        font-size: 26px;
-        line-height: 26px;
+        font-size: 18px;
+        padding-right: 350px;
+        line-height: 30px;
     }
     #home-bg-1 .style1 button , #home-bg-2 .style1 button {
-        font-size: 28px;
+        font-size: 20px;
+        margin-top: 10px;
         height: 50px;
         width: 170px;
     }
     h1.timeline-new {
         text-align: center;
         color: #fff;
-        font-size: 64px;
-        line-height: 93.08px;
+        font-size: 40px;
+        line-height: 90px;
     }
     p.timeline-new {
         text-align: center;
         color: #fff;
-        font-size: 37px;
-        line-height: 42px;
+        font-size: 24px;
+        line-height: 40px;
     }
     p.timeline-new span {
         text-align: center;
@@ -51,16 +53,6 @@
     }
     img.timeline-new {
         padding-top: 100%;
-    }
-    #features h1 {
-        font-size: 116px;
-        color: #fff;
-        text-align: center;
-    }
-    #features p {
-        font-size: 58px;
-        text-align: center;
-        color: #fff;
     }
     .new-copyright {
         font-size: 24px;
@@ -94,33 +86,37 @@
         background-color: #6b6d82;
     }
     .img-banner {
-        width: 100%;
+        /*width: 100%;*/
     }
     .dropdonw-lang {
         text-align: right;
     }
-    /* ------------------------------------------------------------- Home -----------------------------------------------*/
 
-    @media (max-width: 767px) and (min-width: 300px){
-    	.img-banner {
-            width: 100%;
-            /*min-height: 812px;*/
-        }
+    /* ------------------------------------------------------------- Home -----------------------------------------------*/
+    .cd-horizontal-timeline .events-wrapper {
+        overflow-x: scroll;
+    }
+    .cd-horizontal-timeline .events-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+    @media (max-width: 767px) and (min-width: 300px) {
         p.timeline-new {
-            font-size: 24px;
+            font-size: 18px;
             text-align: left; 
         }
         ul.banner-detail {
             padding-left: 0;
         }
         h3.think-tcp {
-            font-size: 40px;
+            font-size: 20px;
+            line-height: 26px;
         }
         span.think-tcp {
-            font-size: 40px;
+            font-size: 24px;
         }
         .neon-border h1 {
-            font-size: 2rem !important;
+            font-size: 18px !important;
             line-height: 25px !important;
         }
         .neon-border {
@@ -129,32 +125,50 @@
         }
         li.number-banner {
             padding-right: 10px;
+            padding: 5px 0;
         }
         .text-slide {
-            bottom: 410px ;
-            top: 220px;
+            bottom: 0;
+            top: 80px;
+        }
+        .detail-neon h1 {
+            font-size: 24px;
+            margin-bottom: 0;
+            line-height: 26px;
+        }
+        .img-banner {
+            /*height: 95vh;*/
+        }
+        .banner-slide-1 {
+            /*height: 95vh;*/
         }
         ul.banner-detail {
             display: inline-block;
-            padding-top: 0;
+            padding-top: 10px;
         }
         .pt-60 {
             padding-top: 0;
         }
         #features h1 {
-            font-size: 50px;
+            font-size: 40px;
         }
-        #hero h2 {
-            font-size: 30px;
-        }
-        #hero h1 {
-            font-size: 60px;
+        h2.think-tcp {
+            font-size: 20px;
         }
         #features p {
-            font-size: 30px;
+            font-size: 18px;
+        }
+        .detail-neon p {
+            font-size: 15px;
+            line-height: 23px;
+            margin-bottom: 5px;
         }
         section {
             padding: 20px 0 !important;
+        }
+        h1.think-tcp {
+            font-size: 35px;
+            line-height: 35px;
         }
         .events-wrapper {
             max-width: 360px;
@@ -180,12 +194,21 @@
             padding: 30px 0;
         }
 
-
-        .banner-slide-1 {
-            height: 70vh;
-        }
         #home-bg-1 .style1 h1 {
-            font-size: 50px;
+            font-size: 40px;
+        }
+        #home-bg-1 .style1 p, #home-bg-2 .style1 p {
+            font-size: 16px;
+            line-height: 24px;
+            padding-right: 0;
+        }
+        #home-bg-1 .style1 button, #home-bg-2 .style1 button {
+            font-size: 24px;
+            height: 45px;
+            width: 160px;
+        }
+        h1.timeline-new {
+            font-size: 40px;
         }
         #home-bg-1  {
             background-size: cover;
@@ -193,21 +216,28 @@
         #home-bg-2 {
             background-size: cover;
         }
+        .new-copyright {
+            font-size: 18px;
+        }
+        .p-t {
+            padding-bottom: 70px;
+        }
     }
-    @media (max-width: 991px) and (min-width: 768px){
+    @media (max-width: 1023px) and (min-width: 768px){
         .banner-slide-1 {
-            height: 60vh;
+            /*height: 60vh;*/
         }
         .text-slide {
             margin-top: 0; 
-            top: 220px;
-            bottom: 180px;
+            top: 80px;
+            bottom: 0;
         }
         h3.think-tcp {
-            font-size: 35px;
+            font-size: 24px;
         }
         #home-bg-1 {
             margin-top: 15px;
+            background-size: auto 100%;
         }
         #home-bg-2 {
             margin-top: 15px;
@@ -215,13 +245,69 @@
         #hero {
             height: auto;
         }
-        #hero h1 {
-            font-size: 90px;
-            /*line-height: 36px;*/
+        h1.think-tcp {
+            font-size: 70px;
+            line-height: 73px;
         }
-        #hero h2 {
+        ul.banner-detail {
+            padding-left: 0;
+        }
+        .neon-border h1 {
+            font-size: 24px;
+            line-height: 35px;
+        }
+        li.number-banner {
+            padding-left: 5px;
+        }
+        .neon-border {
+            width: 40px;
+            height: 40px;
+        }
+        h2.think-tcp {
             font-size: 38px;
-            line-height: 24px;
+            line-height: 40px;
+        }
+        span.think-tcp {
+            font-size: 35px;
+        }
+        .img-banner {
+            /*height: 60vh;*/
+        }
+        .detail-neon h1 {
+            font-size: 28px;
+        }
+        .detail-neon {
+            width: 125px;
+        }
+        .detail-neon p {
+            font-size: 20px;
+        }
+        #home-bg-1 .style1 h1, #home-bg-2 .style1 h1 {
+            font-size: 35px;
+        }
+        img.timeline-new {
+            display: none;
+        }
+        h1.timeline-new {
+            font-size: 40px;
+            line-height: 55px;
+        }
+        #home-bg-1 .style1 p, #home-bg-2 .style1 p {
+            font-size: 15px;
+            line-height: 22px;
+            padding: 0 15px 20px 0;
+        }
+        .new-copyright {
+            font-size: 20px;
+        }
+        #home-bg-1 .style1 button, #home-bg-2 .style1 button {
+            font-size: 21px;
+            height: 40px;
+            width: 150px;
+            margin-top: 0;
+        }
+        .pb-60 {
+            padding-bottom: 20px;
         }
         .events-wrapper {
             max-width: 750px;
@@ -245,16 +331,19 @@
         }
         p.timeline-new {
             text-align: left;
-            font-size: 28px;
+            font-size: 20px;
         }
         .pt-60 {
             padding-top: 0px;
         }
         #features h1 {
-            font-size: 90px;
+            font-size: 50px;
+        }
+        #features p {
+            font-size: 40px;
         }
     }
-    @media (max-width: 1199px) and (min-width: 992px){
+    @media (max-width: 1359px) and (min-width: 1024px){
 
         <? if ($this->session->userdata('site_lang_name') == 'TH') {?>
             .nav-menu>ul>li {
@@ -280,15 +369,18 @@
                 .text-slide {
                     margin-top: 0; 
                     text-align: left;
-                    top: 100px;
+                    top: 180px;
                     bottom: 200px;
                 }
                 ul.banner-detail {
                     padding-top: 30px;
                     padding-left: 30px;
                 }
+                .img-banner {
+                    /*height: 60vh;*/
+                }
                 .banner-slide-1 {
-                    height: 89vh;
+                    /*height: 60vh;*/
                 }
                 #home-bg-1  {
                     background-size: cover;
@@ -297,33 +389,163 @@
                     background-size: cover;
                 }
                 #features h1 {
-                    font-size: 80px;
+                    font-size: 50px;
+                }
+                #features p {
+                    font-size: 24px;
+                }
+                #home-bg-1 .style1 p, #home-bg-2 .style1 p {
+                    font-size: 15px ;
+                    line-height: 23px ;
+                    padding-right: 100px;
+                }
+                .p-t {
+                    padding-top: 70px;
+                }
+                .new-copyright {
+                    font-size: 18px;
                 }
             } 
-            @media (max-width: 1369px) and (min-width: 1200px){
+            @media (max-width: 1400px) and (min-width: 1360px){
                 .nav-menu>ul>li {
                     position: relative;
                     white-space: nowrap;
-                    padding: 10px 15px 10px 15px;
+                    padding: 10px 13px 10px 13px;
                 }
                 .text-slide {
                     margin-top: 0;
                     text-align: left;
-                    top: 150px;
+                    top: 200px;
                 }
                 .banner-slide-1 {
                     height: 99vh;
-                }    
-            }
-            @media (max-width: 1690px) and (min-width: 1370px){
-                .nav-menu>ul>li {
-                    position: relative;
-                    white-space: nowrap;
-                    padding: 10px 15px 10px 15px;
+                }
+                .nav-menu a {
+                    font-size: 15px;
+                }
+                .flag img {
+                    width: 30px;
+                    height: 30px;
+                }
+                .dropdown-full {
+                    font-size: 18px;
+                }
+                h2.think-tcp {
+                    font-size: 40px;
+                    line-height: 45px;
+                }
+                h1.think-tcp {
+                    font-size: 80px;
+                    line-height: 80px;
+                }
+                h3.think-tcp {
+                    font-size: 30px;
+                }
+                span.think-tcp {
+                    font-size: 50px;
+                }
+                ul.banner-detail {
+                    padding-left: 100px;
+                    padding-top: 30px;
+                }
+                .neon-border {
+                    width: 50px;
+                    height: 50px;
+                }
+                .mouse-over {
+                    padding-top: 0px;
+                }
+                .neon-border h1 {
+                    font-size: 30px;
+                    line-height: 45px;
+                }
+                .detail-neon h1 {
+                    font-size: 40px;
+                }
+                .detail-neon p {
+                    font-size: 15px;
+                }
+                #home-bg-1 .style1 h1, #home-bg-2 .style1 h1 {
+                    font-size: 35px;
+                }
+                #home-bg-1 .style1 p, #home-bg-2 .style1 p {
+                    font-size: 15px;
+                    line-height: 24px;
+                    padding-right: 240px;
+                    padding-bottom: 20px;
+                }
+                #home-bg-1 .style1 button, #home-bg-2 .style1 button {
+                    font-size: 24px;
+                    height: 50px;
+                    width: 150px;
+                }
+                h1.timeline-new {
+                    font-size: 50px;
+                }
+                p.timeline-new {
+                    font-size: 18px;
+                }
+                #features h1 {
+                    font-size: 50px;
+                }
+                #features p {
+                    font-size: 25px;
+                }
+                .p-t {
+                    padding-top: 80px;
+                }
+                #home-bg-1 {
+                    background-size: auto 100%;
+                }
+                .new-copyright {
+                    font-size: 18px;
                 }
             }
-            @media (min-width: 1691px){
+            @media (min-width: 1400px){
+               
+                .flag img {
+                    width: 40px;
+                    height: 40px;
+                }
+                .dropdown-full {
+                    font-size: 15px !important;
+                }
 
+            }
+
+            @media (max-width: 1500px) and (min-width: 1400px){
+                .nav-menu>ul>li {
+                    padding: 10px 10px 10px 10px;
+                }
+                .nav-menu a {
+                    font-size: 16px;
+                }
+                #home-bg-1 .style1 p, #home-bg-2 .style1 p {
+                    font-size: 18px;
+                    padding-right: 170px;
+                    line-height: 23px;
+                }
+                .pt-60 {
+                    padding-top: 30px;
+                }
+                .pb-60 {
+                    padding-bottom: 30px;
+                }
+                p.timeline-new {
+                    font-size: 20px;
+                }
+                #features h1 {
+                    font-size: 60px;
+                }
+                #features p {
+                    font-size: 28px;
+                }
+                .p-t {
+                    padding-top: 80px !important;
+                }
+                .new-copyright {
+                    font-size: 20px;
+                }
             }
 
 
@@ -465,7 +687,7 @@
     .cd-horizontal-timeline .events-wrapper {
         position: relative;
         height: 100%;
-        overflow: hidden;
+        /*overflow: hidden;*/
     }
 
     .cd-horizontal-timeline .events {

@@ -38,7 +38,7 @@
                   <?=lang('Recruit')?>
                 </a>
               </li>
-              <li class="breadcrumb-item breadcrumb-self-item-active" aria-current="page">ชื่อตำแหน่งงาน</li>
+              <li class="breadcrumb-item breadcrumb-self-item-active" aria-current="page">โปรแกรมเมอร์</li>
             </ol>
           </nav>
 
@@ -55,7 +55,7 @@
             </li>
           </ul>
 
-          <hr>
+          <hr style="margin-top: 3rem; margin-bottom: 2rem;">
 
           <!-- Wait CK -->
           <div class="">
@@ -69,6 +69,57 @@
 
 
 
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  </section>
+
+
+  <style type="text/css">
+    .nav-1:hover {
+      border-top: 5px solid  #4186FA;
+      margin-top: -3px;
+      transition: all 0.3s ease-in;
+    }
+    .nav-2:hover {
+      border-top: 5px solid  #4186FA;
+      margin-top: -3px;
+      transition: all 0.3s ease-in;
+    }
+    .nav-3:hover {
+      border-top: 5px solid  #4186FA;
+      margin-top: -3px;
+      transition: all 0.3s ease-in;
+    }
+    .nav-4:hover {
+      border-top: 5px solid  #4186FA;
+      margin-top: -3px;
+      transition: all 0.3s ease-in;
+    }
+    .nav-6:hover {
+      border-top: 5px solid  #4186FA;
+      margin-top: -3px;
+      transition: all 0.3s ease-in;
+    }
+    .nav-7:hover {
+      border-top: 5px solid  #4186FA;
+      margin-top: -3px;
+      transition: all 0.3s ease-in;
+    }
+  </style>
+
+
+  <script type="text/javascript">
+    $('#memberImg').ready(function(){
+      $('.nav-5').addClass('nav-active');
+    });
+  </script>
 
 
 
@@ -76,56 +127,7 @@
 
 
 
-        </section>
-
-
-        <style type="text/css">
-          .nav-1:hover {
-            border-top: 5px solid  #4186FA;
-            margin-top: -3px;
-            transition: all 0.3s ease-in;
-          }
-          .nav-2:hover {
-            border-top: 5px solid  #4186FA;
-            margin-top: -3px;
-            transition: all 0.3s ease-in;
-          }
-          .nav-3:hover {
-            border-top: 5px solid  #4186FA;
-            margin-top: -3px;
-            transition: all 0.3s ease-in;
-          }
-          .nav-4:hover {
-            border-top: 5px solid  #4186FA;
-            margin-top: -3px;
-            transition: all 0.3s ease-in;
-          }
-          .nav-6:hover {
-            border-top: 5px solid  #4186FA;
-            margin-top: -3px;
-            transition: all 0.3s ease-in;
-          }
-          .nav-7:hover {
-            border-top: 5px solid  #4186FA;
-            margin-top: -3px;
-            transition: all 0.3s ease-in;
-          }
-        </style>
-
-
-        <script type="text/javascript">
-          $('#memberImg').ready(function(){
-            $('.nav-5').addClass('nav-active');
-          });
-        </script>
-
-
-
-
-
-
-
-        <a href="#" class="radius scroll-top " ><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+  <a href="#" class="radius scroll-top " ><i class="fa fa-angle-up" aria-hidden="true"></i></a>
   <!-- <p class="open-menu-left " onclick="hideButtonmenu()"><i class="fas fa-chevron-right" aria-hidden="true"></i></a></p>
   <div class="menu-left">
     <div class="space-left-a">

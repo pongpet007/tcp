@@ -17,165 +17,191 @@
 
             <div class="banner-slide-1 d-block">
 
-              
+
 
               <picture>
-                <source media="(max-width:768px)" srcset="<?=base_url()?>assets_2021_theme_1/img/bg/bg-banner-mobile-1.png?<?=rand()?>" alt="TCP">
-                <source media="(min-width:769px)" srcset="<?=base_url()?>assets_2021_theme_1/img/bg/bg-banner-1.jpg?<?=rand()?>" alt="TCP">
-                <img src="<?=base_url()?>assets_2021_theme_1/img/bg/bg-banner-1.jpg?<?=rand()?>" class="img-banner" alt="TCP">
-              </picture>
+                <source media="(max-width:700px)" srcset="<?=base_url()?>assets_2021_theme_1/img/bg/bg-banner-mobile-1.png?<?=rand()?>" alt="TCP">
+                  <source media="(max-width:768px) " srcset="<?=base_url()?>assets_2021_theme_1/img/bg/banner-1-768-670.png?<?=rand()?>" alt="TCP">
+                    <source media="(max-width:1024px) " srcset="<?=base_url()?>assets_2021_theme_1/img/bg/banner-1-1024-800.png?<?=rand()?>" alt="TCP">
+                      <source media="(min-width:1290) " srcset="<?=base_url()?>assets_2021_theme_1/img/bg/banner-1-full.png?<?=rand()?>" alt="TCP">
+                    <img src="<?=base_url()?>assets_2021_theme_1/img/bg/banner-1-full.png?<?=rand()?>" class="img-banner" alt="TCP">
+                  </picture>
 
 
-              <div class="carousel-caption text-slide">
+                  <div class="carousel-caption text-slide">
 
-                <div class="">
-                  <h2 class="think-tcp">
-                    THINK OF PACKAGING
-                  </h2>
-                  <h1 class="think-tcp">
-                    THINK OF T.C.P.
-                  </h1>
-                  <h3 class="think-tcp">
-                    ตอบโจทย์ทุกธุรกิจ คู่คิด <span class="font-PSL-bold think-tcp">SME</span> และ <span class="font-PSL-bold think-tcp">START UP</span>
-                  </h3>
-                </div>  
-
-                <ul class="banner-detail d-lg-flex d-sm-none d-none">
-                  <li class="number-banner">
-                    <div class="neon-border">
-                      <h1 >
-                        01
+                    <div class="">
+                      <h2 class="think-tcp">
+                        THINK OF PACKAGING
+                      </h2>
+                      <h1 class="think-tcp font-PSL-bold">
+                        THINK OF T.C.P.
                       </h1>
+                      <h3 class="think-tcp">
+                        ตอบโจทย์ทุกธุรกิจ คู่คิด <span class="font-PSL-bold think-tcp">SME</span> และ <span class="font-PSL-bold think-tcp">START UP</span>
+                      </h3>
+                    </div>  
+
+                    <ul class="banner-detail d-lg-flex ">
+                      <li class="number-banner">
+                        <div class="neon-border">
+                          <h1 >
+                            01
+                          </h1>
+                        </div>
+                      </li>
+                      <li class="detail-neon">
+                        <h1>
+                          CAPACITY
+                        </h1>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget sem a odio. 
+                        </p>
+                      </li>
+                      <li class="number-banner">
+                        <div class="neon-border">
+                          <h1 >
+                            02
+                          </h1>
+                        </div>
+                      </li>
+                      <li class="detail-neon">
+                        <h1>
+                          MACHINE
+                        </h1>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget sem a odio. 
+                        </p>
+                      </li>
+                      <li class="number-banner">
+                        <div class="neon-border">
+                          <h1 >
+                            03
+                          </h1>
+                        </div>
+                      </li>
+                      <li class="detail-neon">
+                        <h1>
+                          SERVICE
+                        </h1>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget sem a odio. 
+                        </p>
+                      </li>
+                    </ul>
+
+                    <div class="mouse-over">
+                      <div class="circle-mouse">
+                        <!-- <i class="fas fa-mouse mouse-down"></i> -->
+                        <a href="#index-about">
+                          <img class="mouse-down" src="<?=base_url('assets_2021_theme_1/img/mouse.svg')?>">
+                        </a>
+                      </div>
+                      <div class="icon-doww">
+                        <i class="fas fa-chevron-down icondown-home"></i>
+                      </div>
                     </div>
-                  </li>
-                  <li class="detail-neon">
-                    <h1>
-                      CAPACITY
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget sem a odio. 
-                    </p>
-                  </li>
-                  <li class="number-banner">
-                    <div class="neon-border">
-                      <h1 >
-                        02
-                      </h1>
-                    </div>
-                  </li>
-                  <li class="detail-neon">
-                    <h1>
-                      MACHINE
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget sem a odio. 
-                    </p>
-                  </li>
-                  <li class="number-banner">
-                    <div class="neon-border">
-                      <h1 >
-                        02
-                      </h1>
-                    </div>
-                  </li>
-                  <li class="detail-neon">
-                    <h1>
-                      SERVICE
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget sem a odio. 
-                    </p>
-                  </li>
-                </ul>
+
+
+                  </div>
+                </div>
 
 
               </div>
-            </div>
 
+              <div class="carousel-item ">
+                <div class="banner-slide-1 d-block w-100">
 
-          </div>
-
-          <div class="carousel-item ">
-            <div class="banner-slide-1 d-block w-100">
-             
-              <picture>
-                <source media="(max-width:768px)" srcset="<?=base_url()?>assets_2021_theme_1/img/bg/bg-banner-mobile-2.png?<?=rand()?>" alt="TCP">
-                <source media="(min-width:769px)" srcset="<?=base_url()?>assets_2021_theme_1/img/bg/bg-banner-2.png?<?=rand()?>" alt="TCP">
-                 <img src="<?=base_url()?>assets_2021_theme_1/img/bg/bg-banner-2.png" class="img-banner"  alt="TCP">
-              </picture>
-              <div class="carousel-caption text-slide  ">
+                  <picture>
+                    <source media="(max-width:700px)" srcset="<?=base_url()?>assets_2021_theme_1/img/bg/bg-banner-mobile-2.png?<?=rand()?>" alt="TCP">
+                      <source media="(max-width:768px)" srcset="<?=base_url()?>assets_2021_theme_1/img/bg/banner-2-768-670.png?<?=rand()?>" alt="TCP">
+                        <source media="(max-width:1024px) " srcset="<?=base_url()?>assets_2021_theme_1/img/bg/banner-2-1024-800.png?<?=rand()?>" alt="TCP">
+                        <source media="(min-width:1290px)" srcset="<?=base_url()?>assets_2021_theme_1/img/bg/banner-2-full.png?<?=rand()?>" alt="TCP">
+                       <img src="<?=base_url()?>assets_2021_theme_1/img/bg/banner-2-full.png" class="img-banner"  alt="TCP">
+                     </picture>
+                     <div class="carousel-caption text-slide  ">
 
 
 
-                <div class="">
-                  <h2 class="think-tcp">
-                    THINK OF PACKAGING
-                  </h2>
-                  <h1 class="think-tcp">
-                    THINK OF T.C.P.
-                  </h1>
-                  <h3 class="think-tcp">
-                    ตอบโจทย์ทุกธุรกิจ คู่คิด <span class="font-PSL-bold think-tcp">SME</span> และ <span class="font-PSL-bold think-tcp">START UP</span>
-                  </h3>
-                </div>  
+                      <div class="">
+                        <h2 class="think-tcp">
+                          THINK OF PACKAGING
+                        </h2>
+                        <h1 class="font-PSL-bold think-tcp">
+                          THINK OF T.C.P.
+                        </h1>
+                        <h3 class="think-tcp">
+                          ตอบโจทย์ทุกธุรกิจ คู่คิด <span class="font-PSL-bold think-tcp">SME</span> และ <span class="font-PSL-bold think-tcp">START UP</span>
+                        </h3>
+                      </div>  
 
-                <ul class="banner-detail d-lg-flex d-sm-none d-none">
-                  <li class="number-banner">
-                    <div class="neon-border">
-                      <h1 >
-                        01
-                      </h1>
+                      <ul class="banner-detail d-lg-flex ">
+                        <li class="number-banner">
+                          <div class="neon-border">
+                            <h1 >
+                              01
+                            </h1>
+                          </div>
+                        </li>
+                        <li class="detail-neon">
+                          <h1>
+                            CAPACITY
+                          </h1>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget sem a odio. 
+                          </p>
+                        </li>
+                        <li class="number-banner">
+                          <div class="neon-border">
+                            <h1 >
+                              02
+                            </h1>
+                          </div>
+                        </li>
+                        <li class="detail-neon">
+                          <h1>
+                            MACHINE
+                          </h1>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget sem a odio. 
+                          </p>
+                        </li>
+                        <li class="number-banner">
+                          <div class="neon-border">
+                            <h1 >
+                              03
+                            </h1>
+                          </div>
+                        </li>
+                        <li class="detail-neon">
+                          <h1>
+                            SERVICE
+                          </h1>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget sem a odio. 
+                          </p>
+                        </li>
+                      </ul>
+
+                      <div class="mouse-over">
+                        <div class="circle-mouse">
+                          <!-- <i class="fas fa-mouse mouse-down"></i> -->
+                          <a href="#index-about">
+                            <img class="mouse-down" src="<?=base_url('assets_2021_theme_1/img/mouse.svg')?>">
+                          </a>
+                        </div>
+                        <div class="icon-doww">
+                          <i class="fas fa-chevron-down icondown-home"></i>
+                        </div>
+                      </div>
+
+
+
+
+
                     </div>
-                  </li>
-                  <li class="detail-neon">
-                    <h1>
-                      CAPACITY
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget sem a odio. 
-                    </p>
-                  </li>
-                  <li class="number-banner">
-                    <div class="neon-border">
-                      <h1 >
-                        02
-                      </h1>
-                    </div>
-                  </li>
-                  <li class="detail-neon">
-                    <h1>
-                      MACHINE
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget sem a odio. 
-                    </p>
-                  </li>
-                  <li class="number-banner">
-                    <div class="neon-border">
-                      <h1 >
-                        02
-                      </h1>
-                    </div>
-                  </li>
-                  <li class="detail-neon">
-                    <h1>
-                      SERVICE
-                    </h1>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget sem a odio. 
-                    </p>
-                  </li>
-                </ul>
-
-
-
-
-
-
-
-              </div>
-            </div>
-          </div>
+                  </div>
+                </div>
           <!-- <div class="carousel-item">
             <div class="banner-slide-1 d-block w-100">
               <img src="<?=base_url()?>assets_2021_theme_1/img/bg/bg-banner-1.jpg"  alt="TCP">

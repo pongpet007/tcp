@@ -17,8 +17,8 @@
     <div class="container  container-header d-md-block ">
       <div class="row">
         <div class="col-md-12">
-          <div class="about-us">
-            <h1>
+          <div class="contact-us">
+            <h1 class="font-PSL-bold">
               <?=lang('Contact Us')?>
             </h1>
             <p>
@@ -37,7 +37,7 @@
     <div class="container container-header" style="padding-bottom: 50px;">
       <div class="row">
         <div class="col-md-6">
-          <h2 class="contact-us-h2">
+          <h2 class="contact-us-h2 font-PSL-bold">
             <?=lang('Contact Us')?>
           </h2>
           <h3 class="input-contact" style="">
@@ -98,7 +98,7 @@
 
 
         <div class="col-md-6">
-          <h2 class="address-contact" style="">
+          <h2 class="address-contact font-PSL-bold" style="">
             <?=lang('Address to contact us')?>
           </h2>
 
@@ -125,8 +125,8 @@
                 <span class="icon-contact">
                   <i class="fas fa-phone-alt i-font-contact"></i>
                 </span>
-                <b class="contatc-h4"><?=lang('Phone number')?> : 
-                  <br>
+                <b class="contatc-h4-a"><?=lang('Phone number')?> : 
+                  <br style="padding-bottom: 5px;">
                   <a href="tel:+662-426-1567-70">+662-426-1567-70</a>
                   <br>
                   <a href="tel:+668-7929-8998">+668-7929-8998</a>

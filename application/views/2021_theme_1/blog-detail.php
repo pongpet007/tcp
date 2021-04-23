@@ -50,7 +50,7 @@
             </li>
           </ul>
 
-          <hr>
+          <hr style="margin-top: 3rem; margin-bottom: 2rem;">
 
           <!-- Wait CK -->
           <div class="">

@@ -14,7 +14,8 @@
 				<div class="contact-header">
 					<div class="detail-contact">
 						<div class="head-1">
-							<i class="icofont-phone iconphone"></i>
+							<!-- <i class="icofont-phone iconphone"></i> -->
+							<img class="iconphone" style="width:50px; height: 50px; padding-right: 15px;" src="<?=base_url('assets_2021_theme_1/img/phone.svg?'.rand())?>">
 						</div>				
 						<div class="head-2">
 							<span class="contactphone">
@@ -278,7 +279,8 @@ $this->load->view('2021_theme_1/inc/header2/css.php')
 <style type="text/css">
 
 	.span-menu {
-		font-size: 18px;
+		font-size: 14px;
+		line-height: 24px;
 		display: grid;
 		color: #a8afb7;
 	}
@@ -326,9 +328,9 @@ $this->load->view('2021_theme_1/inc/header2/css.php')
 		border-top: 1px solid #EEE; 
 	}
 	.navbar-expand-lg .navbar-nav .nav-link {
-		padding-left: 3.5rem;
-		padding-right: 3.5rem;
-		font-size: 23px;
+		padding-left: 2.5rem;
+		padding-right: 2.5rem;
+		font-size: 16px;
 		color: #FFF;
 	}
 	.section-header-solution {
@@ -389,10 +391,10 @@ $this->load->view('2021_theme_1/inc/header2/css.php')
 		font-size: 50px;
 	}
 	.contactphone {
-		font-size: 18px;
+		font-size: 14px;
 	}
 	.time-work {
-		font-size: 18px;
+		font-size: 14px;
 	}
 	.navbar-lang {
 		font-size: 23px;
@@ -454,14 +456,14 @@ $this->load->view('2021_theme_1/inc/header2/css.php')
 	}
 	@media (max-width: 1300px) and (min-width: 1280px) {
 		.navbar-expand-lg .navbar-nav .nav-link {
-			padding-left: 3.5rem;
-			padding-right: 3.5rem;
+			padding-left: 2.5rem;
+			padding-right: 2.5rem;
 		}
 	}
 	@media (max-width: 1400px) and (min-width: 1301px) {
 		.navbar-expand-lg .navbar-nav .nav-link {
-			padding-left: 3.5rem;
-			padding-right: 3.5rem;
+			padding-left: 2.5rem;
+			padding-right: 2.5rem;
 		}
 	}
 	@media (min-width: 1025px) {

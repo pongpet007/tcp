@@ -38,18 +38,21 @@
           กล่องลูกฟูกออฟเซ็ท กล่องแสตนโชว์ กล่องพีวีซี ทุกขนาด
         </h1>
 
-        <hr>
+        <hr style="margin-top: 3rem; margin-bottom: 2rem;">
 
         <!-- CK -->
         <img src="<?=base_url('assets_2021_theme_1/img/product/wait-ck.png?')?><?=rand()?>" style="width: 100%;">
         <!-- end CK -->
 
-        <hr class="border-products-detail">
+        <hr  class="border-products-detail" >
 
         <? 
+        // $products_id = 
 
         $lang = $this->session->userdata('site_lang_name');
-        $share = base_url().$lang.'/Products/detail/'?>
+
+        $share = base_url().$lang.'/Products/detail/'
+        ?>
         <div class="" style="display: inline-block;">
 
 
@@ -102,10 +105,19 @@
              <?=lang('see-more-ask')?>
            </a>
 
-           <div class="dropdown-menu drop-more-new" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item contact-by" href="#"><?=lang('add-line')?></a>
-            <a class="dropdown-item contact-by" href="#"><?=lang('by-phone')?></a>
-            <a class="dropdown-item contact-by" href="#"><?=lang('facebook')?></a>
+           <div class="dropdown-menu drop-more-new" aria-labelledby="dropdownMenuLink" style="transform: translate3d(105px, 42px, 0px);">
+            <a class="dropdown-item contact-by" href="#">
+              <?=lang('add-line')?>
+            </a>
+            <a class="dropdown-item contact-by" href="tel:024261567">
+              <?=lang('by-phone')?>
+            </a>
+            <a class="dropdown-item contact-by" href="https://www.facebook.com/TCPINDUSTRY/">
+              <?=lang('facebook')?>
+            </a>
+            <a class="dropdown-item contact-by" href="<?=base_url($lang.'/Favorite/')?>">
+              <?=lang('Quotation')?>
+            </a>
           </div>
         </div>
       </div>
@@ -209,10 +221,10 @@
 
               <div class="col-md-3 col-sm-4 col-6">
                 <a data-fancybox="gallery" href="<?=base_url('assets_2021_theme_1/img/product/img-pro-1.png?')?><?=rand()?>">
-                  <img src="<?=base_url('assets_2021_theme_1/img/product/img-pro-1.png?')?><?=rand()?>" style="width: 100%;">
+                  <img class="gallery-img" src="<?=base_url('assets_2021_theme_1/img/product/img-pro-1.png?')?><?=rand()?>" style="width: 100%;">
                 </a>
-                <div class="name-gallerly">
-                  <a href="<?=base_url($lang.'/Products/detail/')?>">
+                <div class="name-gallerly font-PSL-bold">
+                  <a data-fancybox="gallery" href="<?=base_url('assets_2021_theme_1/img/product/img-pro-1.png?')?><?=rand()?>">
                     กล่องเครื่องใช้ไฟฟ้า
                   </a>
                 </div>
@@ -221,10 +233,10 @@
 
               <div class="col-md-3 col-sm-4 col-6">
                 <a data-fancybox="gallery" href="<?=base_url('assets_2021_theme_1/img/product/img-pro-2.png?')?><?=rand()?>">
-                  <img src="<?=base_url('assets_2021_theme_1/img/product/img-pro-2.png?')?><?=rand()?>" style="width: 100%;">
+                  <img class="gallery-img" src="<?=base_url('assets_2021_theme_1/img/product/img-pro-2.png?')?><?=rand()?>" style="width: 100%;">
                 </a>
-                <div class="name-gallerly">
-                  <a href="<?=base_url($lang.'/Products/detail/')?>">
+                <div class="name-gallerly font-PSL-bold">
+                  <a data-fancybox="gallery" href="<?=base_url('assets_2021_theme_1/img/product/img-pro-2.png?')?><?=rand()?>">
                     กล่องเครื่องใช้ไฟฟ้า
                   </a>
                 </div>

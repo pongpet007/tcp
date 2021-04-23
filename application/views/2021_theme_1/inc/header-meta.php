@@ -20,6 +20,9 @@
   
   <link href="<?=base_url()?>assets_2021_theme_1/vendor/aos/aos.css" rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets_2021_theme_1/css/font-awesome/all.css">
   <link rel="stylesheet" type="text/css" href="<?=base_url()?>assets_2021_theme_1/css/font-awesome/fontawesome.css">
@@ -43,8 +46,9 @@
   <?*/?>
   <style type="text/css">
     @font-face {
-      font-family: 'PSLDISPLAYPRO';
-      src: url('<?=base_url()?>assets_2021_theme_1/font/PSL029pro.ttf');
+      /*font-family: 'PSLDISPLAYPRO';*/
+      font-family: 'Kanit', sans-serif;
+      /*src: url('<?=base_url()?>assets_2021_theme_1/font/PSL029pro.ttf');*/
       font-weight: normal;
       font-style: normal;
     }

@@ -4,7 +4,7 @@
 		<div class="row">
 
 			<div class="col-lg-4 col-sm-4 col-12">
-				<img src="<?=base_url()?>image_new/logo/logo-footer.png" width="100%">
+				<img src="<?=base_url()?>image_new/logo/logo-footer.png" width="90%">
 				<div class="contact-social">
 					<p>
 						<?=lang('detail-company-footer')?>
@@ -31,7 +31,7 @@
 
 			<div class="col-lg-2 col-sm-2 col-6">
 				<div class="menu-footer">										
-					<div style="margin-bottom: 10px; color: #FFF;">
+					<div class="font-PSL-bold" style="margin-bottom: 10px; color: #FFF;">
 						<?=lang('MENU')?>
 					</div>
 					<div>
@@ -84,7 +84,7 @@
 
 			<div class="col-lg-2 col-sm-2 col-6">
 				<div class="menu-about">
-					<div style="margin-bottom: 10px; color: #FFF;">
+					<div class="font-PSL-bold" style="margin-bottom: 10px; color: #FFF;">
 						<?=lang('know tcp')?>
 					</div>
 					<div>
@@ -126,10 +126,10 @@
 
 					<div class="col-md-12 col-sm-12 col-6">
 						<div class="contact-footer">
-							<h2>
+							<h2 class="font-PSL-bold">
 								<?=lang('Contact Us')?>
 							</h2>
-							<p style="font-size: 20px;">
+							<p class="address-detail" style="">
 								82, 84 <?=lang('Soi Pracha Uthit 69')?> <?=lang('Thung Khru')?> <?=lang('District Thung Khru')?> <?=lang('BANGKOK')?> 10140
 							</p>		
 						</div>
@@ -137,7 +137,7 @@
 
 					<div class="col-md-12 col-sm-12 col-6">
 						<div class="contact-footer">
-							<h4 style="margin-bottom: -5px; font-size: 20px;">
+							<h4 class="font-PSL-bold" style="margin-bottom: -5px; font-size: 16px;">
 								<?=lang('tel')?>
 							</h4>
 							<div class="phone-call">
@@ -152,11 +152,11 @@
 					<div class="col-md-12 col-sm-12 col-12">
 						<div class="contact-footer">
 
-							<h2 style="padding-top: 5px; margin-bottom: -5px;">
+							<h2 class="font-PSL-bold" style="padding-top: 5px; margin-bottom: -5px;">
 								<?=lang('More websites')?>
 							</h2>
 							<span >
-								<a href="http://tcpindustry.brandexdirectory.com" style="color: #FFF; font-size: 23px;">tcpindustry.brandexdirectory.com</a>
+								<a href="http://tcpindustry.brandexdirectory.com" style="color: #FFF; font-size: 16px; padding-top: 14px;">tcpindustry.brandexdirectory.com</a>
 							</span>
 
 						</div>
@@ -180,7 +180,7 @@
 	<div class="row">
 		<div class="col-md-12 col-sm-12 col-12">
 			<copyright >
-				<div style="text-align: center; padding: 20px 0; color: #9b9c9e; font-size: 20px;">
+				<div class="copy font-PSL-bold" >
 					COPYRIGHT <? echo date('Y')?> T.C.P. INDUSTRY  CO.,LTD. ALL  RIGHT RESERVED. LEGAL & PRIVACY.
 				</div>
 

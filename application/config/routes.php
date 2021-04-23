@@ -99,6 +99,13 @@ $route['(LA|la)\/Job\/detail\/(.+)'] = 'Job/detail/$1/$2';
 $route['(MM|mm)\/Job\/detail\/(.+)'] = 'Job/detail/$1/$2';
 $route['(VN|vn)\/Job\/detail\/(.+)'] = 'Job/detail/$1/$2';
 
+$route['(TH|th)\/Quotation'] = 'Quotation/index/$1';
+$route['(US|us)\/Quotation'] = 'Quotation/index/$1';
+$route['(KH|kh)\/Quotation'] = 'Quotation/index/$1';
+$route['(LA|la)\/Quotation'] = 'Quotation/index/$1';
+$route['(MM|mm)\/Quotation'] = 'Quotation/index/$1';
+$route['(VN|vn)\/Quotation'] = 'Quotation/index/$1';
+
 
 
 $route['(TH|th)\/Home\/stat'] = 'Home/stat';

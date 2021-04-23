@@ -14,7 +14,7 @@
 		position:  absolute;
 		right: 0;
 		top: 10px;
-		background-color: #6b6d82;
+		background-color: #808080;
 	}
 
 	.i-drop-menu {
@@ -23,7 +23,7 @@
 	.dropdown-full {
 		background-color: #6c757d00;
 		border-color: #6c757d00;
-		font-size: 24px;
+		font-size: 18px;
 		padding: 0;
 	}
 	.dropdown-full:hover {
@@ -48,10 +48,12 @@
 
 	}
 	.drop-lang a {
-		font-size: 20px;
+		font-size: 18px;
 		padding: .25rem 3.5rem;
 	}
-
+	.ul-header-home {
+		float: right;
+	}
 
 
 	/* Menu bar mobile*/
@@ -238,11 +240,11 @@
 		letter-spacing: .5px;
 		color: #a8afb7;
 		padding-left: 5px;
-		font-size: 22px;
+		font-size: 15px;
 	}
 	.lang-mobile a{
 		color: #333 !important;
-		font-size: 24px;
+		font-size: 20px;
 	}
 	.circle-logo {
 		width: 96px;
@@ -253,10 +255,10 @@
 		padding: 5px;
 	}
 	.menu-nav-mobile {
-		padding-top: 5px;
-		padding-bottom: 5px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 		padding-left: 15px; 
-		font-size: 24px; 
+		font-size: 18px; 
 		border-bottom: 1px solid #EEE;
 	}
 	.flag-mobile {
@@ -270,21 +272,28 @@
 
 
 	/*  //////////////////////          Responsive           ////////////////////////////// */
-	@media (max-width: 500px) and (min-width: 300px) {
+	@media (max-width: 767px) and (min-width: 300px) {
+		.item-1::before, .item-2::before, .item-3::before, .item-4::before {
+			background-color: #ebebeb00;
+		}
+		.detail-obligation {
+			padding-top: 0;
+		}
 		.logo-header , .contact-header {
 			display: none;
 		}
 		.about-us {
-			margin-top: 80px;
+			margin-top: 100px;
 		}
 		.iconvision {
 			font-size: 28px;
 		}
 		.vision p {
-			font-size: 18px;
+			font-size: 11px;
 		}
 		.vision span {
 			visibility: hidden;
+			display: none;
 		}
 		.item-1 , .item-2 , .item-3, .item-4 ,.item-5 , .space-tab{
 			height: 120px;
@@ -332,7 +341,7 @@
 			line-height: 28px;
 		}
 		.detail-board p {
-			font-size: 25px;
+			font-size: 20px;
 		}
 
 		.contact-footer {
@@ -341,10 +350,13 @@
 		.about-us {
 			padding-bottom: 30px;
 		}
+		.detail-director {
+			padding: 50px 10px 10px 0;
+		}
 
 	}
 
-	@media (max-width: 768px) and (min-width: 501px) {
+	@media (max-width: 1023px) and (min-width: 768px) {
 		.nav-link {
 			padding: .4rem 1.3rem;
 			line-height: 23px;
@@ -359,13 +371,7 @@
 		.nav-1:after, .nav-2:after, .nav-3:after, .nav-4:after, .nav-5:after, .nav-6:after {
 			height: 0%;
 		}
-		.vision span {
-			line-height: 45px;
-			font-size: 20px;
-		}
-		.about-us {
-			margin-top: 100px;
-		}
+		
 		.navbar-light .navbar-toggler {
 			margin-bottom: 10px;
 		}
@@ -393,29 +399,39 @@
 		.detail-history p {
 			line-height: 28px;
 		}
-		.detail-iso p {
-			line-height: 28px;
-		}
-		.about-us {
-			padding-bottom: 60px;
-		}
+		
 		#header {
 			padding: 30px 0;
 		}
 
 	}
 
-	@media (max-width: 1024px) and (min-width: 769px) {
+	@media (max-width: 1359px) and (min-width: 1024px) {
 		.about-us {
 			margin-top: 120px;
 			padding-bottom: 100px;
 		}
-		.vision-detail {
-			margin-top: 70px;
-		}
 		.img-vision img {
 			padding-top: 40px;
 		}
+		.dropdonw-lang {
+			margin-left: 0;
+			display: inline-flex;
+		}
+		.flag img {
+			width: 30px;
+			height: 30px;
+		}
+		.dropdown-full {
+			font-size: 18px;
+		}
+		.drop-lang a {
+			font-size: 15px;
+		}
+		.span-menu {
+			font-size: 13px !important;
+		}
+
 	}
 
 

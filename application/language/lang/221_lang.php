@@ -45,7 +45,7 @@ $lang["Share"] = 'แชร์ : ';
 $lang["see-more-ask"] = 'สนใจติดต่อสอบถามเพิ่มเติม';
 $lang["add-line"] = 'แอดไลน์';
 $lang["by-phone"] = 'ทางโทรศัพท์';
-$lang["facebook"] = 'เฟสบุ๊ค';
+$lang["facebook"] = 'เฟซบุ๊ค';
 $lang["tags"] = 'ป้ายกำกับสินค้า : ';
 $lang["Sample work"] = 'ตัวอย่างงาน';
 $lang["BY"] = 'โดย : ';
@@ -92,7 +92,7 @@ $lang["Business hours"] = 'เวลาทำการ';
 $lang["Mon - Sat"] = 'จันทร์ - เสาร์  ';
 $lang["time"] = 'เวลา';
 $lang["office"] = 'ออฟฟิศ';
-
+$lang["Quotation"] = 'ขอใบเสนอราคา';
 
 
 
